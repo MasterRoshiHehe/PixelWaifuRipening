@@ -212,7 +212,7 @@
       "VariantExpressions": {
         "Vanilla": {
 		"0": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Bouncer/Bouncer.png" }
-		},
+		}
 	  }
 	},	
     
@@ -1271,7 +1271,7 @@
         "6": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Default/Leah_6.png" },
         "7": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Default/Leah_7.png" },
         "8": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Default/Leah_8.png" },
-        "9": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Default/Leah_9.png" },
+        "9": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Default/Leah_9.png" }
         },
         "Pyjamas": {
           "0": { "Frames": 1, "Fps": 1, "Mode": "once", "Sprite": "assets/Roshi_Portraits/Leah/Pyjamas/Leah_Pyjamas_0.png" },
