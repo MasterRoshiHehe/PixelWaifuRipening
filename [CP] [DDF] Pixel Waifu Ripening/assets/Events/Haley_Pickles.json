@@ -1,0 +1,32 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Haley Pickle Event Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pickles",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pickles.png"
+    },
+    {
+      "LogName": "Trigger Haley Pickle Appearance",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Entries": {
+        "Roshi.HaleyPickles": {
+          "Id": "Roshi.HaleyPickles",
+          "Condition": "IS_EVENT 12",
+          "Portrait": "Portraits/Haley_Pickles",
+          "Precedence": -10000
+        }
+      }
+    },
+    {
+      "LogName": "DDFC Haley Pickles",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Haley_Pickles": { "CopyFrom": "Haley" }
+      }
+    }
+  ]
+}

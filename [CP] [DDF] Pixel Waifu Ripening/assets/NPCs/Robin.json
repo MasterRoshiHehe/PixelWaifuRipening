@@ -1,0 +1,60 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Robin_Vanilla", "FromFile": "assets/Roshi_Portraits/Robin/Robin.png" },
+    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Robin_Winter", "FromFile": "assets/Roshi_Portraits/Robin/Robin_Winter.png" },
+    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Robin_Beach", "FromFile": "assets/Roshi_Portraits/Robin/Robin_Beach.png" },
+    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Robin_Rainy", "FromFile": "assets/Roshi_Portraits/Robin/Robin_Rain.png" },
+    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Robin_Pyjamas", "FromFile": "assets/Roshi_Portraits/Robin/Robin_Pyjamas.png" },
+
+    // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Robin Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Robin", "Appearance" ],
+      "Entries": {
+        "Roshi_Robin_Vanilla_Fallback": {
+          "Id": "Roshi_Robin_Vanilla_Fallback",
+          "Portrait": "Portraits/Robin_Vanilla",
+          "Precedence": -10
+        },
+        "Roshi_Robin_Pyjamas_Morning": {
+          "Id": "Roshi_Robin_Pyjamas_Morning",
+          "Condition": "ANY \"LOCATION_NAME Target ScienceHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950",
+          "Portrait": "Portraits/Robin_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Robin_Pyjamas_Night": {
+          "Id": "Roshi_Robin_Pyjamas_Night",
+          "Condition": "ANY \"LOCATION_NAME Target ScienceHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600",
+          "Portrait": "Portraits/Robin_Pyjamas",
+          "Precedence": -100
+        },
+"Roshi_Robin_Rain": {
+          "Id": "Roshi_Robin_Rain",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Robin_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Robin_IslandAttire": {
+          "Id": "Roshi_Robin_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Robin_Beach",
+          "Precedence": -510
+        }
+      }
+    },
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Robin": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

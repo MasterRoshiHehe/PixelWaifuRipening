@@ -1,0 +1,60 @@
+{
+  "Changes": [
+    // --- 1. LOAD THE PORTRAIT STRINGS FOR APF ---
+    {
+      "LogName": "Load Random Beach Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Beach, Portraits/Haley_Beach_BlackTube, Portraits/Haley_Beach_BlueTube, Portraits/Haley_Beach_PinkSuit, Portraits/Haley_Beach_Towel",
+      "FromFile": "assets/Roshi_Portraits/Haley/{{TargetWithoutPath}}.png"
+    },
+
+    // --- 2. DDFC MAPPING ---
+    {
+      "LogName": "DDFC Assignment - Haley Beach Random",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Haley_Beach_BlackTube": { "CopyFrom": "RoshiHD_Template" },
+        "Haley_Beach_BlueTube": { "CopyFrom": "RoshiHD_Template" },
+        "Haley_Beach_PinkSuit": { "CopyFrom": "RoshiHD_Template" },
+        "Haley_Beach_Towel": { "CopyFrom": "RoshiHD_Template" }
+      }
+    },
+
+    // --- 3. APPEARANCE LOGIC (APF PORTRAIT ONLY) ---
+    {
+      "LogName": "Haley Appearance Logic - Beach Bikinis (Portrait Only)",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Update": "OnDayStart",
+      "Entries": {
+        "Roshi_Haley_BeachBikinis": {
+          "Id": "Roshi_Haley_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          
+          // PINNED KEY IN ACTION: Rolls the die once for the Portrait
+          "Portrait": "Portraits/Haley_{{Random: Beach, Beach_BlackTube, Beach_BlueTube, Beach_PinkSuit, Beach_Towel |key=haley_beach_outfit}}",
+          "Precedence": 100
+        }
+      }
+    },
+
+    // --- 4. SAFE SPRITE INJECTION ---
+{
+      "LogName": "Haley Sprite - Beach Bikini Safe Injection",
+      "Action": "EditImage",
+      "Target": "Characters/Haley_Beach",
+      "FromFile": "assets/Roshi_Sprites/Haley/Beach/Haley_{{Random: Beach, Beach_BlackTube, Beach_BlueTube, Beach_PinkSuit, Beach_Towel |key=haley_beach_outfit}}.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 192 },
+      "PatchMode": "Replace",
+      "Update": "OnDayStart, OnLocationChange, OnTimeChange",
+      "When": {
+        "Season": "Spring, Summer, Fall",
+        "Weather": "Sun",
+        "LocationName": "Beach, IslandResort",
+        "Time": "{{Range: 0600, 1850}}"
+      }
+    }
+  ]
+}

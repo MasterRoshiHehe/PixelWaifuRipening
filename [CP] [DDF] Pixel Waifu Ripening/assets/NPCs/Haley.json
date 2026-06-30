@@ -1,0 +1,98 @@
+{
+  "Changes": [
+    // --- 1A. LOAD STANDALONE ASSETS ---
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Haley",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Haley_Winter",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Winter.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Beach",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Beach.png"
+    },
+    {
+      "LogName": "Load HD Vanilla",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley.png"
+    },
+    {
+      "LogName": "Load HD Rainy",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas.png"
+    },
+    { "LogName": "Load Haley Pyjamas Sprite", "Action": "Load", "Target": "Characters/Haley_Pyjamas", "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png" },
+    {
+      "LogName": "Load HD Luau Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Luau",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Luau.png"
+    },
+    {
+      "LogName": "Load HD Luau Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Luau",
+      "FromFile": "assets/Roshi_Sprites/Haley/Haley_Luau.png"
+    },
+    // --- BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Haley Appearance Logic - Portraits Only",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Entries": {
+        "Roshi_Haley_Rainy": {
+          "Id": "Roshi_Haley_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Here Rain Storm",
+          "Portrait": "Portraits/Haley_Rainy",
+          "Precedence": -20
+        },
+        "Roshi_Haley_IslandAttire": {
+          "Id": "Roshi_Haley_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Haley_Beach",
+          "Precedence": -510
+        },
+        "Roshi_Haley_Base_Winter": {
+          "Id": "Roshi_Haley_Base_Winter",
+          "Condition": "SEASON Winter",
+          "Portrait": "Portraits/Haley_Winter",
+          "Precedence": -500
+        },
+        "Roshi_Haley_Vanilla_Fallback": {
+          "Id": "Roshi_Haley_Vanilla_Fallback",
+          "Portrait": "Portraits/Haley_Vanilla",
+          "Precedence": -10
+      }
+    }
+},	
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Haley": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

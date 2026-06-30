@@ -1,0 +1,185 @@
+{
+  "Format": "2.4.0",
+"DynamicTokens": [
+    {
+      "Name": "Roshi_HaleyBeachOutfitId",
+      "Value": "{{Random:Beach,Beach_BlackTube,Beach_BlueTube,Beach_PinkSuit,Beach_Towel}}",
+      "Update": "OnDayStart"
+    }
+  ],
+  "ConfigSchema": {
+      "EnableCustomOutfits": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom immersive seasonal, pajama, and festival outfits for supported NPCs."
+    },
+	"EmilyBreastEnvy": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Enable Breast Envy for Emily."
+    },
+	"EnableHaremValleyOverwrites": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom portraits for Harem Valley events. Disable if you play in a language other than English."
+    },
+    "EnableXtardewOverwrites": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom portraits for Xtardew Valley events. Disable if you play in a language other than English."
+    }
+  },
+  "Changes": [
+    // ==========================================
+    // 1. DDFC MASTER TEMPLATE
+    // ==========================================
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "RoshiHD_Template": {
+		    "width": 1100,
+			"height": 360,
+          "portrait": { "xOffset": 480, "yOffset": -1291, "h": 320, "w": 320, "bottom": true, "scale": 2.775, "layerDepth": 0.1 },
+          "name": { "xOffset": 180, "yOffset": -440, "scroll": true, "bottom": true, "centered": true, "scrollType": 0 },
+          "jewel": { "disabled": true,"xOffset": -48, "yOffset": -60, "right": true },
+          "button": { "xOffset": -40, "yOffset": -48, "right": true, "bottom": true },
+          "hearts": { "xOffset": 8, "yOffset": -24, "bottom": true, "showEmptyHearts": true, "heartsPerRow": 14 },
+          "texts": [{ "disabled": true }],
+          "dividers": [{ "disabled": true, "xOffset": 0, "height": 0 }]
+        }
+      }
+    },
+
+    // ==========================================
+    // 2. VANILLA NPC MODULES
+    // Loads the individual JSON files for each character.
+    // ==========================================
+    { "Action": "Include", "FromFile": "assets/NPCs/Abigail.json" },
+	{ "Action": "Include", "FromFile": "assets/NPCs/Bouncer.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Caroline.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Emily.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Haley.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Jodi.json" },
+	{ "Action": "Include", "FromFile": "assets/NPCs/Krobus.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Leah.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Marnie.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Maru.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Penny.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Robin.json" },
+    { "Action": "Include", "FromFile": "assets/NPCs/Sandy.json" },
+
+    // ==========================================
+    // 3. CUSTOM EVENT PORTRAITS
+    //
+    // ==========================================
+    { "Action": "Include", "FromFile": "assets/Events/Haley_Pickles.json" },
+
+    // ==========================================
+    // 4. THIRD-PARTY MOD PATCHES
+    // Only loads if the player actually has these mods installed.
+    // ==========================================
+    {
+      "Action": "Include",
+      "When": { "HasMod": "Pseudodiego.XtardewValley" },
+      "FromFile": "assets/Patches/Xtardew/Xtardew_Index.json"
+    },
+    {
+      "LogName": "Lewd Krobus Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewd_Krobus/Krobus.json",
+      "When": {
+        "HasMod": "thrinityseven.Lewd_Krobus"
+      }
+    },
+    {
+      "LogName": "Harem Valley / Valley Girls Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Harem_Valley/Harem_Valley_Index.json",
+      "When": {
+        "HasMod": "Trashracc.VG",
+		"EnableHaremValleyOverwrites": "true"
+      }
+    },
+    { 
+      "Action": "Include", 
+      "FromFile": "assets/Patches/Xtardew/Events/Haley_Darkroom.json", 
+      "When": {
+		"HasMod": "Pseudodiego.XtardewValley",
+        "EnableXtardewOverwrites": "true" 
+      }
+    },
+    {
+      "LogName": "DDFC Scaler Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler.json",
+      "When": {
+        "HasMod": "dakot.DDFCScaler"
+      }
+    },
+	{
+	"LogName": "Include Beach Bikinis",
+	"Action": "Include",
+	"FromFile": "assets/Patches/Beach_Bikinis/Beach_Bikinis.json",
+	"When": {
+		"HasMod": "BeachBikinis"
+	}
+	},
+	{
+	"LogName": "Include Improved Luau",
+	"Action": "Include",
+	"FromFile": "assets/Patches/Improved_Luau/Improved_Luau.json",
+	"When": {
+		"HasMod": "citacritta.ImprovedLuau"
+	}
+	},
+// ==========================================
+    // 5. DDFC SCALER - THIRD PARTY PATCHES
+    // Only loads if both DDFC Scaler AND the target mod are installed.
+    // ==========================================
+    {
+      "LogName": "DDFC Scaler - Xtardew Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Xtardew.json",
+      "When": {
+        "HasMod": "dakot.DDFCScaler",
+        "HasMod": "Pseudodiego.XtardewValley"
+      }
+    },
+    {
+      "LogName": "DDFC Scaler - Lewd Krobus Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Lewd_Krobus.json",
+      "When": {
+        "HasMod": "dakot.DDFCScaler",
+        "HasMod": "thrinityseven.Lewd_Krobus"
+      }
+    },
+	// ==========================================
+    // 5. IMMERSIVE ADDITIONS
+    // Optional dynamic events and logic.
+    // ==========================================
+	{
+      "LogName": "Load Custom Outfits Index",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits_Index.json",
+      "When": {
+        "EnableCustomOutfits": "true"
+      }
+    },
+    {
+      "LogName": "Load Breast Envy Emily Dream",
+      "Action": "Include",
+      "FromFile": "assets/Events/Emily_Dream_BE.json",
+      "When": {
+        "EmilyBreastEnvy": "true"
+      }
+    }
+	// ==========================================
+    // 6. CUSTOM EVENTS
+    // Custom PWR Events.
+    // ==========================================
+
+  ]
+}
+

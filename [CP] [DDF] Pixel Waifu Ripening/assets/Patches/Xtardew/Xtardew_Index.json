@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Abigail.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Caroline.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Emily.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Haley.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Leah.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Maru.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Penny.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Robin.json" },
+    { "Action": "Include", "FromFile": "assets/Patches/Xtardew/NPCs/Sandy.json" }
+  ]
+}

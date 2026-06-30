@@ -1,0 +1,29 @@
+{
+  "Changes": [
+    {
+      "LogName": "DDFC Scaler Integration",
+      "Action": "EditData",
+      "Target": "dakot.DDFCScaler/ScaledNPCs",
+      "Entries": {
+		"Abigail·": "TopRight",
+		"Abigail··": "TopRight",
+		"Caroline·": "TopRight",
+		"Caroline··": "TopRight",
+		"Emily·": "TopRight",
+		"Emily··": "TopRight",
+		"Haley·": "TopRight",
+        "Haley··": "TopRight",
+		"Leah·": "TopRight",
+		"Leah··": "TopRight",
+		"Maru·": "TopRight",
+		"Maru··": "TopRight",
+		"Penny·": "TopRight",
+		"Penny··": "TopRight",
+		"Robin·": "TopRight",
+		"Robin··": "TopRight",
+		"Sandy··": "TopRight",
+		"Sandy··": "TopRight"
+      }
+    }
+  ]
+}

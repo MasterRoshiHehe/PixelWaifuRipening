@@ -1,0 +1,58 @@
+{
+  "Name": "[CP] [DDF] Pixel Waifu Ripening PWR",
+  "Author": "MasterRoshiHehe",
+  "Version": "0.2.67",
+  "Description": "High-quality Pixel Style AI Portraits",
+  "UniqueID": "MasterRoshiHehe.PWR",
+  "UpdateKeys": [ "Nexus:44489" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Mangupix.DialogueDisplayFrameworkContinued",
+      "IsRequired": true
+    },
+	{
+      "UniqueID": "tyr4ntx.AnimatedPortraitFramework",
+      "IsRequired": true
+    },
+	{
+      "UniqueID": "s0ru.SpriteVariantOrchestrator",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "dakot.DDFCScaler",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Pseudodiego.XtardewValley",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Pseudodiego.NudeNPC",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Pseudodiego.LAtardewValley",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Trashracc.VG",
+      "IsRequired": false
+    },
+	    {
+      "UniqueID": "thrinityseven.Lewd_Krobus",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "BeachBikinis",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "citacritta.ImprovedLuau",
+      "IsRequired": false
+    }
+  ]
+}
+

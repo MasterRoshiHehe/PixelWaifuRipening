@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    { "LogName": "Load Abigail Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Spring_Outfits.json" },
+    { "LogName": "Load Abigail Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Summer_Outfits.json" },
+    { "LogName": "Load Abigail Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Fall_Outfits.json" },
+    { "LogName": "Load Abigail Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Winter_Outfits.json" },
+    { "LogName": "Load Abigail Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Festival_Outfits.json" },
+    { "LogName": "Load Emily Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Emily/Emily_Festival_Outfits.json" },
+    { "LogName": "Load Haley Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Spring_Outfits.json" },
+    { "LogName": "Load Haley Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Summer_Outfits.json" },
+    { "LogName": "Load Haley Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Fall_Outfits.json" },
+    { "LogName": "Load Haley Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Winter_Outfits.json" },
+    { "LogName": "Load Haley Outfits", "Action": "Include", "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Festival_Outfits.json" }
+  ]
+}

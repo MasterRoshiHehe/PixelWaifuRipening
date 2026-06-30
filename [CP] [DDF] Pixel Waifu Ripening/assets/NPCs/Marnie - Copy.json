@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie_Vanilla", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie.png" },
+    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie_Winter", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Winter.png" },
+    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Marnie_Beach", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Beach.png" },
+    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Marnie_Rainy", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Rain.png" },
+    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Marnie_Pyjamas", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Pyjamas.png" },
+
+    // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Marnie Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Marnie", "Appearance" ],
+      "Entries": {
+        "Roshi_Marnie_Vanilla_Fallback": {
+          "Id": "Roshi_Marnie_Vanilla_Fallback",
+          "Portrait": "Portraits/Marnie_Vanilla",
+          "Precedence": -10
+        },
+        "Roshi_Marnie_Pyjamas_Morning": {
+          "Id": "Roshi_Marnie_Pyjamas_Morning",
+          "Condition": "ANY \"LOCATION_NAME Target AnimalShop\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950",
+          "Portrait": "Portraits/Marnie_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Marnie_Pyjamas_Night": {
+          "Id": "Roshi_Marnie_Pyjamas_Night",
+          "Condition": "ANY \"LOCATION_NAME Target AnimalShop\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600",
+          "Portrait": "Portraits/Marnie_Pyjamas",
+          "Precedence": -100
+        },
+"Roshi_Marnie_Rain": {
+          "Id": "Roshi_Marnie_Rain",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Marnie_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Marnie_IslandAttire": {
+          "Id": "Roshi_Marnie_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Marnie_Beach",
+          "Precedence": -510
+        }
+      }
+    },
+
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Marnie": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

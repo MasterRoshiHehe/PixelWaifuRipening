@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Sandy", "FromFile": "assets/Roshi_Portraits/Sandy/Sandy.png" },
+
+    // --- 2. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Sandy": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

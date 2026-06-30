@@ -1,0 +1,86 @@
+{
+  "Changes": [
+    // ==========================================================
+    // HALEY PLEASURE OVERRIDES (MAD: 0-2 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Haley Pleasure (Mad)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Haley",
+	  "Update": "OnLocationChange",
+      "When": { "Hearts:Haley": "0, 1, 2" },
+      "Entries": {
+        "pleasure1": "Um! What the hell @?$110#$b#Can't you see I'm busy?$110#$b#Ugh, whatever! Hurry up and go away!$110",
+        "pleasure2": "Um! What the hell @?$120#$b#Can't you see I'm busy?$120#$b#Ugh, whatever! Hurry up and go away!$120",
+        "pleasure3": "Um! What the hell @?$130#$b#Can't you see I'm busy?$130#$b#Ugh, whatever! Hurry up and go away!$130",
+        "pleasure4": "Um! What the hell @?$140#$b#Can't you see I'm busy?$140#$b#Ugh, whatever! Hurry up and go away!$140",
+        "pleasure5": "Um! What the hell @?$150#$b#Can't you see I'm busy?$151#$b#Ugh, whatever! Hurry up and go away!$152",
+        "pleasure6": "Um! What the hell @?$32#$b#Can't you see I'm busy?$32#$b#Ugh, whatever! Hurry up and go away!$32",
+        "pleasure7": "Um! What the hell @?$170#$b#Can't you see I'm busy?$171#$b#Ugh, whatever! Hurry up and go away!$172",
+        "pleasure8": "Um! What the hell @?$32#$b#Can't you see I'm busy?$32#$b#Ugh, whatever! Hurry up and go away!$32",
+        "pleasure9": "Um! What the hell @?$32#$b#Can't you see I'm busy?$32#$b#Ugh, whatever! Hurry up and go away!$32"
+      }
+    },
+    // ==========================================================
+    // HALEY PLEASURE OVERRIDES (HAPPY: 3-6 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Haley Pleasure (Happy)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Haley",
+	  "Update": "OnLocationChange",
+      "When": { "Hearts:Haley": "3, 4, 5, 6" },
+      "Entries": {
+        "pleasure1": "Oh, @? I didn't see you there.$112#$b#You know, I was feeling kinda lonely...$111#$b#You can stay if you want? Just keep this between us...$111",
+        "pleasure2": "Oh, @? I didn't see you there.$122#$b#You know, I was feeling kinda lonely...$121#$b#You can stay if you want? Maybe even join me? *wink*$121",
+        "pleasure3": "Oh, @? I didn't see you there.$132#$b#You know, I was feeling kinda lonely...$131#$q 997/998 Haley.Pleasure1.01#You could help out with that... right? #$r 999 0 Haley_999_999#Of course I can < #$r 999 0 Haley_800_800#Maybe another time",
+        "pleasure4": "Hey @!$142#$b#I need to ask you something...$141#$b#How does my ass look on this thing?$142#$b#Good, right?$141#$b#I bet you love it when I, *huff* ...Stretch my ass like this!$143",
+        "pleasure5": "Oh fuck! Mmmph, that's... it...$153#$b#Oh um! Hi @. What are you doing here?$154#$b#No, don't leave!$155#$b#I finally managed to take the entire length of this monster!$156#$b#Impressive, right?$157",
+        "pleasure6": "Hey @! Sorry about the mess!$31#$b#I was just, um, feeling a little bored.$33#$b#I have a bad habit of touching myself whenever I'm bored, haha!$42#$b#I'd rather it be you though$33",
+        "pleasure7": "Hey @! Sorry about the mess!$173#$b#I was just, um, feeling a little bored.$174#$b#I have a bad habit of touching myself whenever I'm bored, haha!$175#$b#You can understand, right?$176",
+        "pleasure8": "Mmmm! My pussy is already so wet! Oh gosh!$34#$b#Oh, um! Hey @! Don't mind me.$31#$b#I was actually hoping you would show up.$33#$b#It's a little more exciting when you watch.$44",
+        "pleasure9": "Hey @, perfect timing...$44#$b#I'm really horny right now...$34#$q 997/998 Haley.Pleasure.09#Can you give me another faical?#$r 999 0 Haley_969_969#Any time <#$r 999 0 Haley_869_869#Not right now"
+      }
+    },
+    // ==========================================================
+    // HALEY PLEASURE OVERRIDES (VERY HAPPY: 7-14 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Haley Pleasure (Very Happy)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Haley",
+	  "Update": "OnLocationChange",
+      "When": { "Hearts:Haley": "7, 8, 9, 10, 11, 12, 13, 14" },
+      "Entries": {
+        "pleasure1": "Oh, @? I didn't see you there.$112#$b#You know, I was feeling kinda lonely...$111#$b#You can stay if you want? Just keep this between us...$112",
+        "pleasure2": "Oh, @? I didn't see you there.$122#$b#You know, I was feeling kinda lonely...$121#$b#You can stay if you want? Maybe even join me? *wink*$122",
+        "pleasure3": "Oh, @? I didn't see you there.$132#$b#You know, I was feeling kinda lonely...$132#$q 997/998 Haley.Pleasure2.03#You know the drill, @... #$r 999 0 Haley_900_900#Oh yes I do < #$r 999 0 Haley_800_800#Maybe another time",
+        "pleasure4": "Hey @!$142#$b#I need to ask you something...$141#$b#How does my ass look on this thing?$142#$b#Good, right?$141#$b#I bet you love it when I, *huff* ...Stretch my ass like this!$143#$q 997/998 Haley.Pleasure2.01#Could you... help me stretch out something else of mine? #$r 999 0 Haley_999_999#Of course I can... #$r 999 0 Haley_800_800#Maybe another time",
+        "pleasure5": "Oh fuck! Mmmph, that's... it...$153#$b#Oh um! Hi @. What are you doing here?$158#$b#No, don't leave!$159#$b#I finally managed to take the entire length of this monster!$156#$b#Impressive, right?$157",
+        "pleasure6": "Hey @! Sorry about the mess!$31#$b#I was just, um, feeling a little bored.$33#$b#I have a bad habit of touching myself whenever I'm bored, haha!$42#$b#I'd rather it be you though$33",
+        "pleasure7": "Hey @! Sorry about the mess!$175#$b#I was just, um, feeling a little bored.$174#$b#I have a bad habit of touching myself whenever I'm bored, haha!$175#$b#You can understand, right?$176",
+        "pleasure8": "Mmmm! My pussy is already so wet! Oh gosh!$34#$b#Oh, um! Hey @! Don't mind me.$31#$b#I was actually hoping you would show up.$33#$b#It's a little more exciting when you watch.$44",
+        "pleasure9": "Hey @, perfect timing...$44#$b#I'm really horny right now...$34#$q 997/998 Haley.Pleasure.09#Can you give me another faical?#$r 999 0 Haley_969_969#Any time <#$r 999 0 Haley_869_869#Not right now"
+      }
+    },
+	// ==========================================================
+    // HALEY SEX OVERRIDES
+    // ==========================================================
+    {
+      "LogName": "HV Haley Sex",
+      "Action": "EditData",
+      "Target": "Strings/animationDescriptions",
+      "Update": "OnLocationChange",
+      "Entries": {
+        "haley_sex1": "How does my pussy feel, Alex?$211#$b#I can feel you throbbing inside me...$211#$b#Mmmph! That's it...$210#$b#Now, how fast I can make you cum?$211",
+        "haley_sex2": "Oh fuck yes! Ugh!$220#$b#Mmmph! That's it! Shove your huge fucking cock inside me!$221",
+        "haley_sex3": "Mmmmph! Mmmmph! Mmmmph!$45",
+        "haley_sex4": "",
+        "haley_sex5": "",
+        "haley_sex6": "",
+        "haley_top": "Mmmm! Oh yes, babe!$270#$b#You're making me so fucking wet right now!$271",
+        "haley_bottom": "Mmmm! Oh yes, babe!$221#$b#You're making me so fucking wet right now!$220"
+      }
+    }
+  ]
+}

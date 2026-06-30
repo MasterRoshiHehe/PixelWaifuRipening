@@ -1,0 +1,67 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Emily_Vanilla", "FromFile": "assets/Roshi_Portraits/Emily/Emily.png" },
+    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Emily_Winter", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Winter.png" },
+    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Emily_Beach", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Beach.png" },
+    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Emily_Rainy", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Rain.png" },
+    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Emily_Pyjamas", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Pyjamas.png" },
+    { "LogName": "Load HD Luau", "Action": "Load", "Target": "Portraits/Emily_Luau", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Luau.png" },
+	{
+      "LogName": "Load HD Luau Sprite",
+      "Action": "Load",
+      "Target": "Characters/Emily_Luau",
+      "FromFile": "assets/Roshi_Sprites/Emily/Emily_Luau.png"
+    },
+    // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Emily Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Emily", "Appearance" ],
+      "Entries": {
+        "Roshi_Emily_Vanilla_Fallback": {
+          "Id": "Roshi_Emily_Vanilla_Fallback",
+          "Portrait": "Portraits/Emily_Vanilla",
+          "Precedence": -10
+        },
+        "Roshi_Emily_Pyjamas_Morning": {
+          "Id": "Roshi_Emily_Pyjamas_Morning",
+          "Condition": "ANY \"LOCATION_NAME Target EmilyHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950",
+          "Portrait": "Portraits/Emily_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Emily_Pyjamas_Night": {
+          "Id": "Roshi_Emily_Pyjamas_Night",
+          "Condition": "ANY \"LOCATION_NAME Target EmilyHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600",
+          "Portrait": "Portraits/Emily_Pyjamas",
+          "Precedence": -100
+        },
+"Roshi_Emily_Rainy": {
+          "Id": "Roshi_Emily_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Emily_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Emily_IslandAttire": {
+          "Id": "Roshi_Emily_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Emily_Beach",
+          "Precedence": -510
+        }
+      }
+    },
+
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Emily": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie.png" },
+    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie_Winter", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Winter.png" },
+    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Marnie_Beach", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Beach.png" },
+    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Marnie_Rainy", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Rain.png" },
+
+    // --- 2. APPEARANCE LOGIC ---
+    // All appearance entries are consolidated here.
+    // By using Game State Queries (like TIME) directly in the 'Condition' field,
+    // the game engine evaluates these rules natively.
+    // Note: The game only rechecks an NPC's Appearance when they change location.
+    // This means if you are in the same room as Marnie when the time changes,
+    // her portrait might not update until she moves or you re-enter the location.
+    {
+      "LogName": "Marnie Appearance Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Marnie", "Appearance" ],
+      "Entries": {
+        "Roshi_Marnie_Vanilla_Fallback": {
+          "Id": "Roshi_Marnie_Vanilla_Fallback",
+          "Portrait": "Portraits/Marnie",
+          "Precedence": 100
+        },
+        "Roshi_Marnie_Rain": {
+          "Id": "Roshi_Marnie_Rain",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Marnie_Rainy",
+          "Precedence": 50
+        },
+        "Roshi_Marnie_IslandAttire": {
+          "Id": "Roshi_Marnie_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Marnie_Beach",
+          "Precedence": 0
+        }
+      }
+    },
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "LogName": "DDFC Assignment - Marnie",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Marnie": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

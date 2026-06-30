@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    // --- LOAD THE HD PORTRAIT ---
+    {
+      "LogName": "Lewd Krobus HD Portrait Override",
+      "Action": "Load",
+      "Target": "Portraits/Krobus",
+      "FromFile": "assets/Roshi_Portraits/Krobus/Lewd_Krobus.png",
+      "Priority": "High"
+    },
+    // --- DDFC ASSIGNMENT ---
+    {
+      "LogName": "DDFC HD Template - Krobus",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Krobus": { "CopyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

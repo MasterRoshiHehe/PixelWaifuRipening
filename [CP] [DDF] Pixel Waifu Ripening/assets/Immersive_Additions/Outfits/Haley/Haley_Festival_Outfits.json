@@ -1,0 +1,38 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load HD Fall Quinn Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Fall_Quinn",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Quinn.png"
+    },
+    {
+      "LogName": "Load HD Fall Quinn Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Fall_Quinn",
+      "FromFile": "assets/Other_Sprites/SillyBobThorton/Haley_Quinn.png"
+    },
+    {
+      "LogName": "Haley Appearance Logic - Festivals",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Entries": {
+        "Roshi_Haley_SpiritsEve": {
+          "Id": "Roshi_Haley_SpiritsEve",
+          "Condition": "SEASON_DAY Fall 27, LOCATION_NAME Here Temp",
+          "Portrait": "Portraits/Haley_Fall_Quinn",
+          "Sprite": "Characters/Haley_Fall_Quinn",
+          "Precedence": -2000
+        },
+        "Roshi_Haley_Luau": {
+          "Id": "Roshi_Haley_Luau",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Beach",
+          "Portrait": "Portraits/Haley_Luau",
+          "Sprite": "Characters/Haley_Luau",
+          "Precedence": -2000
+        }
+      }
+    }
+  ]
+}

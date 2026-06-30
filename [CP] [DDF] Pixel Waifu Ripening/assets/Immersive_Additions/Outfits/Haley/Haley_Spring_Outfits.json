@@ -1,0 +1,93 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load HD Vanilla",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley.png"
+    },
+    {
+      "LogName": "Load HD Vanilla Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Vanilla",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png"
+    },
+    {
+      "LogName": "Load HD Rainy",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Rain.png"
+    },
+    {
+      "LogName": "Load HD Phone",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Phone",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Phone.png"
+    },
+    {
+      "LogName": "Haley Appearance Logic - Spring Portraits",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Entries": {
+"Roshi_Haley_Pyjamas_Morning": {
+          "Id": "Roshi_Haley_Pyjamas_Morning",
+          "Condition": "TIME 600 930, SEASON Spring, ANY \"LOCATION_NAME Target HaleyHouse\" \"LOCATION_NAME Target FarmHouse, RELATIONSHIP Any Haley Married\"",
+          "Portrait": "Portraits/Haley_Pyjamas",
+          "Precedence": -1000
+        },
+        "Roshi_Haley_Pyjamas_Night": {
+          "Id": "Roshi_Haley_Pyjamas_Night",
+          "Condition": "TIME 2000 2600, SEASON Spring, ANY \"LOCATION_NAME Target HaleyHouse\" \"LOCATION_NAME Target FarmHouse, RELATIONSHIP Any Haley Married\"",
+          "Portrait": "Portraits/Haley_Pyjamas",
+          "Precedence": -1000
+        },
+"Roshi_Haley_Rainy": {
+          "Id": "Roshi_Haley_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, SEASON Spring",
+          "Portrait": "Portraits/Haley_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Haley_Phone": {
+          "Id": "Roshi_Haley_Phone",
+          "Condition": "PLAYER_HEARTS Haley 0 2, SEASON Spring",
+          "Portrait": "Portraits/Haley_Phone",
+          "Precedence": -11
+        },
+        "Roshi_Haley_Vanilla_Fallback": {
+          "Id": "Roshi_Haley_Vanilla_Fallback",
+          "Portrait": "Portraits/Haley_Vanilla",
+          "Precedence": -10
+        }
+      }
+    },
+    {
+      "LogName": "Haley Sprite - Pyjamas Morning Spring",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { 
+        "Season": "Spring",
+        "Time": "{{Range: 600, 930}}",
+        "IsOutdoors": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Haley Sprite - Pyjamas Night Spring",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { 
+        "Season": "Spring",
+        "Time": "{{Range: 2000, 2600}}",
+        "IsOutdoors": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}

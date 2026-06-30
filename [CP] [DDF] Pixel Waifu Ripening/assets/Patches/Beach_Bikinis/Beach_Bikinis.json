@@ -1,0 +1,157 @@
+{
+  "Changes": [
+    {
+      "LogName": "Abigail Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Abigail", "Appearance" ],
+      "Entries": {
+        "Roshi_Abigail_BeachBikinis": {
+          "Id": "Roshi_Abigail_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Abigail_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Caroline Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Caroline", "Appearance" ],
+      "Entries": {
+        "Roshi_Caroline_BeachBikinis": {
+          "Id": "Roshi_Caroline_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Caroline_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Emily Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Emily", "Appearance" ],
+      "Entries": {
+        "Roshi_Emily_BeachBikinis": {
+          "Id": "Roshi_Emily_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Emily_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+  {
+
+      "LogName": "Haley Appearance Logic - Beach Bikinis",
+
+      "Action": "EditData",
+
+      "Target": "Data/Characters",
+
+      "TargetField": [ "Haley", "Appearance" ],
+
+      "Entries": {
+
+        "Roshi_Haley_BeachBikinis": {
+
+          "Id": "Roshi_Haley_BeachBikinis",
+
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+
+          "Portrait": "Portraits/Haley_Beach",
+
+          "Precedence": 100
+
+        }
+
+      }
+
+    },
+    {
+      "LogName": "Jodi Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Jodi", "Appearance" ],
+      "Entries": {
+        "Roshi_Jodi_BeachBikinis": {
+          "Id": "Roshi_Jodi_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Jodi_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Leah Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Leah", "Appearance" ],
+      "Entries": {
+        "Roshi_Leah_BeachBikinis": {
+          "Id": "Roshi_Leah_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Leah_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Marnie Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Marnie", "Appearance" ],
+      "Entries": {
+        "Roshi_Marnie_BeachBikinis": {
+          "Id": "Roshi_Marnie_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Marnie_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Maru Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Maru", "Appearance" ],
+      "Entries": {
+        "Roshi_Maru_BeachBikinis": {
+          "Id": "Roshi_Maru_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Maru_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Penny Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Penny", "Appearance" ],
+      "Entries": {
+        "Roshi_Penny_BeachBikinis": {
+          "Id": "Roshi_Penny_BeachBikinis",
+			"Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Penny_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Robin Appearance Logic - Beach Bikinis",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Robin", "Appearance" ],
+      "Entries": {
+        "Roshi_Robin_BeachBikinis": {
+          "Id": "Roshi_Robin_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Robin_Beach",
+          "Precedence": 100
+        }
+      }
+    }
+  ]
+}

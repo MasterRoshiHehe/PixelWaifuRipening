@@ -1,0 +1,114 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load HD Summer Base",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Summer",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer.png"
+    },
+    {
+      "LogName": "Load HD Summer Base Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Summer",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png"
+    },
+    {
+      "LogName": "Load HD Summer Rainy",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Summer_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer_Rain.png" 
+    },
+    {
+      "LogName": "Load HD Summer Rainy Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Summer_Rainy",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png"
+    },
+    {
+      "LogName": "Haley Appearance Logic - Summer Portraits",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Haley", "Appearance" ],
+      "Entries": {
+        "Roshi_Haley_Pyjamas_Morning_Summer": {
+          "Id": "Roshi_Haley_Pyjamas_Morning_Summer",
+          "Indoors": true,
+          "Outdoors": false,
+          "Condition": "TIME 600 930, SEASON Summer",
+          "Portrait": "Portraits/Haley_Pyjamas",
+          "Precedence": -1000
+        },
+        "Roshi_Haley_Pyjamas_Night_Summer": {
+          "Id": "Roshi_Haley_Pyjamas_Night_Summer",
+          "Indoors": true,
+          "Outdoors": false,
+          "Condition": "TIME 2000 2600, SEASON Summer",
+          "Portrait": "Portraits/Haley_Pyjamas",
+          "Precedence": -1000
+        },
+        "Roshi_Haley_Base_Summer": {
+          "Id": "Roshi_Haley_Base_Summer",
+          "Condition": "SEASON Summer",
+          "Portrait": "Portraits/Haley_Summer",
+          "Precedence": -500
+        },
+"Roshi_Haley_Summer_Rainy": {
+          "Id": "Roshi_Haley_Summer_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, SEASON Summer",
+          "Portrait": "Portraits/Haley_Summer_Rainy",
+          "Precedence": -800
+        }
+      }
+    },
+    {
+      "LogName": "Haley Sprite - Summer Base",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { "Season": "Summer" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Haley Sprite - Summer Rainy",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { 
+        "Season": "Summer",
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Haley Sprite - Pyjamas Morning Summer",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { 
+        "Season": "Summer",
+        "Time": "{{Range: 600, 930}}",
+        "IsOutdoors": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Haley Sprite - Pyjamas Night Summer",
+      "Action": "EditImage",
+      "Target": "Characters/Haley",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
+      "When": { 
+        "Season": "Summer",
+        "Time": "{{Range: 2000, 2600}}",
+        "IsOutdoors": "false"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}

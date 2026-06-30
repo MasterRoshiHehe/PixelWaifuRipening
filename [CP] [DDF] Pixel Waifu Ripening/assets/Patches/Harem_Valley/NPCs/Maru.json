@@ -1,0 +1,67 @@
+{
+  "Changes": [
+    // ==========================================================
+    // MARU PLEASURE OVERRIDES (MAD: 0-2 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Maru Pleasure (Mad)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Maru",
+      "Update": "OnLocationChange",
+      "When": { "Hearts:Maru": "0, 1, 2" },
+      "Entries": {
+        "pleasure1": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure2": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure3": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure4": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure5": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure6": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure7": "Agh! Why are you watching me?$170#$b#Don't you have something better to do? Please go away...$170",
+        "pleasure8": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32",
+        "pleasure9": "Agh! Why are you watching me?$32#$b#Don't you have something better to do? Please go away...$32"
+      }
+    },
+    // ==========================================================
+    // MARU PLEASURE OVERRIDES (HAPPY: 3-6 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Maru Pleasure (Happy)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Maru",
+      "Update": "OnLocationChange",
+      "When": { "Hearts:Maru": "3, 4, 5, 6" },
+      "Entries": {
+        "pleasure1": "Mmmph! Oh gosh! That's it! Ugh!$35#$b#Oh! Hey @! Did I surprise you?$33#$b#I needed a quick break from all the work...$34#$b#It's nice to loosen up every so often...$36",
+        "pleasure2": "Mmmph! Oh gosh! That's it! Ugh!$35#$b#Oh! Hey @! Did I surprise you?$33#$b#I needed a quick break from all the work...$34#$b#It's nice to loosen up every so often...$36",
+        "pleasure3": "Gosh! This toy is so fucking good! Ugh!$34#$b#Hey! Do you think there's enough room for a second dildo? Or is that too much?$38#$b#Hmmm, maybe another time...$33",
+        "pleasure4": "Oh fuck! That's good...$38#$b#Oh, hey @! I'm really glad you're here...$33#$b#I feel like breaking out some of my... toys...$31#$q 997/998 Maru.Pleasure1.01#Do you want to watch? #$r 999 0 Maru_999_999#Sounds fun! #$r 999 0 Maru_899_899#I've not got time right now...",
+        "pleasure5": "Ohhh, that's good! Mmmph!$34#$b#Oh gosh @! I didn't notice you there!$31#$b#Look, I may have gotten a little carried away, okay! I can't help it!$40",
+        "pleasure6": "Mmmm! Oh yeah! That's good!$34#$b#Oh! Hey @! Sorry about the um, the mess...$33#$b#If you need something, you might need to wait...$31#$b#My hands are a little preoccupied at the moment...$42",
+        "pleasure7": "Mmmm! Oh yeah! That's good!$172#$b#Oh! Hey @! Sorry about the um, the mess...$170#$b#If you need something, you might need to wait...$171#$b#My hands are a little preoccupied at the moment...$172",
+        "pleasure8": "Oh hey @. I knew you would show up eventually, haha!$31#$b#Oh, um, maybe be careful around here...$33#$b#I've left quite a big mess...$44",
+        "pleasure9": "@! Glad to see you <$33#$b#I'm enjoying this session...$44#$b#But I'd like to get some fresh air.$33#$b#Do you want to go for a walk...#$q 997/998 Maru.Pleasure1.09#And let me suck you off?#$r 999 0 Maru_969_969#Let's do it <#$r 999 0 Maru_869_869#Sorry, not right now..."
+      }
+    },
+    // ==========================================================
+    // MARU PLEASURE OVERRIDES (VERY HAPPY: 7-14 Hearts)
+    // ==========================================================
+    {
+      "LogName": "HV Maru Pleasure (Very Happy)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Maru",
+      "Update": "OnLocationChange",
+      "When": { "Hearts:Maru": "7, 8, 9, 10, 11, 12, 13, 14" },
+      "Entries": {
+        "pleasure1": "Mmmph! Oh gosh! That's it! Ugh!$35#$b#Oh! Hey @! Did I surprise you?$33#$b#I needed a quick break from all the work...$34#$b#It's nice to loosen up every so often...$36",
+        "pleasure2": "Mmmph! Oh gosh! That's it! Ugh!$35#$b#Oh! Hey @! Did I surprise you?$33#$b#I needed a quick break from all the work...$34#$b#It's nice to loosen up every so often...$36",
+        "pleasure3": "Gosh! This toy is so fucking good! Ugh!$34#$b#Hey! Do you think there's enough room for a second dildo? Or is that too much?$38#$b#Hmmm, maybe another time...$33",
+        "pleasure4": "Oh fuck! That's good...$38#$b#Oh, hey @! I'm gonna have a longer session...$33#$q 997/998 Maru.Pleasure2.01#Do you want to join me? #$r 999 0 Maru_900_900#Of course! #$r 999 0 Maru_800_800#I've not got time right now...",
+        "pleasure5": "Ohhh, that's good! Mmmph!$34#$b#Oh gosh @! I didn't notice you there!$31#$b#Look, I may have gotten a little carried away, okay! I can't help it!$40",
+        "pleasure6": "Mmmm! Oh yeah! That's good!$34#$b#Oh! Hey @! Sorry about the um, the mess...$33#$b#If you need something, you might need to wait...$31#$b#My hands are a little preoccupied at the moment...$42",
+        "pleasure7": "Mmmm! Oh yeah! That's good!$172#$b#Oh! Hey @! Sorry about the um, the mess...$171#$b#If you need something, you might need to wait...$172#$b#My hands are a little preoccupied at the moment...$172",
+        "pleasure8": "Oh hey @. I knew you would show up eventually, haha!$31#$b#Oh, um, maybe be careful around here...$33#$b#I've left quite a big mess...$44",
+        "pleasure9": "@! Glad to see you <$33#$b#I'm enjoying this session...$44#$b#But I'd like to get some fresh air.$33#$q 997/998 Maru.Pleasure2.09#Do you want to go for a walk? *wink* #$r 999 0 Maru_969_969#Let's do it <#$r 999 0 Maru_869_869#Sorry, not right now..."
+      }
+    }
+  ]
+}

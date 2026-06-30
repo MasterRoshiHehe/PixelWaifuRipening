@@ -1,0 +1,22 @@
+Folder PATH listing for volume Mods
+Volume serial number is CC2C-2BB2
+D:.
+|   structure.txt
+|   
++---Abigail
+|       Abigail_Fall_Outfits.json
+|       Abigail_Festival_Outfits.json
+|       Abigail_Spring_Outfits.json
+|       Abigail_Summer_Outfits.json
+|       Abigail_Winter_Outfits.json
+|       
++---Emily
+|       Emily_Festival_Outfits.json
+|       
+\---Haley
+        Haley_Fall_Outfits.json
+        Haley_Festival_Outfits.json
+        Haley_Spring_Outfits.json
+        Haley_Summer_Outfits.json
+        Haley_Winter_Outfits.json
+        

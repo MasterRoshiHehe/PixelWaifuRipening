@@ -1,0 +1,74 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load HD Fall",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Abigail_Fall",
+      "FromFile": "assets/Roshi_Portraits/Abigail/Abigail_Fall.png"
+    },
+    {
+      "LogName": "Load HD Fall Rainy",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Abigail_Fall_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Abigail/Abigail_Fall_Rainy.png"
+    },
+    {
+      "LogName": "Abigail Appearance Logic - Fall Portraits",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [ "Abigail", "Appearance" ],
+      "Entries": {
+        "Roshi_Abigail_Pyjamas_Morning_Fall": {
+          "Id": "Roshi_Abigail_Pyjamas_Morning_Fall",
+          "Condition": "ANY \"LOCATION_NAME Target SeedShop\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950, SEASON Fall",
+          "Portrait": "Portraits/Abigail_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Abigail_Pyjamas_Night_Fall": {
+          "Id": "Roshi_Abigail_Pyjamas_Night_Fall",
+          "Condition": "ANY \"LOCATION_NAME Target SeedShop\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600, SEASON Fall",
+          "Portrait": "Portraits/Abigail_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Abigail_Base_Fall": {
+          "Id": "Roshi_Abigail_Base_Fall",
+          "Condition": "SEASON Fall",
+          "Portrait": "Portraits/Abigail_Fall",
+          "Precedence": -500
+        },
+"Roshi_Abigail_Fall_Rainy": {
+          "Id": "Roshi_Abigail_Fall_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, SEASON Fall",
+          "Portrait": "Portraits/Abigail_Fall_Rainy",
+          "Precedence": -510
+        }
+      }
+    },
+    {
+      "LogName": "Abigail Sprite - Fall Base",
+      "Action": "EditImage",
+      "Target": "Characters/Abigail",
+      "FromFile": "assets/Other_Sprites/Hughskadoo/TiredAbigail_Sprites.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 448 },
+      "When": { "Season": "Fall" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Abigail Sprite - Fall Rainy",
+      "Action": "EditImage",
+      "Target": "Characters/Abigail",
+      "FromFile": "assets/Other_Sprites/Hughskadoo/TiredAbigail_Sprites.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 448 },
+      "When": {
+        "Season": "Fall",
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}
