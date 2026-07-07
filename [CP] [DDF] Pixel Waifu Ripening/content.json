@@ -141,23 +141,17 @@
       "LogName": "DDFC Scaler - Xtardew Integration",
       "Action": "Include",
       "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Xtardew.json",
-"When": {
-  "HasMod": [
-    "dakot.DDFCScaler",
-    "Pseudodiego.XtardewValley"
-  ]
-}
+      "When": {
+        "HasMod": "dakot.DDFCScaler, Pseudodiego.XtardewValley"
+      }
     },
     {
       "LogName": "DDFC Scaler - Lewd Krobus Integration",
       "Action": "Include",
       "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Lewd_Krobus.json",
-"When": {
-  "HasMod": [
-    "dakot.DDFCScaler",
-    "thrinityseven.Lewd_Krobus"
-  ]
-}
+      "When": {
+        "HasMod": "dakot.DDFCScaler, thrinityseven.Lewd_Krobus"
+      }
     },
 	// ==========================================
     // 5. IMMERSIVE ADDITIONS
