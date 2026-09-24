@@ -1,20 +1,58 @@
 {
   "Changes": [
     // --- 1. LOAD STANDALONE ASSETS ---
-    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Maru_Vanilla", "FromFile": "assets/Roshi_Portraits/Maru/Maru.png" },
-    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Maru_Winter", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Winter.png" },
-    { "LogName": "Load HD Winter Int", "Action": "Load", "Priority": "High", "Target": "Portraits/Maru_Winter_Int", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Winter_Int.png" },
-    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Maru_Beach", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Beach.png" },
-    { "LogName": "Load HD Hospital", "Action": "Load", "Target": "Portraits/Maru_Hospital", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Nurse.png" },
-    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Maru_Rainy", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Rain.png" },
-    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Maru_Pyjamas", "FromFile": "assets/Roshi_Portraits/Maru/Maru_Pyjamas.png" },
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Maru_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Maru_Winter",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Winter.png"
+    },
+    {
+      "LogName": "Load HD Winter Int",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Maru_Winter_Int",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Winter_Int.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Maru_Beach",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Beach.png"
+    },
+    {
+      "LogName": "Load HD Hospital",
+      "Action": "Load",
+      "Target": "Portraits/Maru_Hospital",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Nurse.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Maru_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Maru_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Pyjamas.png"
+    },
 
     // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Maru Appearance Logic - Base",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Maru", "Appearance" ],
+      "TargetField": ["Maru", "Appearance"],
       "Entries": {
         "Roshi_Maru_Vanilla_Fallback": {
           "Id": "Roshi_Maru_Vanilla_Fallback",
@@ -39,7 +77,7 @@
           "Portrait": "Portraits/Maru_Pyjamas",
           "Precedence": -100
         },
-"Roshi_Maru_Rain": {
+        "Roshi_Maru_Rain": {
           "Id": "Roshi_Maru_Rain",
           "Indoors": false,
           "Outdoors": true,
@@ -61,7 +99,6 @@
         }
       }
     },
-
 
     // --- 3. DDFC ASSIGNMENT ---
     {

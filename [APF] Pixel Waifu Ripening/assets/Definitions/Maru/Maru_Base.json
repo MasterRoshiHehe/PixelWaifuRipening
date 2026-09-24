@@ -1,0 +1,672 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Maru",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": [
+        "Vanilla",
+        "Rainy",
+        "Pyjamas",
+        "Beach",
+        "Winter",
+        "Winter_Int",
+        "Hospital"
+      ],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "10": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Ropes_0.png"
+        },
+        "11": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Ropes_1.png"
+        },
+        "30": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_0.png"
+        },
+        "31": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_1.png"
+        },
+        "32": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_2.png"
+        },
+        "33": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_3.png"
+        },
+        "34": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_4.png"
+        },
+        "35": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Nude_5.png"
+        },
+        "36": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_0.png"
+        },
+        "37": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Male_Sex_0.png"
+        },
+        "38": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_1.png"
+        },
+        "39": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Male_Sex_1.png"
+        },
+        "40": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_2.png"
+        },
+        "41": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Male_Sex_2.png"
+        },
+        "42": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_3.png"
+        },
+        "43": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Male_Sex_3.png"
+        },
+        "44": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_4.png"
+        },
+        "45": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Male_Sex_4.png"
+        },
+        "47": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Female_Sex_0.png"
+        },
+        "49": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Female_Sex_1.png"
+        },
+        "51": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Female_Sex_2.png"
+        },
+        "53": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Female_Sex_3.png"
+        },
+        "54": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_0.png"
+        },
+        "56": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_1.png"
+        },
+        "58": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_2.png"
+        },
+        "60": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_3.png"
+        },
+        "62": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_4.png"
+        },
+        "64": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Extras_5.png"
+        },
+        "170": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_7_0.png"
+        },
+        "171": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_7_1.png"
+        },
+        "172": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Maru/Valley_Girls/Pleasure_7_2.png"
+        }
+      },
+      "VariantExpressions": {
+        "Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Default/Maru_9.png"
+          }
+        },
+        "Rainy": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Rain/Maru_Rain_9.png"
+          }
+        },
+        "Pyjamas": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Pyjamas/Maru_Pyjamas_9.png"
+          }
+        },
+        "Beach": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Beach/Maru_Beach_9.png"
+          }
+        },
+        "Winter": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter/Maru_Winter_9.png"
+          }
+        },
+        "Winter_Int": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Winter_Int/Maru_Winter_Int_9.png"
+          }
+        },
+        "Hospital": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Maru/Nurse/Maru_Nurse_5.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

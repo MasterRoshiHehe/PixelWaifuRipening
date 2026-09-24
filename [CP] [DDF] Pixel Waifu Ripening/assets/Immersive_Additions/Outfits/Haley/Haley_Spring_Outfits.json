@@ -1,93 +1,70 @@
 {
   "Changes": [
+    // --- 1. ROOT FALLBACK ASSETS (Required by SVO pipeline) ---
     {
-      "LogName": "Load HD Vanilla",
+      "LogName": "Load Haley Spring Root Portrait",
       "Action": "Load",
-      "Target": "Portraits/Haley_Vanilla",
+      "Target": "Portraits/Haley_Spring",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley.png"
     },
     {
-      "LogName": "Load HD Vanilla Sprite",
+      "LogName": "Load Haley Spring Root Sprite",
       "Action": "Load",
-      "Target": "Characters/Haley_Vanilla",
+      "Target": "Characters/Haley_Spring",
       "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png"
     },
+
+    // --- 2. SUB-VARIANT ASSETS (Targeted by SVO winners) ---
     {
-      "LogName": "Load HD Rainy",
+      "LogName": "Load Haley Spring Base Portrait",
       "Action": "Load",
-      "Target": "Portraits/Haley_Rainy",
-      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Rain.png"
+      "Target": "Portraits/Haley_Spring_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley.png"
     },
     {
-      "LogName": "Load HD Phone",
+      "LogName": "Load Haley Spring Base Sprite",
       "Action": "Load",
-      "Target": "Portraits/Haley_Phone",
-      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Phone.png"
+      "Target": "Characters/Haley_Spring_Base",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png"
+    },
+
+    // --- 3. CONTEXT & WEATHER OVERRIDES (Content Patcher) ---
+    {
+      "LogName": "Haley Spring Base Outdoor Rain Portrait",
+      "Action": "EditImage",
+      "Target": "Portraits/Haley_Spring_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Rain.png",
+      "When": {
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
+      },
+      "Update": "OnLocationChange"
     },
     {
-      "LogName": "Haley Appearance Logic - Spring Portraits",
-      "Action": "EditData",
-      "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
-      "Entries": {
-"Roshi_Haley_Pyjamas_Morning": {
-          "Id": "Roshi_Haley_Pyjamas_Morning",
-          "Condition": "TIME 600 930, SEASON Spring, ANY \"LOCATION_NAME Target HaleyHouse\" \"LOCATION_NAME Target FarmHouse, RELATIONSHIP Any Haley Married\"",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Pyjamas_Night": {
-          "Id": "Roshi_Haley_Pyjamas_Night",
-          "Condition": "TIME 2000 2600, SEASON Spring, ANY \"LOCATION_NAME Target HaleyHouse\" \"LOCATION_NAME Target FarmHouse, RELATIONSHIP Any Haley Married\"",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-"Roshi_Haley_Rainy": {
-          "Id": "Roshi_Haley_Rainy",
-          "Indoors": false,
-          "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, SEASON Spring",
-          "Portrait": "Portraits/Haley_Rainy",
-          "Precedence": -50
-        },
-        "Roshi_Haley_Phone": {
-          "Id": "Roshi_Haley_Phone",
-          "Condition": "PLAYER_HEARTS Haley 0 2, SEASON Spring",
-          "Portrait": "Portraits/Haley_Phone",
-          "Precedence": -11
-        },
-        "Roshi_Haley_Vanilla_Fallback": {
-          "Id": "Roshi_Haley_Vanilla_Fallback",
-          "Portrait": "Portraits/Haley_Vanilla",
-          "Precedence": -10
-        }
+      "LogName": "Haley Spring Low Hearts Phone Portrait",
+      "Action": "EditImage",
+      "Target": "Portraits/Haley_Spring_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Phone.png",
+      "When": {
+        "Hearts:Haley": "0, 1, 2",
+        "Weather": "Sun"
       }
     },
+
+    // --- 4. SINGLE APPEARANCE HOOK FOR SPRING ROOT ---
     {
-      "LogName": "Haley Sprite - Pyjamas Morning Spring",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Spring",
-        "Time": "{{Range: 600, 930}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Haley Sprite - Pyjamas Night Spring",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Spring",
-        "Time": "{{Range: 2000, 2600}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
+      "LogName": "Haley Appearance Logic - Spring Root",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "Entries": {
+        "Roshi_Haley_Spring": {
+          "Id": "Roshi_Haley_Spring",
+          "Condition": "SEASON Spring",
+          "Portrait": "Portraits/Haley_Spring",
+          "Precedence": -500
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load LewdDew - Abigail",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/NPCs/Abigail.json"
+    },
+    {
+      "LogName": "Load LewdDew - Emily",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/NPCs/Emily.json"
+    },
+    {
+      "LogName": "Load LewdDew - Haley",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/NPCs/Haley.json"
+    },
+    {
+      "LogName": "Load LewdDew - Maru",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/NPCs/Maru.json"
+    },
+    {
+      "LogName": "Load LewdDew - SexRobot",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/NPCs/SexRobot.json"
+    }
+  ]
+}

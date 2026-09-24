@@ -5,17 +5,20 @@
       "Action": "EditData",
       "Target": "dakot.DDFCScaler/ScaledNPCs",
       "Entries": {
-		"Abigail": "TopRight",
-		"Caroline": "TopRight",
-		"Emily": "TopRight",
+        "Abigail": "TopRight",
+        "Bouncer": "TopRight",
+        "Caroline": "TopRight",
+        "Emily": "TopRight",
+        "Evelyn": "TopRight",
         "Haley": "TopRight",
-		"Jodi": "TopRight",
-		"Leah": "TopRight",
-		"Marnie": "TopRight",
-		"Maru": "TopRight",
-		"Penny": "TopRight",
-		"Robin": "TopRight",
-		"Sandy": "TopRight"
+        "Jodi": "TopRight",
+        "Leah": "TopRight",
+        "Marnie": "TopRight",
+        "Maru": "TopRight",
+        "Pam": "TopRight",
+        "Penny": "TopRight",
+        "Robin": "TopRight",
+        "Sandy": "TopRight"
       }
     }
   ]

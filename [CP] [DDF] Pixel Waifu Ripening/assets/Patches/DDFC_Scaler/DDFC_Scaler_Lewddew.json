@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "DDFC Scaler Integration",
+      "Action": "EditData",
+      "Target": "dakot.DDFCScaler/ScaledNPCs",
+      "Entries": {
+        "AbigailLewd": "TopRight",
+        "EmilyLewd": "TopRight",
+        "HaleyLewd": "TopRight"
+      }
+    }
+  ]
+}

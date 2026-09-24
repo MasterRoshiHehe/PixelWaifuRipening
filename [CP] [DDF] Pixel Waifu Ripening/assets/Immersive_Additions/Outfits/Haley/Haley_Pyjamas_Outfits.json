@@ -1,0 +1,71 @@
+{
+  "Changes": [
+    // --- 1. ROOT FALLBACK ASSETS (Pointed to Pyjamas_Default) ---
+    {
+      "LogName": "Load Haley Pyjamas Root Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas_Default.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas Root Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Pyjamas",
+      "FromFile": "assets/Roshi_Sprites/Haley/Pyjamas/Haley_Pyjamas_Default.png"
+    },
+    // --- 2. SUB-VARIANT ASSETS (Targeted by SVO winners) ---
+    {
+      "LogName": "Load Haley Pyjamas Default Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pyjamas_Default",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas_Default.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas Default Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Pyjamas_Default",
+      "FromFile": "assets/Roshi_Sprites/Haley/Pyjamas/Haley_Pyjamas_Default.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas UndiesBlue Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pyjamas_UndiesBlue",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas_UndiesBlue.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas UndiesBlue Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Pyjamas_UndiesBlue",
+      "FromFile": "assets/Roshi_Sprites/Haley/Pyjamas/Haley_Pyjamas_UndiesBlue.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas Nude Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Pyjamas_Nude",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Nude.png"
+    },
+    {
+      "LogName": "Load Haley Pyjamas Nude Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Pyjamas_Nude",
+      "FromFile": "assets/Roshi_Sprites/Haley/Nude/Haley_Nude.png"
+    },
+    // --- 3. APPEARANCE HOOK WITH BETAS LOCATION GSQ ---
+    {
+      "LogName": "Haley Appearance Logic - Pyjamas Root",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Roshi_Haley_Pyjamas": {
+          "Id": "Roshi_Haley_Pyjamas",
+          "Condition": "TIME 600 930 2000 2600, Spiderbuttons.BETAS_NPC_NEAR_AREA HaleyHouse 5 6 4 Haley",
+          "Portrait": "Portraits/Haley_Pyjamas",
+          "Sprite": "Characters/Haley_Pyjamas",
+          "Precedence": -1000
+        }
+      }
+    }
+  ]
+}

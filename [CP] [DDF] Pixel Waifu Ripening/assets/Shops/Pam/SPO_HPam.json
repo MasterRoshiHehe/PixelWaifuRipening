@@ -1,0 +1,29 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "DesertFestival_Pam": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Pam",
+      "FromFile": "assets/Shops/Pam/HPam_Default.png",
+      "When": { "Hearts:Pam": "0, 1, 2" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Pam",
+      "FromFile": "assets/Shops/Pam/HPam_Friendly.png",
+      "When": { "Hearts:Pam": "3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14" }
+    }
+  ]
+}

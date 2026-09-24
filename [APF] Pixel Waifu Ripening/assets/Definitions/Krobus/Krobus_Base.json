@@ -1,0 +1,140 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Krobus",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Vanilla"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_7.png"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_8.png"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_9.png"
+        }
+      },
+      "VariantExpressions": {
+        "Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Krobus/Lewd/Krobus_Lewd_9.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

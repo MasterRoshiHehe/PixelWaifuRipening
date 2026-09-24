@@ -1,0 +1,80 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Evelyn_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Evelyn/Evelyn.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Evelyn_Winter",
+      "FromFile": "assets/Roshi_Portraits/Evelyn/Evelyn_Winter.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Evelyn_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Evelyn/Evelyn_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Evelyn_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Evelyn/Evelyn_Pyjamas.png"
+    },
+    // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Evelyn Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Evelyn", "Appearance"],
+      "Entries": {
+        "Roshi_Evelyn_Vanilla_Fallback": {
+          "Id": "Roshi_Evelyn_Vanilla_Fallback",
+          "Portrait": "Portraits/Evelyn_Vanilla",
+          "Precedence": -10
+        },
+        "Roshi_Evelyn_Pyjamas_Morning": {
+          "Id": "Roshi_Evelyn_Pyjamas_Morning",
+          "Condition": "ANY \"LOCATION_NAME Target EvelynHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950",
+          "Portrait": "Portraits/Evelyn_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Evelyn_Pyjamas_Night": {
+          "Id": "Roshi_Evelyn_Pyjamas_Night",
+          "Condition": "ANY \"LOCATION_NAME Target EvelynHouse\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600",
+          "Portrait": "Portraits/Evelyn_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Evelyn_Rainy": {
+          "Id": "Roshi_Evelyn_Rainy",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm GreenRain, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Evelyn_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Evelyn_Winter": {
+          "Id": "Roshi_Evelyn_Winter",
+          "Condition": "ANY \"SEASON Winter\"",
+          "Portrait": "Portraits/Evelyn_Winter",
+          "Precedence": -50
+        }
+      }
+    },
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Evelyn": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "ShadowShop": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/ShadowShop",
+      "FromFile": "assets/Shops/Krobus/FKrobus_Neutral.png",
+      "When": { "Hearts:Leah": "0, 1, 2, 3, 4" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/ShadowShop",
+      "FromFile": "assets/Shops/Krobus/FKrobus_Happy.png",
+      "When": { "Hearts:Leah": "5, 6, 7, 8" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/ShadowShop",
+      "FromFile": "assets/Shops/Krobus/FKrobus_Blushing.png",
+      "When": { "Hearts:Leah": "9, 10, 11, 12, 13, 14" }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    // ==========================================================
+    // EMILY LEWD PORTRAIT LOADS
+    // Loads custom Emily Lewd portraits into the portrait registry
+    // ==========================================================
+    {
+      "LogName": "Load HD Emily Lewd Portrait",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/EmilyLewd",
+      "FromFile": "assets/Roshi_Portraits/Emily/Emily_Lewd.png"
+    },
+    // --- EMILY LEWD APPEARANCE LOGIC ---
+    {
+      "LogName": "EmilyLewd Appearance Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["EmilyLewd", "Appearance"],
+      "Entries": {
+        "Roshi_EmilyLewd_Base": {
+          "Id": "Roshi_EmilyLewd_Base",
+          "Portrait": "Portraits/EmilyLewd",
+          "Precedence": -10
+        }
+      }
+    },
+    // --- DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "EmilyLewd": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

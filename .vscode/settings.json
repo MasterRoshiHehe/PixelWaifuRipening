@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python \\.\\\\reorganize_apf_categories\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

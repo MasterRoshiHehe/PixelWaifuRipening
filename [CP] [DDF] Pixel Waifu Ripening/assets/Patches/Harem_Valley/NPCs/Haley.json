@@ -7,7 +7,7 @@
       "LogName": "HV Haley Pleasure (Mad)",
       "Action": "EditData",
       "Target": "Strings/schedules/Haley",
-	  "Update": "OnLocationChange",
+      "Update": "OnLocationChange",
       "When": { "Hearts:Haley": "0, 1, 2" },
       "Entries": {
         "pleasure1": "Um! What the hell @?$110#$b#Can't you see I'm busy?$110#$b#Ugh, whatever! Hurry up and go away!$110",
@@ -28,7 +28,7 @@
       "LogName": "HV Haley Pleasure (Happy)",
       "Action": "EditData",
       "Target": "Strings/schedules/Haley",
-	  "Update": "OnLocationChange",
+      "Update": "OnLocationChange",
       "When": { "Hearts:Haley": "3, 4, 5, 6" },
       "Entries": {
         "pleasure1": "Oh, @? I didn't see you there.$112#$b#You know, I was feeling kinda lonely...$111#$b#You can stay if you want? Just keep this between us...$111",
@@ -49,7 +49,7 @@
       "LogName": "HV Haley Pleasure (Very Happy)",
       "Action": "EditData",
       "Target": "Strings/schedules/Haley",
-	  "Update": "OnLocationChange",
+      "Update": "OnLocationChange",
       "When": { "Hearts:Haley": "7, 8, 9, 10, 11, 12, 13, 14" },
       "Entries": {
         "pleasure1": "Oh, @? I didn't see you there.$112#$b#You know, I was feeling kinda lonely...$111#$b#You can stay if you want? Just keep this between us...$112",
@@ -63,7 +63,7 @@
         "pleasure9": "Hey @, perfect timing...$44#$b#I'm really horny right now...$34#$q 997/998 Haley.Pleasure.09#Can you give me another faical?#$r 999 0 Haley_969_969#Any time <#$r 999 0 Haley_869_869#Not right now"
       }
     },
-	// ==========================================================
+    // ==========================================================
     // HALEY SEX OVERRIDES
     // ==========================================================
     {

@@ -5,12 +5,12 @@
       "Action": "Include",
       "FromFile": "assets/Patches/Harem_Valley/NPCs/Haley.json"
     },
-	{
+    {
       "LogName": "Load Harem Valley / Valley Girls - Haley Picnic",
       "Action": "Include",
       "FromFile": "assets/Patches/Harem_Valley/Events/Haley_Picnic.json"
     },
-	{
+    {
       "LogName": "Load Harem Valley / Valley Girls - Maru",
       "Action": "Include",
       "FromFile": "assets/Patches/Harem_Valley/NPCs/Maru.json"

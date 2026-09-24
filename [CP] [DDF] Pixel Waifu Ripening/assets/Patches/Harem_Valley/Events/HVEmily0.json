@@ -24,21 +24,30 @@
       "Target": "Data/Events/HaleyHouse",
       "TextOperations": [
         {
-          "Target": [ "Entries", "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000" ],
+          "Target": [
+            "Entries",
+            "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000"
+          ],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"Come here, @... I'm gonna get shy with you just staring...$34\"",
           "Value": "changePortrait Emily Bra_Nude/speak Emily \"Come here, @... I'm gonna get shy with you just staring...$4\"",
           "Delimiter": "/"
         },
         {
-          "Target": [ "Entries", "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000" ],
+          "Target": [
+            "Entries",
+            "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000"
+          ],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"You can hold them if you want...$34\"",
           "Value": "speak Emily \"You can hold them if you want...$4\"",
           "Delimiter": "/"
         },
         {
-          "Target": [ "Entries", "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000" ],
+          "Target": [
+            "Entries",
+            "HVEmily0/g male/LocalMail HVEmilyInitiation/Friendship Emily 1000"
+          ],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"Visit me again soon... ok?$30#$b#I'd like to show myself off again...$33\"",
           "Value": "speak Emily \"Visit me again soon... ok?$1#$b#I'd like to show myself off again...$3\"",

@@ -1,0 +1,203 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Pam",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Vanilla", "Rainy", "Beach", "Pyjamas", "Winter"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        }
+      },
+      "VariantExpressions": {
+        "Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Default/Pam_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Default/Pam_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Default/Pam_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Default/Pam_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Default/Pam_4.png"
+          }
+        },
+        "Rainy": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Rain/Pam_Rain_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Rain/Pam_Rain_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Rain/Pam_Rain_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Rain/Pam_Rain_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Rain/Pam_Rain_4.png"
+          }
+        },
+        "Beach": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Beach/Pam_Beach_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Beach/Pam_Beach_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Beach/Pam_Beach_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Beach/Pam_Beach_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Beach/Pam_Beach_4.png"
+          }
+        },
+        "Pyjamas": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Pyjamas/Pam_Pyjamas_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Pyjamas/Pam_Pyjamas_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Pyjamas/Pam_Pyjamas_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Pyjamas/Pam_Pyjamas_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Pyjamas/Pam_Pyjamas_4.png"
+          }
+        },
+        "Winter": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Winter/Pam_Winter_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Winter/Pam_Winter_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Winter/Pam_Winter_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Winter/Pam_Winter_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Pam/Winter/Pam_Winter_4.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

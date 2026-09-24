@@ -4,14 +4,14 @@
       "LogName": "Emily Appearance Logic - Festivals",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Emily", "Appearance" ],
+      "TargetField": ["Emily", "Appearance"],
       "Entries": {
         "Roshi_Emily_Luau": {
           "Id": "Roshi_Emily_Luau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Beach",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
           "Portrait": "Portraits/Emily_Luau",
           "Sprite": "Characters/Emily_Luau",
-          "Precedence": -100
+          "Precedence": -2000
         }
       }
     }

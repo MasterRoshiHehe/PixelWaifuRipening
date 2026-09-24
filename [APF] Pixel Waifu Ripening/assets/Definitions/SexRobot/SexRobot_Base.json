@@ -1,0 +1,77 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "SexRobot",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_7.png"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_8.png"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/SexRobot/SexRobot_9.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    }
+  ],
+  "Rules": []
+}

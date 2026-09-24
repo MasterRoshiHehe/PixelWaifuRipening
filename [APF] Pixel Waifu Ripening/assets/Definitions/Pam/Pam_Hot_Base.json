@@ -1,0 +1,341 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Pam",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": [
+        "Hot_Vanilla",
+        "Hot_Beach",
+        "Hot_Spring",
+        "Hot_Summer",
+        "Hot_Fall",
+        "Hot_Winter_Indoor",
+        "Hot_FlowerDance",
+        "Hot_SpiritsEve",
+        "Hot_Winter_Outdoor"
+      ],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        }
+      },
+      "VariantExpressions": {
+        "Hot_Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Default/Pam_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Default/Pam_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Default/Pam_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Default/Pam_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Default/Pam_4.png"
+          }
+        },
+        "Hot_Beach": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Beach/Pam_Beach_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Beach/Pam_Beach_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Beach/Pam_Beach_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Beach/Pam_Beach_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Beach/Pam_Beach_4.png"
+          }
+        },
+        "Hot_Spring": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Spring/Pam_Spring_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Spring/Pam_Spring_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Spring/Pam_Spring_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Spring/Pam_Spring_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Spring/Pam_Spring_4.png"
+          }
+        },
+        "Hot_Summer": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Summer/Pam_Summer_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Summer/Pam_Summer_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Summer/Pam_Summer_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Summer/Pam_Summer_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Summer/Pam_Summer_4.png"
+          }
+        },
+        "Hot_Fall": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Fall/Pam_Fall_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Fall/Pam_Fall_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Fall/Pam_Fall_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Fall/Pam_Fall_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Fall/Pam_Fall_4.png"
+          }
+        },
+        "Hot_Winter_Indoor": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Indoor/Pam_Winter_Indoor_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Indoor/Pam_Winter_Indoor_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Indoor/Pam_Winter_Indoor_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Indoor/Pam_Winter_Indoor_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Indoor/Pam_Winter_Indoor_4.png"
+          }
+        },
+        "Hot_FlowerDance": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/FlowerDance/Pam_FlowerDance_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/FlowerDance/Pam_FlowerDance_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/FlowerDance/Pam_FlowerDance_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/FlowerDance/Pam_FlowerDance_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/FlowerDance/Pam_FlowerDance_4.png"
+          }
+        },
+        "Hot_SpiritsEve": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/SpiritsEve/Pam_SpiritsEve_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/SpiritsEve/Pam_SpiritsEve_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/SpiritsEve/Pam_SpiritsEve_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/SpiritsEve/Pam_SpiritsEve_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/SpiritsEve/Pam_SpiritsEve_4.png"
+          }
+        },
+        "Hot_Winter_Outdoor": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Outdoor/Pam_Winter_Outdoor_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Outdoor/Pam_Winter_Outdoor_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Outdoor/Pam_Winter_Outdoor_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Outdoor/Pam_Winter_Outdoor_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/PamHot/Winter_Outdoor/Pam_Winter_Outdoor_4.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

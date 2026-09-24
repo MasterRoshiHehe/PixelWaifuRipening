@@ -1,36 +1,68 @@
 {
   "Changes": [
+    // --- 1. LOAD FESTIVAL PORTRAITS & SPRITES ---
     {
-      "LogName": "Load HD Fall Quinn Portrait",
+      "LogName": "Load Haley Spirits Eve Quinn Portrait",
       "Action": "Load",
       "Target": "Portraits/Haley_Fall_Quinn",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley_Quinn.png"
     },
     {
-      "LogName": "Load HD Fall Quinn Sprite",
+      "LogName": "Load Haley Spirits Eve Quinn Sprite",
       "Action": "Load",
       "Target": "Characters/Haley_Fall_Quinn",
       "FromFile": "assets/Other_Sprites/SillyBobThorton/Haley_Quinn.png"
     },
     {
+      "LogName": "Load Haley Luau Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Luau",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Luau.png"
+    },
+    {
+      "LogName": "Load Haley Luau Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Luau",
+      "FromFile": "assets/Roshi_Sprites/Haley/Luau/Haley_Luau.png"
+    },
+    // --- 2. FESTIVAL APPEARANCE LOGIC ---
+    {
       "LogName": "Haley Appearance Logic - Festivals",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
+      "TargetField": ["Haley", "Appearance"],
       "Entries": {
         "Roshi_Haley_SpiritsEve": {
           "Id": "Roshi_Haley_SpiritsEve",
-          "Condition": "SEASON_DAY Fall 27, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Fall 27",
           "Portrait": "Portraits/Haley_Fall_Quinn",
           "Sprite": "Characters/Haley_Fall_Quinn",
           "Precedence": -2000
         },
         "Roshi_Haley_Luau": {
           "Id": "Roshi_Haley_Luau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Beach",
+          "Condition": "SEASON_DAY Summer 11",
           "Portrait": "Portraits/Haley_Luau",
           "Sprite": "Characters/Haley_Luau",
           "Precedence": -2000
+        },
+        "Roshi_Haley_DesertFestival": {
+          "Id": "Roshi_Haley_DesertFestival",
+          "Condition": "SEASON_DAY Spring 15 Spring 16 Spring 17, PLAYER_HAS_MAIL Host ccBus jojaBus, ANY \"Spiderbuttons.BETAS_NPC_FOLLOWING_SCHEDULE Haley DesertFestival spring_15 spring_16 spring_17\" \"LOCATION_NAME Target Desert DesertFestival\"",
+          "Portrait": "Portraits/Haley_Summer",
+          "Sprite": "Characters/Haley_Summer",
+          "Precedence": -2000
+        }
+      }
+    },
+    // --- 3. DDFC / BEACH OVERRIDE FOR LUAU EVENT ---
+    {
+      "LogName": "Haley_Beach Appearance Logic - Luau",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Haley_Luau": {
+          "CopyFrom": "RoshiHD_Template"
         }
       }
     }

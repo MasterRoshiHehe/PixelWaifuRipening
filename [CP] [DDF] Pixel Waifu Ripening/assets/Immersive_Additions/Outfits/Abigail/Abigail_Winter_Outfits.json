@@ -4,7 +4,7 @@
       "LogName": "Abigail Appearance Logic - Winter Portraits",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Abigail", "Appearance" ],
+      "TargetField": ["Abigail", "Appearance"],
       "Entries": {
         "Roshi_Abigail_Pyjamas_Morning_Winter": {
           "Id": "Roshi_Abigail_Pyjamas_Morning_Winter",

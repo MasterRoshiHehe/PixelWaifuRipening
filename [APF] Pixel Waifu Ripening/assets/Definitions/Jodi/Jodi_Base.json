@@ -1,0 +1,347 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Jodi",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Vanilla", "Rainy", "Beach", "Pyjamas", "Winter"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "30": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_0.png"
+        },
+        "31": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_1.png"
+        },
+        "32": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_2.png"
+        },
+        "33": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_3.png"
+        },
+        "34": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_4.png"
+        },
+        "35": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Nude_5.png"
+        },
+        "36": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Pleasure_0.png"
+        },
+        "37": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Male_Sex_0.png"
+        },
+        "38": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Pleasure_1.png"
+        },
+        "39": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Male_Sex_1.png"
+        },
+        "40": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Pleasure_2.png"
+        },
+        "41": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Male_Sex_2.png"
+        },
+        "42": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Pleasure_3.png"
+        },
+        "43": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Male_Sex_3.png"
+        },
+        "44": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Pleasure_4.png"
+        },
+        "45": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Male_Sex_4.png"
+        },
+        "47": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Female_Sex_0.png"
+        },
+        "49": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Female_Sex_1.png"
+        },
+        "51": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Female_Sex_2.png"
+        },
+        "53": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Female_Sex_3.png"
+        },
+        "54": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Extras_0.png"
+        },
+        "56": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Extras_1.png"
+        },
+        "58": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Extras_2.png"
+        },
+        "60": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Jodi/Valley_Girls/Extras_3.png"
+        }
+      },
+      "VariantExpressions": {
+        "Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Default/Jodi_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Default/Jodi_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Default/Jodi_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Default/Jodi_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Default/Jodi_4.png"
+          }
+        },
+        "Rainy": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Rain/Jodi_Rain_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Rain/Jodi_Rain_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Rain/Jodi_Rain_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Rain/Jodi_Rain_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Rain/Jodi_Rain_4.png"
+          }
+        },
+        "Beach": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Beach/Jodi_Beach_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Beach/Jodi_Beach_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Beach/Jodi_Beach_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Beach/Jodi_Beach_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Beach/Jodi_Beach_4.png"
+          }
+        },
+        "Pyjamas": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Pyjamas/Jodi_Pyjamas_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Pyjamas/Jodi_Pyjamas_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Pyjamas/Jodi_Pyjamas_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Pyjamas/Jodi_Pyjamas_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Pyjamas/Jodi_Pyjamas_4.png"
+          }
+        },
+        "Winter": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Winter/Jodi_Winter_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Winter/Jodi_Winter_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Winter/Jodi_Winter_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Winter/Jodi_Winter_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Jodi/Winter/Jodi_Winter_4.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

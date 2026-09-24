@@ -1,0 +1,32 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "Traveler": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        },
+        "Festival_FestivalOfIce_TravelingMerchant": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/Traveler",
+      "FromFile": "assets/Shops/Traveler/Traveler_Default.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/Festival_FestivalOfIce_TravelingMerchant",
+      "FromFile": "assets/Shops/Traveler/Traveler_Default.png"
+    }
+  ]
+}

@@ -1,114 +1,60 @@
 {
   "Changes": [
+    // --- 1. ROOT FALLBACK ASSETS (Required by SVO pipeline) ---
     {
-      "LogName": "Load HD Fall Base",
+      "LogName": "Load Haley Fall Root Portrait",
       "Action": "Load",
       "Target": "Portraits/Haley_Fall",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley_Fall.png"
     },
     {
-      "LogName": "Load HD Fall Base Sprite",
+      "LogName": "Load Haley Fall Root Sprite",
       "Action": "Load",
       "Target": "Characters/Haley_Fall",
       "FromFile": "assets/Roshi_Sprites/Haley/Fall/Haley_Fall.png"
     },
+
+    // --- 2. SUB-VARIANT ASSETS (Targeted by SVO winners) ---
     {
-      "LogName": "Load HD Fall Rainy",
+      "LogName": "Load Haley Fall Base Portrait",
       "Action": "Load",
-      "Target": "Portraits/Haley_Fall_Rainy",
-      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Fall_Rain.png"
+      "Target": "Portraits/Haley_Fall_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Fall.png"
     },
     {
-      "LogName": "Load HD Fall Rainy Sprite",
+      "LogName": "Load Haley Fall Base Sprite",
       "Action": "Load",
-      "Target": "Characters/Haley_Fall_Rainy",
+      "Target": "Characters/Haley_Fall_Base",
       "FromFile": "assets/Roshi_Sprites/Haley/Fall/Haley_Fall.png"
     },
+
+    // --- 3. OUTDOOR RAIN OVERRIDES (Content Patcher) ---
     {
-      "LogName": "Haley Appearance Logic - Fall Portraits",
-      "Action": "EditData",
-      "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
-      "Entries": {
-        "Roshi_Haley_Pyjamas_Morning_Fall": {
-          "Id": "Roshi_Haley_Pyjamas_Morning_Fall",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 600 930, SEASON Fall",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Pyjamas_Night_Fall": {
-          "Id": "Roshi_Haley_Pyjamas_Night_Fall",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 2000 2600, SEASON Fall",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Base_Fall": {
-          "Id": "Roshi_Haley_Base_Fall",
-          "Condition": "SEASON Fall",
-          "Portrait": "Portraits/Haley_Fall",
-          "Precedence": -500
-        },
-"Roshi_Haley_Fall_Rainy": {
-          "Id": "Roshi_Haley_Fall_Rainy",
-          "Indoors": false,
-          "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, SEASON Fall",
-          "Portrait": "Portraits/Haley_Fall_Rainy",
-          "Precedence": -800
-        },
-      }
-    },
-    {
-      "LogName": "Haley Sprite - Fall Base",
+      "LogName": "Haley Fall Base Outdoor Rain Portrait",
       "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Fall/Haley_Fall.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { "Season": "Fall" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Haley Sprite - Fall Rainy",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Fall/Haley_Fall.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Fall",
+      "Target": "Portraits/Haley_Fall_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Fall_Rain.png",
+      "When": {
         "Weather": "Rain, Storm",
         "IsOutdoors": "true"
       },
-      "Update": "OnLocationChange, OnTimeChange"
+      "Update": "OnLocationChange"
     },
+
+    // --- 4. SINGLE APPEARANCE HOOK FOR FALL ROOT ---
     {
-      "LogName": "Haley Sprite - Pyjamas Morning Fall",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Fall",
-        "Time": "{{Range: 600, 930}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Haley Sprite - Pyjamas Night Fall",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Fall",
-        "Time": "{{Range: 2000, 2600}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
+      "LogName": "Haley Appearance Logic - Fall Root",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "Entries": {
+        "Roshi_Haley_Fall": {
+          "Id": "Roshi_Haley_Fall",
+          "Condition": "SEASON Fall",
+          "Portrait": "Portraits/Haley_Fall",
+          "Precedence": -500
+        }
+      }
     }
   ]
 }

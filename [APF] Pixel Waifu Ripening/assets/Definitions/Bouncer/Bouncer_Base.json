@@ -1,0 +1,31 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Bouncer",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Vanilla"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        }
+      },
+      "VariantExpressions": {
+        "Vanilla": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Bouncer/Bouncer.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": []
+}

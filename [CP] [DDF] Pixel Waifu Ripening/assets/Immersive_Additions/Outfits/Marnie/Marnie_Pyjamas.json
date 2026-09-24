@@ -10,7 +10,7 @@
       "LogName": "Marnie Appearance Logic - Pyjamas",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Marnie", "Appearance" ],
+      "TargetField": ["Marnie", "Appearance"],
       "Entries": {
         "Roshi_Marnie_Pyjamas_Morning": {
           "Id": "Roshi_Marnie_Pyjamas_Morning",

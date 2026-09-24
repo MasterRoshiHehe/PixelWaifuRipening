@@ -16,7 +16,7 @@
       "LogName": "Abigail Appearance Logic - Festivals",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Abigail", "Appearance" ],
+      "TargetField": ["Abigail", "Appearance"],
       "Entries": {
         "Roshi_Abigail_SpiritsEve": {
           "Id": "Roshi_Abigail_SpiritsEve",

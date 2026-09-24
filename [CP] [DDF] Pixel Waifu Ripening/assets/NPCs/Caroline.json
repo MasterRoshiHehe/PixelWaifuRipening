@@ -1,18 +1,45 @@
 {
   "Changes": [
     // --- 1. LOAD STANDALONE ASSETS ---
-    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Caroline_Vanilla", "FromFile": "assets/Roshi_Portraits/Caroline/Caroline.png" },
-    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Caroline_Winter", "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Winter.png" },
-    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Caroline_Beach", "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Beach.png" },
-    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Caroline_Rainy", "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Rain.png" },
-    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Caroline_Pyjamas", "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Pyjamas.png" },
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Caroline_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Caroline/Caroline.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Caroline_Winter",
+      "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Winter.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Beach",
+      "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Beach.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Caroline/Caroline_Pyjamas.png"
+    },
 
     // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Caroline Appearance Logic - Base",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Caroline", "Appearance" ],
+      "TargetField": ["Caroline", "Appearance"],
       "Entries": {
         "Roshi_Caroline_Vanilla_Fallback": {
           "Id": "Roshi_Caroline_Vanilla_Fallback",
@@ -31,11 +58,11 @@
           "Portrait": "Portraits/Caroline_Pyjamas",
           "Precedence": -100
         },
-"Roshi_Caroline_Rain": {
+        "Roshi_Caroline_Rain": {
           "Id": "Roshi_Caroline_Rain",
           "Indoors": false,
           "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Condition": "WEATHER Town Rain Storm GreenRain, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
           "Portrait": "Portraits/Caroline_Rainy",
           "Precedence": -50
         },
@@ -47,7 +74,6 @@
         }
       }
     },
-
 
     // --- 3. DDFC ASSIGNMENT ---
     {

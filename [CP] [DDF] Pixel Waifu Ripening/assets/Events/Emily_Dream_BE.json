@@ -1,28 +1,38 @@
 {
   "Changes": [
-    { "LogName": "Load HD Dream BE 1", "Action": "Load", "Target": "Portraits/Emily_Dream_BE_1", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Dream_BE_1.png" },
-    { "LogName": "Load HD Dream BE 2", "Action": "Load", "Target": "Portraits/Emily_Dream_BE_2", "FromFile": "assets/Roshi_Portraits/Emily/Emily_Dream_BE_2.png" },
+    {
+      "LogName": "Load HD Dream BE 1",
+      "Action": "Load",
+      "Target": "Portraits/Emily_Dream_BE_1",
+      "FromFile": "assets/Roshi_Portraits/Emily/Emily_Dream_BE_1.png"
+    },
+    {
+      "LogName": "Load HD Dream BE 2",
+      "Action": "Load",
+      "Target": "Portraits/Emily_Dream_BE_2",
+      "FromFile": "assets/Roshi_Portraits/Emily/Emily_Dream_BE_2.png"
+    },
     {
       "LogName": "Emily Dream Event Portrait Swaps",
       "Action": "EditData",
       "Target": "Data/Events/HaleyHouse",
       "TextOperations": [
         {
-          "Target": [ "Entries", "471942/f Emily 500/p Emily" ],
+          "Target": ["Entries", "471942/f Emily 500/p Emily"],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"Why are you here?$u\"",
           "Value": "changePortrait Emily Dream_BE_1/speak Emily \"Why are you here?$2\"",
           "Delimiter": "/"
         },
-		{
-          "Target": [ "Entries", "471942/f Emily 500/p Emily" ],
+        {
+          "Target": ["Entries", "471942/f Emily 500/p Emily"],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"...$u#$b#That reminded me of something.$u#$b#Even the tiniest, blandest, simplest light holds a wonderful secret.\"",
           "Value": "speak Emily \"...$4#$b#That reminded me of something.$3#$b#Even the tiniest, blandest, simplest light holds a wonderful secret.$0\"",
           "Delimiter": "/"
         },
         {
-          "Target": [ "Entries", "471942/f Emily 500/p Emily" ],
+          "Target": ["Entries", "471942/f Emily 500/p Emily"],
           "Operation": "ReplaceDelimited",
           "Search": "speak Emily \"@... There's something special about @...$u#$b#Our destinies will intersect...$u\"",
           "Value": "changePortrait Emily Dream_BE_2/speak Emily \"@... There's something special about @...$u#$b#Our destinies will intersect...$1\"",

@@ -37,33 +37,33 @@
       "LogName": "Load HD Pyjamas",
       "Action": "Load",
       "Target": "Portraits/Haley_Pyjamas",
-      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas.png"
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Pyjamas_Default.png"
     },
-    { "LogName": "Load Haley Pyjamas Sprite", "Action": "Load", "Target": "Characters/Haley_Pyjamas", "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png" },
+    {
+      "LogName": "Load Haley Pyjamas Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Pyjamas",
+      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png"
+    },
     {
       "LogName": "Load HD Luau Portrait",
       "Action": "Load",
-      "Target": "Portraits/Haley_Luau",
+      "Target": "Portraits/Haley_Luau, Portraits/Haley_Luau_Default",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley_Luau.png"
     },
-    {
-      "LogName": "Load HD Luau Sprite",
-      "Action": "Load",
-      "Target": "Characters/Haley_Luau",
-      "FromFile": "assets/Roshi_Sprites/Haley/Haley_Luau.png"
-    },
+
     // --- BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Haley Appearance Logic - Portraits Only",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
+      "TargetField": ["Haley", "Appearance"],
       "Entries": {
         "Roshi_Haley_Rainy": {
           "Id": "Roshi_Haley_Rainy",
           "Indoors": false,
           "Outdoors": true,
-          "Condition": "WEATHER Here Rain Storm",
+          "Condition": "WEATHER Here Rain Storm GreenRain",
           "Portrait": "Portraits/Haley_Rainy",
           "Precedence": -20
         },
@@ -83,9 +83,9 @@
           "Id": "Roshi_Haley_Vanilla_Fallback",
           "Portrait": "Portraits/Haley_Vanilla",
           "Precedence": -10
+        }
       }
-    }
-},	
+    },
     // --- 3. DDFC ASSIGNMENT ---
     {
       "Action": "EditData",

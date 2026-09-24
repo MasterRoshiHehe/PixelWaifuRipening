@@ -1,0 +1,147 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "When": {
+        "HasMod": "Dakota.ShopPortraitOverhaul"
+      },
+      "Entries": {
+        "MasterRoshiHehe.PWR": {
+          "PackName": "Pixel Waifu Ripening",
+          "Author": "MasterRoshiHehe"
+        }
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Abigail/SPO_Abigail.json",
+      "When": {
+        "Enable Abigail": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Caroline/SPO_Caroline.json",
+      "When": {
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "false"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Caroline_Sweetheart/SPO_Caroline_Sweetheart.json",
+      "When": {
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Emily/SPO_Emily.json",
+      "When": {
+        "Enable Emily": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Evelyn/SPO_Evelyn.json",
+      "When": {
+        "Enable Evelyn": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Haley/SPO_Haley.json",
+
+      "When": {
+        "Enable Haley": "True",
+        "Enable Custom Outfits for Haley": "false"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Haley/SPO_Haley_Immersive.json",
+      "When": {
+        "Enable Haley": "True",
+        "Enable Custom Outfits for Haley": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Jodi/SPO_Jodi.json",
+      "When": {
+        "Enable Jodi": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Krobus/SPO_FKrobus.json",
+      "When": {
+        "Query: '{{HasMod |contains=thrinityseven.Lewd_Krobus}}' = 'true' OR '{{Enable Lewd Krobus}}' = 'true'": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Leah/SPO_Leah.json",
+      "When": {
+        "Enable Leah": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Marnie/SPO_Marnie.json",
+      "When": {
+        "Enable Marnie": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Maru/SPO_Maru.json",
+      "When": {
+        "Enable Maru": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Pam/SPO_HPam.json",
+      "When": {
+        "Enable Pam": "true",
+        "Enable Hot Pam": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Pam/SPO_Pam.json",
+      "When": {
+        "Enable Pam": "true",
+        "Enable Hot Pam": "false"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Penny/SPO_Penny.json",
+      "When": {
+        "Enable Penny": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Robin/SPO_Robin.json",
+      "When": {
+        "Enable Robin": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Sandy/SPO_Sandy.json",
+      "When": {
+        "Enable Sandy": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shops/Traveler/SPO_Traveller.json"
+    }
+  ]
+}

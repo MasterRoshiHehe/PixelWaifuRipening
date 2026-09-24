@@ -1,0 +1,213 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS (PORTRAITS) ---
+    {
+      "LogName": "Load HD Spring",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Spring",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Spring.png"
+    },
+    {
+      "LogName": "Load HD Summer",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Summer",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Summer.png"
+    },
+    {
+      "LogName": "Load HD Fall",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Fall",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Fall.png"
+    },
+    {
+      "LogName": "Load HD Winter Indoor",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor.png"
+    },
+    {
+      "LogName": "Load HD Winter Indoor 1",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor1",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor1.png"
+    },
+    {
+      "LogName": "Load HD Winter Outdoor",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Winter_Outdoor",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Outdoor.png"
+    },
+    {
+      "LogName": "Load HD Flower Dance",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_FlowerDance",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_FlowerDance.png"
+    },
+    {
+      "LogName": "Load HD Spirits Eve",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_SpiritsEve",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_SpiritsEve.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Beach",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach.png"
+    },
+    {
+      "LogName": "Load HD Aerobics",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Aerobics",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Aerobics.png"
+    },
+
+    // --- 2. INDEPENDENT APF PORTRAIT REDIRECTION ---
+    {
+      "LogName": "Sweetheart Caroline APF Portrait Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Caroline", "Appearance"],
+      "Entries": {
+        "Roshi_Caroline_Sweetheart_Spring": {
+          "Id": "Roshi_Caroline_Sweetheart_Spring",
+          "Condition": "SEASON Spring",
+          "Portrait": "Portraits/Caroline_Sweetheart_Spring",
+          "Precedence": -2010
+        },
+        "Roshi_Caroline_Sweetheart_Summer": {
+          "Id": "Roshi_Caroline_Sweetheart_Summer",
+          "Condition": "SEASON Summer",
+          "Portrait": "Portraits/Caroline_Sweetheart_Summer",
+          "Precedence": -2010
+        },
+        "Roshi_Caroline_Sweetheart_Fall": {
+          "Id": "Roshi_Caroline_Sweetheart_Fall",
+          "Condition": "SEASON Fall",
+          "Portrait": "Portraits/Caroline_Sweetheart_Fall",
+          "Precedence": -2010
+        },
+        "Roshi_Caroline_Sweetheart_WinterIndoor": {
+          "Id": "Roshi_Caroline_Sweetheart_WinterIndoor",
+          "Condition": "SEASON Winter",
+          "Indoors": true,
+          "Portrait": "Portraits/Caroline_Sweetheart_Winter_Indoor",
+          "Precedence": -2020
+        },
+        "Roshi_Caroline_Sweetheart_WinterOutdoor": {
+          "Id": "Roshi_Caroline_Sweetheart_WinterOutdoor",
+          "Condition": "SEASON Winter",
+          "Outdoors": true,
+          "Portrait": "Portraits/Caroline_Sweetheart_Winter_Outdoor",
+          "Precedence": -2020
+        },
+        "Roshi_Caroline_Sweetheart_Aerobics": {
+          "Id": "Roshi_Caroline_Sweetheart_Aerobics",
+          "Condition": "DAY_OF_WEEK Tuesday, LOCATION_NAME Target SeedShop",
+          "Portrait": "Portraits/Caroline_Sweetheart_Aerobics",
+          "Precedence": -2050
+        },
+        "Roshi_Caroline_Sweetheart_FlowerDance": {
+          "Id": "Roshi_Caroline_Sweetheart_FlowerDance",
+          "Condition": "SEASON_DAY Spring 24",
+          "Portrait": "Portraits/Caroline_Sweetheart_FlowerDance",
+          "Precedence": -2100
+        },
+        "Roshi_Caroline_Sweetheart_Spirit": {
+          "Id": "Roshi_Caroline_Sweetheart_Spirit",
+          "Condition": "SEASON_DAY Fall 27",
+          "Portrait": "Portraits/Caroline_Sweetheart_SpiritsEve",
+          "Precedence": -2100
+        },
+        "Roshi_Caroline_Sweetheart_Beach": {
+          "Id": "Roshi_Caroline_Sweetheart_Beach",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Caroline_Sweetheart_Beach",
+          "Precedence": -2150
+        }
+      }
+    },
+
+    // --- 3. SPRITE OVERLAYS (CASCADING) ---
+    {
+      "LogName": "Caroline Sprite - Spring",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Spring.png",
+      "When": { "Season": "Spring" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Summer",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Summer.png",
+      "When": { "Season": "Summer" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Fall",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Fall.png",
+      "When": { "Season": "Fall" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Winter Indoor",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline_Winter",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Indoor.png",
+      "When": { "Season": "Winter", "IsOutdoors": "false" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Winter Outdoor",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline_Winter",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Outdoor.png",
+      "When": { "Season": "Winter", "IsOutdoors": "true" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Aerobics",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Aerobics.png",
+      "When": { "DayOfWeek": "Tuesday", "LocationName": "SeedShop" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Flower Dance",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/FlowerDance.png",
+      "When": { "Season": "Spring", "Day": "24" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Spirits Eve",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline",
+      "FromFile": "assets/Other_Sprites/sorkrimp/SpiritsEve.png",
+      "When": { "Season": "Fall", "Day": "27" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Caroline Sprite - Beach",
+      "Action": "EditImage",
+      "Target": "Characters/Caroline_Beach",
+      "FromFile": "assets/Other_Sprites/sorkrimp/beach.png"
+    },
+
+    // --- 4. DDFC ASSIGNMENT ---
+    {
+      "LogName": "DDFC Assignment - Caroline",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Caroline": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

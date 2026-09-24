@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    // ==========================================================
+    // SexRobot PORTRAIT LOADS
+    // Loads custom SexRobot portraits into the portrait registry
+    // ==========================================================
+    {
+      "LogName": "Load HD SexRobot Portrait",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/SexRobot",
+      "FromFile": "assets/Roshi_Portraits/SexRobot/SexRobot.png"
+    },
+    // --- SEXROBOT LEWD APPEARANCE LOGIC ---
+    {
+      "LogName": "Load HD SexRobot Portrait",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["SexRobot", "Appearance"],
+      "Entries": {
+        "Roshi_SexRobot_Base": {
+          "Id": "Roshi_SexRobot_Base",
+          "Portrait": "Portraits/SexRobot",
+          "Precedence": -10
+        }
+      }
+    },
+    // --- DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "SexRobot": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

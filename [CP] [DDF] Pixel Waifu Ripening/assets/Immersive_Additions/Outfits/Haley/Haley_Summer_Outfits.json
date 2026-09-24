@@ -1,114 +1,127 @@
 {
   "Changes": [
+    // --- 1. ROOT FALLBACK ASSETS (Required by SVO pipeline) ---
     {
-      "LogName": "Load HD Summer Base",
+      "LogName": "Load Haley Summer Root Portrait",
       "Action": "Load",
       "Target": "Portraits/Haley_Summer",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer.png"
     },
     {
-      "LogName": "Load HD Summer Base Sprite",
+      "LogName": "Load Haley Summer Root Sprite",
       "Action": "Load",
       "Target": "Characters/Haley_Summer",
       "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png"
     },
+    // --- 2. SUB-VARIANT ASSETS (Targeted by SVO winners) ---
     {
-      "LogName": "Load HD Summer Rainy",
+      "LogName": "Load Haley Summer Base Portrait",
       "Action": "Load",
-      "Target": "Portraits/Haley_Summer_Rainy",
-      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer_Rain.png" 
+      "Target": "Portraits/Haley_Summer_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer.png"
     },
     {
-      "LogName": "Load HD Summer Rainy Sprite",
+      "LogName": "Load Haley Summer Base Sprite",
       "Action": "Load",
-      "Target": "Characters/Haley_Summer_Rainy",
+      "Target": "Characters/Haley_Summer_Base",
       "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png"
     },
     {
-      "LogName": "Haley Appearance Logic - Summer Portraits",
-      "Action": "EditData",
-      "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
-      "Entries": {
-        "Roshi_Haley_Pyjamas_Morning_Summer": {
-          "Id": "Roshi_Haley_Pyjamas_Morning_Summer",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 600 930, SEASON Summer",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Pyjamas_Night_Summer": {
-          "Id": "Roshi_Haley_Pyjamas_Night_Summer",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 2000 2600, SEASON Summer",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Base_Summer": {
-          "Id": "Roshi_Haley_Base_Summer",
-          "Condition": "SEASON Summer",
-          "Portrait": "Portraits/Haley_Summer",
-          "Precedence": -500
-        },
-"Roshi_Haley_Summer_Rainy": {
-          "Id": "Roshi_Haley_Summer_Rainy",
-          "Indoors": false,
-          "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, SEASON Summer",
-          "Portrait": "Portraits/Haley_Summer_Rainy",
-          "Precedence": -800
-        }
-      }
+      "LogName": "Load Haley Summer Denim Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Summer_Denim",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Denim.png"
     },
     {
-      "LogName": "Haley Sprite - Summer Base",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { "Season": "Summer" },
-      "Update": "OnLocationChange, OnTimeChange"
+      "LogName": "Load Haley Summer Denim Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Summer_Denim",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer_Denim.png"
+    },
+    // --- 3. OUTDOOR RAIN OVERRIDES (Content Patcher) ---
+    {
+      "LogName": "Load Haley Summer Base Rain Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Summer_Base_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer_Rainy.png"
     },
     {
-      "LogName": "Haley Sprite - Summer Rainy",
+      "LogName": "Load Haley Summer Base Rain Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Summer_Base_Rainy",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png"
+    },
+    {
+      "LogName": "Load Haley Summer Denim Rain Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Summer_Denim_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Denim.png"
+    },
+    {
+      "LogName": "Load Haley Summer Denim Rain Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Summer_Denim_Rainy",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer_Denim.png"
+    },
+    {
+      "LogName": "Haley Summer Base Outdoor Rain Portrait",
       "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Summer",
+      "Target": "Portraits/Haley_Summer_Base_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Summer_Rain.png",
+      "When": {
         "Weather": "Rain, Storm",
         "IsOutdoors": "true"
       },
-      "Update": "OnLocationChange, OnTimeChange"
+      "Update": "OnLocationChange"
     },
     {
-      "LogName": "Haley Sprite - Pyjamas Morning Summer",
+      "LogName": "Haley Summer Base Outdoor Rain Sprite",
       "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Summer",
-        "Time": "{{Range: 600, 930}}",
-        "IsOutdoors": "false"
+      "Target": "Characters/Haley_Summer_Base_Rainy",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer.png",
+      "When": {
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
       },
-      "Update": "OnLocationChange, OnTimeChange"
+      "Update": "OnLocationChange"
     },
     {
-      "LogName": "Haley Sprite - Pyjamas Night Summer",
+      "LogName": "Haley Summer Denim Outdoor Rain Portrait",
       "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Summer",
-        "Time": "{{Range: 2000, 2600}}",
-        "IsOutdoors": "false"
+      "Target": "Portraits/Haley_Summer_Denim_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Denim.png",
+      "When": {
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
       },
-      "Update": "OnLocationChange, OnTimeChange"
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Haley Summer Denim Outdoor Rain Sprite",
+      "Action": "EditImage",
+      "Target": "Characters/Haley_Summer_Denim_Rainy",
+      "FromFile": "assets/Roshi_Sprites/Haley/Summer/Haley_Summer_Denim.png",
+      "When": {
+        "Weather": "Rain, Storm",
+        "IsOutdoors": "true"
+      },
+      "Update": "OnLocationChange"
+    },
+    // --- 4. SINGLE APPEARANCE HOOK FOR SUMMER ROOT ---
+    {
+      "LogName": "Haley Appearance Logic - Summer Root",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "Entries": {
+        "Roshi_Haley_Summer": {
+          "Id": "Roshi_Haley_Summer",
+          "Condition": "SEASON Summer",
+          "Portrait": "Portraits/Haley_Summer",
+          "Sprite": "Characters/Haley_Summer",
+          "Precedence": -500
+        }
+      }
     }
   ]
 }

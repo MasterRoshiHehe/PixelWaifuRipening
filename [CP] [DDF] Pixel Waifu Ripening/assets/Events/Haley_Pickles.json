@@ -10,7 +10,7 @@
       "LogName": "Trigger Haley Pickle Appearance",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
+      "TargetField": ["Haley", "Appearance"],
       "Entries": {
         "Roshi.HaleyPickles": {
           "Id": "Roshi.HaleyPickles",

@@ -1,76 +1,47 @@
 {
   "Changes": [
+    // --- 1. ROOT FALLBACK ASSETS (Required by SVO pipeline) ---
     {
-      "LogName": "Load HD Winter",
+      "LogName": "Load Haley Winter Root Portrait",
       "Action": "Load",
-      "Priority": "High",
       "Target": "Portraits/Haley_Winter",
       "FromFile": "assets/Roshi_Portraits/Haley/Haley_Winter.png"
     },
     {
-      "LogName": "Haley Appearance Logic - Winter Portraits",
+      "LogName": "Load Haley Winter Root Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Winter",
+      "FromFile": "assets/Roshi_Sprites/Haley/Winter/Haley_Winter.png"
+    },
+
+    // --- 2. SUB-VARIANT ASSETS (Targeted by SVO winners) ---
+    {
+      "LogName": "Load Haley Winter Base Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Winter_Base",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Winter.png"
+    },
+    {
+      "LogName": "Load Haley Winter Base Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Winter_Base",
+      "FromFile": "assets/Roshi_Sprites/Haley/Winter/Haley_Winter.png"
+    },
+
+    // --- 3. SINGLE APPEARANCE HOOK FOR WINTER ROOT ---
+    {
+      "LogName": "Haley Appearance Logic - Winter Root",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
+      "TargetField": ["Haley", "Appearance"],
       "Entries": {
-        "Roshi_Haley_Pyjamas_Morning_Winter": {
-          "Id": "Roshi_Haley_Pyjamas_Morning_Winter",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 600 930, SEASON Winter",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Pyjamas_Night_Winter": {
-          "Id": "Roshi_Haley_Pyjamas_Night_Winter",
-          "Indoors": true,
-          "Outdoors": false,
-          "Condition": "TIME 2000 2600, SEASON Winter",
-          "Portrait": "Portraits/Haley_Pyjamas",
-          "Precedence": -1000
-        },
-        "Roshi_Haley_Base_Winter": {
-          "Id": "Roshi_Haley_Base_Winter",
+        "Roshi_Haley_Winter": {
+          "Id": "Roshi_Haley_Winter",
           "Condition": "SEASON Winter",
           "Portrait": "Portraits/Haley_Winter",
           "Precedence": -500
         }
       }
-    },
-    {
-      "LogName": "Haley Sprite - Winter Base",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Winter/Haley_Winter.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 384 },
-      "When": { "Season": "Winter" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Haley Sprite - Pyjamas Morning Winter",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Winter",
-        "Time": "{{Range: 600, 930}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Haley Sprite - Pyjamas Night Winter",
-      "Action": "EditImage",
-      "Target": "Characters/Haley",
-      "FromFile": "assets/Roshi_Sprites/Haley/Default/Haley.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 416 },
-      "When": { 
-        "Season": "Winter",
-        "Time": "{{Range: 2000, 2600}}",
-        "IsOutdoors": "false"
-      },
-      "Update": "OnLocationChange, OnTimeChange"
     }
   ]
 }

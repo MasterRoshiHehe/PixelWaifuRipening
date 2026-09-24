@@ -1,0 +1,37 @@
+{
+  "Changes": [
+    // ==========================================================
+    // Maru LEWD PORTRAIT LOADS
+    // Loads custom Maru Lewd portraits into the portrait registry
+    // ==========================================================
+    {
+      "LogName": "Load HD Maru Lewd Portrait",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/MaruLewd",
+      "FromFile": "assets/Roshi_Portraits/Maru/Maru_Lewd.png"
+    },
+    // --- MARU LEWD APPEARANCE LOGIC ---
+    {
+      "LogName": "MaruLewd Appearance Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["MaruLewd", "Appearance"],
+      "Entries": {
+        "Roshi_MaruLewd_Base": {
+          "Id": "Roshi_MaruLewd_Base",
+          "Portrait": "Portraits/MaruLewd",
+          "Precedence": -10
+        }
+      }
+    },
+    // --- DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "MaruLewd": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

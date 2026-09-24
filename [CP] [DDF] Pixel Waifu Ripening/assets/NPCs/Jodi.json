@@ -1,18 +1,45 @@
 {
   "Changes": [
     // --- 1. LOAD STANDALONE ASSETS ---
-    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Jodi_Vanilla", "FromFile": "assets/Roshi_Portraits/Jodi/Jodi.png" },
-    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Jodi_Winter", "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Winter.png" },
-    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Jodi_Beach", "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Beach.png" },
-    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Jodi_Rainy", "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Rain.png" },
-    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Jodi_Pyjamas", "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Pyjamas.png" },
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Jodi_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Jodi/Jodi.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Jodi_Winter",
+      "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Winter.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Jodi_Beach",
+      "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Beach.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Jodi_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Jodi_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Jodi/Jodi_Pyjamas.png"
+    },
 
     // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Jodi Appearance Logic - Base",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Jodi", "Appearance" ],
+      "TargetField": ["Jodi", "Appearance"],
       "Entries": {
         "Roshi_Jodi_Vanilla_Fallback": {
           "Id": "Roshi_Jodi_Vanilla_Fallback",
@@ -31,11 +58,11 @@
           "Portrait": "Portraits/Jodi_Pyjamas",
           "Precedence": -100
         },
-"Roshi_Jodi_Rain": {
+        "Roshi_Jodi_Rain": {
           "Id": "Roshi_Jodi_Rain",
           "Indoors": false,
           "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Condition": "WEATHER Town Rain Storm GreenRain, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
           "Portrait": "Portraits/Jodi_Rainy",
           "Precedence": -50
         },

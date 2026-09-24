@@ -1,0 +1,87 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Pam_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Pam/Pam.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Pam_Winter",
+      "FromFile": "assets/Roshi_Portraits/Pam/Pam_Winter.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Beach",
+      "FromFile": "assets/Roshi_Portraits/Pam/Pam_Beach.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Pam/Pam_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Pam/Pam_Pyjamas.png"
+    },
+
+    // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
+    {
+      "LogName": "Pam Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Pam", "Appearance"],
+      "Entries": {
+        "Roshi_Pam_Vanilla_Fallback": {
+          "Id": "Roshi_Pam_Vanilla_Fallback",
+          "Portrait": "Portraits/Pam_Vanilla",
+          "Precedence": -10
+        },
+        "Roshi_Pam_Pyjamas_Morning": {
+          "Id": "Roshi_Pam_Pyjamas_Morning",
+          "Condition": "ANY \"LOCATION_NAME Target Trailer\" \"LOCATION_NAME Target Trailer_Big\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950",
+          "Portrait": "Portraits/Pam_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Pam_Pyjamas_Night": {
+          "Id": "Roshi_Pam_Pyjamas_Night",
+          "Condition": "ANY \"LOCATION_NAME Target Trailer\" \"LOCATION_NAME Target Trailer_Big\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600",
+          "Portrait": "Portraits/Pam_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Pam_Rain": {
+          "Id": "Roshi_Pam_Rain",
+          "Indoors": false,
+          "Outdoors": true,
+          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Pam_Rainy",
+          "Precedence": -50
+        },
+        "Roshi_Pam_IslandAttire": {
+          "Id": "Roshi_Pam_IslandAttire",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Pam_Beach",
+          "Precedence": -510
+        }
+      }
+    },
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Pam": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

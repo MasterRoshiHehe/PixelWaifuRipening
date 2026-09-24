@@ -4,7 +4,7 @@
       "LogName": "Abigail Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Abigail", "Appearance" ],
+      "TargetField": ["Abigail", "Appearance"],
       "Entries": {
         "Roshi_Abigail_BeachBikinis": {
           "Id": "Roshi_Abigail_BeachBikinis",
@@ -18,7 +18,7 @@
       "LogName": "Caroline Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Caroline", "Appearance" ],
+      "TargetField": ["Caroline", "Appearance"],
       "Entries": {
         "Roshi_Caroline_BeachBikinis": {
           "Id": "Roshi_Caroline_BeachBikinis",
@@ -28,11 +28,30 @@
         }
       }
     },
+    // --- CHILDHOOD SWEETHEART CAROLINE (BEACH BIKINIS) ---
+    {
+      "LogName": "Caroline Appearance Logic - Beach Bikinis (Childhood Sweetheart)",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Caroline", "Appearance"],
+      "When": {
+        "HasMod": "BeachBikinis",
+        "Enable Childhood Sweetheart Caroline": "true"
+      },
+      "Entries": {
+        "Roshi_Caroline_Sweetheart_BeachBikinis": {
+          "Id": "Roshi_Caroline_Sweetheart_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Caroline_Sweetheart_Beach",
+          "Precedence": -2200
+        }
+      }
+    },
     {
       "LogName": "Emily Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Emily", "Appearance" ],
+      "TargetField": ["Emily", "Appearance"],
       "Entries": {
         "Roshi_Emily_BeachBikinis": {
           "Id": "Roshi_Emily_BeachBikinis",
@@ -42,38 +61,29 @@
         }
       }
     },
+    /*
   {
-
-      "LogName": "Haley Appearance Logic - Beach Bikinis",
-
+      "LogName": "Haley Appearance Logic - Beach",
       "Action": "EditData",
-
       "Target": "Data/Characters",
-
       "TargetField": [ "Haley", "Appearance" ],
-
       "Entries": {
-
-        "Roshi_Haley_BeachBikinis": {
-
-          "Id": "Roshi_Haley_BeachBikinis",
-
+        "Roshi_Haley_Beach": {
+          "Id": "Roshi_Haley_Beach",
           "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, ANY \"TIME 0600 1850\" \"SEASON_DAY Summer 11\", ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
-
           "Portrait": "Portraits/Haley_Beach",
-
           "Precedence": 100
-
         }
 
       }
 
     },
+    */
     {
       "LogName": "Jodi Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Jodi", "Appearance" ],
+      "TargetField": ["Jodi", "Appearance"],
       "Entries": {
         "Roshi_Jodi_BeachBikinis": {
           "Id": "Roshi_Jodi_BeachBikinis",
@@ -87,7 +97,7 @@
       "LogName": "Leah Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Leah", "Appearance" ],
+      "TargetField": ["Leah", "Appearance"],
       "Entries": {
         "Roshi_Leah_BeachBikinis": {
           "Id": "Roshi_Leah_BeachBikinis",
@@ -101,7 +111,7 @@
       "LogName": "Marnie Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Marnie", "Appearance" ],
+      "TargetField": ["Marnie", "Appearance"],
       "Entries": {
         "Roshi_Marnie_BeachBikinis": {
           "Id": "Roshi_Marnie_BeachBikinis",
@@ -115,7 +125,7 @@
       "LogName": "Maru Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Maru", "Appearance" ],
+      "TargetField": ["Maru", "Appearance"],
       "Entries": {
         "Roshi_Maru_BeachBikinis": {
           "Id": "Roshi_Maru_BeachBikinis",
@@ -125,15 +135,54 @@
         }
       }
     },
+    // --- VANILLA PAM (BEACH BIKINIS) ---
+    {
+      "LogName": "Pam Appearance Logic - Beach Bikinis (Vanilla)",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Pam", "Appearance"],
+      "When": {
+        "HasMod": "BeachBikinis",
+        "Enable Hot Pam": "false"
+      },
+      "Entries": {
+        "Roshi_Pam_BeachBikinis": {
+          "Id": "Roshi_Pam_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Pam_Beach",
+          "Precedence": 100
+        }
+      }
+    },
+
+    // --- HOT PAM (BEACH BIKINIS) ---
+    {
+      "LogName": "Pam Appearance Logic - Beach Bikinis (Hot Pam)",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Pam", "Appearance"],
+      "When": {
+        "HasMod": "BeachBikinis",
+        "Enable Hot Pam": "true"
+      },
+      "Entries": {
+        "Roshi_HotPam_BeachBikinis": {
+          "Id": "Roshi_HotPam_BeachBikinis",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Portrait": "Portraits/Pam_Hot_Beach",
+          "Precedence": 100
+        }
+      }
+    },
     {
       "LogName": "Penny Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Penny", "Appearance" ],
+      "TargetField": ["Penny", "Appearance"],
       "Entries": {
         "Roshi_Penny_BeachBikinis": {
           "Id": "Roshi_Penny_BeachBikinis",
-			"Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
           "Portrait": "Portraits/Penny_Beach",
           "Precedence": 100
         }
@@ -143,7 +192,7 @@
       "LogName": "Robin Appearance Logic - Beach Bikinis",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Robin", "Appearance" ],
+      "TargetField": ["Robin", "Appearance"],
       "Entries": {
         "Roshi_Robin_BeachBikinis": {
           "Id": "Roshi_Robin_BeachBikinis",

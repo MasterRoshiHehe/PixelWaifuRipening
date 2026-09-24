@@ -18,7 +18,7 @@
       "LogName": "Abigail Appearance Logic - Fall Portraits",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Abigail", "Appearance" ],
+      "TargetField": ["Abigail", "Appearance"],
       "Entries": {
         "Roshi_Abigail_Pyjamas_Morning_Fall": {
           "Id": "Roshi_Abigail_Pyjamas_Morning_Fall",
@@ -38,7 +38,7 @@
           "Portrait": "Portraits/Abigail_Fall",
           "Precedence": -500
         },
-"Roshi_Abigail_Fall_Rainy": {
+        "Roshi_Abigail_Fall_Rainy": {
           "Id": "Roshi_Abigail_Fall_Rainy",
           "Indoors": false,
           "Outdoors": true,

@@ -1,0 +1,47 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Sandy",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Sandy/Default/Sandy_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Sandy/Default/Sandy_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Sandy/Default/Sandy_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Sandy/Default/Sandy_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Sandy/Default/Sandy_4.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    }
+  ],
+  "Rules": []
+}

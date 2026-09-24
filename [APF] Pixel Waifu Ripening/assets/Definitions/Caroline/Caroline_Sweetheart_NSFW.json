@@ -1,0 +1,177 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Caroline",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Sweetheart_Valley_Girls"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "10": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "11": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "30": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "31": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "32": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "33": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "34": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "35": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "36": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "37": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "38": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "39": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "40": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "41": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "42": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "43": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "44": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "45": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "47": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "49": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "51": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "53": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        }
+      },
+      "VariantExpressions": {}
+    }
+  ],
+  "Rules": []
+}

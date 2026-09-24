@@ -1,10 +1,10 @@
 {
   "Name": "Pixel Waifu Ripening PWR - APF",
   "Author": "MasterRoshiHehe",
-  "Version": "0.2.67",
+  "Version": "0.2.75",
   "Description": "High-quality Pixel Style AI Portraits (APF)",
   "UniqueID": "MasterRoshiHehe.PWR.APF",
-  "UpdateKeys": [ "Nexus:44489" ],
+  "UpdateKeys": ["Nexus:44489"],
   "MinimumApiVersion": "4.0.0",
   "ContentPackFor": {
     "UniqueID": "tyr4ntx.AnimatedPortraitFramework"
@@ -14,21 +14,9 @@
       "UniqueID": "tyr4ntx.AnimatedPortraitFramework",
       "IsRequired": true
     },
-	{
-      "UniqueID": "Trashracc.VG",
-      "IsRequired": false
-    },
-	    {
-      "UniqueID": "Pseudodiego.XtardewValley",
-      "IsRequired": false
-    },
-	{
-      "UniqueID": "Pseudodiego.NudeNPC",
-      "IsRequired": false
-    },
     {
-      "UniqueID": "Pseudodiego.LAtardewValley",
-      "IsRequired": false
+      "UniqueID": "MasterRoshiHehe.PWR",
+      "IsRequired": true
     }
   ]
 }

@@ -1,18 +1,45 @@
 {
   "Changes": [
     // --- 1. LOAD STANDALONE ASSETS ---
-    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie_Vanilla", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie.png" },
-    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Marnie_Winter", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Winter.png" },
-    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Marnie_Beach", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Beach.png" },
-    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Marnie_Rainy", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Rain.png" },
-    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Marnie_Pyjamas", "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Pyjamas.png" },
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Marnie_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Marnie_Winter",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Winter.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Marnie_Beach",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Beach.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Marnie_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Marnie_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Pyjamas.png"
+    },
 
     // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Marnie Appearance Logic - Base",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Marnie", "Appearance" ],
+      "TargetField": ["Marnie", "Appearance"],
       "Entries": {
         "Roshi_Marnie_Vanilla_Fallback": {
           "Id": "Roshi_Marnie_Vanilla_Fallback",
@@ -31,7 +58,7 @@
           "Portrait": "Portraits/Marnie_Pyjamas",
           "Precedence": -100
         },
-"Roshi_Marnie_Rain": {
+        "Roshi_Marnie_Rain": {
           "Id": "Roshi_Marnie_Rain",
           "Indoors": false,
           "Outdoors": true,
@@ -47,7 +74,6 @@
         }
       }
     },
-
 
     // --- 3. DDFC ASSIGNMENT ---
     {

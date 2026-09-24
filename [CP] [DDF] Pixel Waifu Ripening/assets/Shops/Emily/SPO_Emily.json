@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "DesertFestival_Emily": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Emily",
+      "FromFile": "assets/Shops/Emily/Emily_Neutral.png",
+      "When": { "Hearts:Emily": "0, 1, 2, 3, 4" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Emily",
+      "FromFile": "assets/Shops/Emily/Emily_Happy.png",
+      "When": { "Hearts:Emily": "5, 6, 7, 8" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Emily",
+      "FromFile": "assets/Shops/Emily/Emily_Blushing.png",
+      "When": { "Hearts:Emily": "9, 10, 11, 12, 13, 14" }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS ---
+    {
+      "LogName": "Load HD Portrait - Mrs. Qi",
+      "Action": "Load",
+      "Target": "Portraits/MrQi_Mrs_Qi",
+      "FromFile": "assets/Roshi_Portraits/Mrs_Qi/Mrs_Qi.png"
+    },
+
+    // --- 2. MRS. QI APF REDIRECTION ---
+    {
+      "LogName": "Mrs. Qi APF Portrait Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Mister Qi", "Appearance"],
+      "Entries": {
+        "Roshi_MrsQi": {
+          "Id": "Roshi_MrsQi",
+          "Portrait": "Portraits/MrQi_Mrs_Qi",
+          "Precedence": -100
+        }
+      }
+    },
+
+    // --- 3. DDFC ASSIGNMENT ---
+    {
+      "LogName": "DDFC Assignment - MrQi",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Mister Qi": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

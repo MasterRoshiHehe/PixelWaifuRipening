@@ -1,0 +1,465 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Emily",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Bra_Nude"],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "10": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_0.png"
+        },
+        "30": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_0.png"
+        },
+        "31": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_1.png"
+        },
+        "32": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_2.png"
+        },
+        "33": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_3.png"
+        },
+        "34": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_4.png"
+        },
+        "35": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Nude_5.png"
+        },
+        "36": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Pleasure_0.png"
+        },
+        "37": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Male_Sex_0.png"
+        },
+        "38": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Pleasure_1.png"
+        },
+        "39": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Male_Sex_1.png"
+        },
+        "40": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Pleasure_2.png"
+        },
+        "41": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Male_Sex_2.png"
+        },
+        "42": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Pleasure_3.png"
+        },
+        "43": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Male_Sex_3.png"
+        },
+        "44": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Pleasure_4.png"
+        },
+        "45": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Male_Sex_4.png"
+        },
+        "47": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Female_Sex_0.png"
+        },
+        "49": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Female_Sex_1.png"
+        },
+        "51": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Female_Sex_2.png"
+        },
+        "53": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Female_Sex_3.png"
+        }
+      },
+      "VariantExpressions": {
+        "Bra_Nude": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Default/Emily_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Default/Emily_7.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_0.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_3.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_4.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Emily/Valley_Girls/Bra_Nude_5.png"
+          }
+        }
+      }
+    },
+    {
+      "Target": "EmilyLewd",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Lewd/Emily_Lewd_7.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    },
+    {
+      "Target": "Emily·",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_Nude_7.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    },
+    {
+      "Target": "Emily··",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_7.png"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_8.png"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Emily/Xtardew/Xtardew_9.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    }
+  ],
+  "Rules": []
+}

@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "DesertFestival_Abigail": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Abigail",
+      "FromFile": "assets/Shops/Abigail/Abigail_Neutral.png",
+      "When": { "Hearts:Abigail": "0, 1, 2" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Abigail",
+      "FromFile": "assets/Shops/Abigail/Abigail_Smiling.png",
+      "When": { "Hearts:Abigail": "3, 4, 5" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Abigail",
+      "FromFile": "assets/Shops/Abigail/Abigail_Happy.png",
+      "When": { "Hearts:Abigail": "6, 7, 8" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Abigail",
+      "FromFile": "assets/Shops/Abigail/Abigail_Blushing.png",
+      "When": { "Hearts:Abigail": "9, 10, 11, 12, 13, 14" }
+    }
+  ]
+}

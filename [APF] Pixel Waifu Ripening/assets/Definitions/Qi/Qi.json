@@ -1,0 +1,33 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Mister Qi",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": ["Vanilla", "Mrs_Qi"],
+      "Expressions": {
+        "0": { "Frames": 1, "Fps": 1, "Mode": "once" },
+        "1": { "Frames": 1, "Fps": 1, "Mode": "once" }
+      },
+      "VariantExpressions": {
+        "Mrs_Qi": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Mrs_Qi/Mrs_Qi_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Mrs_Qi/Mrs_Qi_1.png"
+          }
+        }
+      }
+    }
+  ]
+}

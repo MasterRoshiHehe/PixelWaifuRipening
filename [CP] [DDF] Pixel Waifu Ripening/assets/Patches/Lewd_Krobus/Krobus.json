@@ -1,20 +1,60 @@
 {
   "Changes": [
-    // --- LOAD THE HD PORTRAIT ---
     {
-      "LogName": "Lewd Krobus HD Portrait Override",
+      "LogName": "Load HD Krobus Female Portrait",
       "Action": "Load",
+      "Priority": "High",
       "Target": "Portraits/Krobus",
-      "FromFile": "assets/Roshi_Portraits/Krobus/Lewd_Krobus.png",
-      "Priority": "High"
+      "FromFile": "assets/Roshi_Portraits/Krobus/Krobus_Lewd.png"
     },
-    // --- DDFC ASSIGNMENT ---
     {
-      "LogName": "DDFC HD Template - Krobus",
+      "LogName": "Load HD Krobus Female Portrait",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Krobus_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Krobus/Krobus_Lewd.png"
+    },
+    {
+      "LogName": "Load Krobus Female Sprite",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Characters/Krobus",
+      "FromFile": "assets/Other_Sprites/TrashRacc/Krobus_Sprite.png"
+    },
+    {
+      "LogName": "Krobus Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Krobus", "Appearance"],
+      "Entries": {
+        "Roshi_Krobus_Vanilla_Fallback": {
+          "Id": "Roshi_Krobus_Vanilla_Fallback",
+          "Portrait": "Portraits/Krobus",
+          "Precedence": 100
+        }
+      }
+    },
+    {
+      "LogName": "Krobus Appearance Logic - Base",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Krobus", "Appearance"],
+      "Entries": {
+        "Roshi_Krobus_Vanilla_Fallback": {
+          "Id": "Roshi_Krobus_Vanilla_Fallback",
+          "Portrait": "Portraits/Krobus_Vanilla",
+          "Precedence": 100
+        }
+      }
+    },
+    // --- 3. DDFC ASSIGNMENT ---
+    {
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {
-        "Krobus": { "CopyFrom": "RoshiHD_Template" }
+        "Krobus": {
+          "copyFrom": "RoshiHD_Template"
+        }
       }
     }
   ]

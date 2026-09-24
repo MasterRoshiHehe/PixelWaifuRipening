@@ -1,59 +1,85 @@
 {
   "Changes": [
-    // --- 1. LOAD THE PORTRAIT STRINGS FOR APF ---
+    // --- 1. ROOT FALLBACK & SUB-VARIANT PORTRAITS ---
     {
       "LogName": "Load Random Beach Portraits",
       "Action": "Load",
-      "Target": "Portraits/Haley_Beach, Portraits/Haley_Beach_BlackTube, Portraits/Haley_Beach_BlueTube, Portraits/Haley_Beach_PinkSuit, Portraits/Haley_Beach_Towel",
+      "Target": "Portraits/Haley_Beach_BlackTube, Portraits/Haley_Beach_BlueTube, Portraits/Haley_Beach_PinkSuit, Portraits/Haley_Beach_Towel",
       "FromFile": "assets/Roshi_Portraits/Haley/{{TargetWithoutPath}}.png"
     },
+    {
+      "LogName": "Load Haley Beach Nude Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Beach_Nude",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Nude.png"
+    },
+    {
+      "LogName": "Load Haley Beach Vanilla Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Beach_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Beach.png"
+    },
 
-    // --- 2. DDFC MAPPING ---
+    // --- 2. ROOT FALLBACK & SUB-VARIANT BEACH SPRITES ---
+    {
+      "LogName": "Load Haley Beach Root & Variant Sprites",
+      "Action": "Load",
+      "Target": "Characters/Haley_Beach, Characters/Haley_Beach_BlackTube, Characters/Haley_Beach_BlueTube, Characters/Haley_Beach_PinkSuit, Characters/Haley_Beach_Towel, Characters/Haley_Beach_Nude",
+      "FromFile": "assets/Roshi_Sprites/Haley/Beach/{{TargetWithoutPath}}.png"
+    },
+
+    {
+      "LogName": "Load Haley Beach Vanilla Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Beach_Vanilla",
+      "FromFile": "assets/Roshi_Sprites/Haley/Beach/Haley_Beach.png"
+    },
+
+    // --- 3. DDFC MAPPING ---
     {
       "LogName": "DDFC Assignment - Haley Beach Random",
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {
-        "Haley_Beach_BlackTube": { "CopyFrom": "RoshiHD_Template" },
-        "Haley_Beach_BlueTube": { "CopyFrom": "RoshiHD_Template" },
-        "Haley_Beach_PinkSuit": { "CopyFrom": "RoshiHD_Template" },
-        "Haley_Beach_Towel": { "CopyFrom": "RoshiHD_Template" }
-      }
-    },
-
-    // --- 3. APPEARANCE LOGIC (APF PORTRAIT ONLY) ---
-    {
-      "LogName": "Haley Appearance Logic - Beach Bikinis (Portrait Only)",
-      "Action": "EditData",
-      "Target": "Data/Characters",
-      "TargetField": [ "Haley", "Appearance" ],
-      "Update": "OnDayStart",
-      "Entries": {
-        "Roshi_Haley_BeachBikinis": {
-          "Id": "Roshi_Haley_BeachBikinis",
-          "Condition": "WEATHER Here Sun, LOCATION_NAME Here Beach, TIME 0600 1850, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
-          
-          // PINNED KEY IN ACTION: Rolls the die once for the Portrait
-          "Portrait": "Portraits/Haley_{{Random: Beach, Beach_BlackTube, Beach_BlueTube, Beach_PinkSuit, Beach_Towel |key=haley_beach_outfit}}",
-          "Precedence": 100
+        "Haley_Beach": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_Vanilla": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_Nude": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_BlackTube": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_BlueTube": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_PinkSuit": {
+          "CopyFrom": "RoshiHD_Template"
+        },
+        "Haley_Beach_Towel": {
+          "CopyFrom": "RoshiHD_Template"
         }
       }
     },
 
-    // --- 4. SAFE SPRITE INJECTION ---
-{
-      "LogName": "Haley Sprite - Beach Bikini Safe Injection",
-      "Action": "EditImage",
-      "Target": "Characters/Haley_Beach",
-      "FromFile": "assets/Roshi_Sprites/Haley/Beach/Haley_{{Random: Beach, Beach_BlackTube, Beach_BlueTube, Beach_PinkSuit, Beach_Towel |key=haley_beach_outfit}}.png",
-      "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 192 },
-      "PatchMode": "Replace",
-      "Update": "OnDayStart, OnLocationChange, OnTimeChange",
-      "When": {
-        "Season": "Spring, Summer, Fall",
-        "Weather": "Sun",
-        "LocationName": "Beach, IslandResort",
-        "Time": "{{Range: 0600, 1850}}"
+    // --- 4. APPEARANCE HOOK - BEACH MAP ONLY ---
+    {
+      "LogName": "Haley Appearance Logic - Beach Map",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "Update": "OnLocationChange",
+      "Entries": {
+        "Roshi_Haley_BeachBikinis": {
+          "Id": "Roshi_Haley_BeachBikinis",
+          "Condition": "LOCATION_NAME Target Beach IslandResort, WEATHER Target Sun",
+          "Portrait": "Portraits/Haley_Beach",
+          "Sprite": "Characters/Haley_Beach",
+          "Precedence": -2000
+        }
       }
     }
   ]

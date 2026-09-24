@@ -1,0 +1,124 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Robin·",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_Nude_7.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    },
+    {
+      "Target": "Robin··",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_0.png"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_1.png"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_2.png"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_3.png"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_4.png"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_5.png"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_6.png"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once",
+          "Sprite": "assets/Roshi_Portraits/Robin/Xtardew/Xtardew_7.png"
+        }
+      },
+      "Variants": [],
+      "VariantExpressions": {}
+    }
+  ],
+  "Rules": []
+}

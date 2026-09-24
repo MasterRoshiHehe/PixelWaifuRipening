@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "LogName": "DDFC Scaler Integration",
+      "Action": "EditData",
+      "Target": "dakot.DDFCScaler/ScaledNPCs",
+      "Entries": {
+        "Mister Qi": "TopRight"
+      }
+    }
+  ]
+}

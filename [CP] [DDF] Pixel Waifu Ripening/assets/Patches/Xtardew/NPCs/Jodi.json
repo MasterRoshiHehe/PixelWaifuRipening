@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Jodi·": { "CopyFrom": "Jodi" },
+        "Jodi··": { "CopyFrom": "Jodi" }
+      }
+    }
+  ]
+}

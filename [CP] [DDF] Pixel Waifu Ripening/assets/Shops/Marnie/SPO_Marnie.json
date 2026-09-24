@@ -1,0 +1,159 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "{{Dakota.ShopPortraitOverhaul/Packs}}",
+      "TargetField": ["MasterRoshiHehe.PWR", "Portraits"],
+      "When": { "HasMod": "Dakota.ShopPortraitOverhaul" },
+      "Entries": {
+        "AnimalShop": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        },
+        "PetAdoption": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        },
+        "DesertFestival_Marnie": {
+          "DefaultScale": 100,
+          "DefaultOffsetX": -20,
+          "DefaultOffsetY": -130
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Marnie",
+      "FromFile": "assets/Shops/Marnie/Marnie_Neutral.png",
+      "When": {
+        "Hearts:Marnie": "0, 1, 2, 3, 4"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Marnie",
+      "FromFile": "assets/Shops/Marnie/Marnie_Smiling.png",
+      "When": {
+        "Hearts:Marnie": "5, 6, 7, 8"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/DesertFestival_Marnie",
+      "FromFile": "assets/Shops/Marnie/Marnie_Happy.png",
+      "When": {
+        "Hearts:Marnie": "9, 10, 11, 12, 13, 14"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Neutral.png",
+      "When": {
+        "Hearts:Marnie": "0, 1, 2, 3, 4",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Smiling.png",
+      "When": {
+        "Hearts:Marnie": "5, 6, 7, 8",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Happy.png",
+      "When": {
+        "Hearts:Marnie": "9, 10, 11, 12, 13, 14",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Neutral.png",
+      "When": {
+        "Hearts:Marnie": "0, 1, 2, 3, 4",
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Smiling.png",
+      "When": {
+        "Hearts:Marnie": "5, 6, 7, 8",
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/AnimalShop",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Happy.png",
+      "When": {
+        "Hearts:Marnie": "9, 10, 11, 12, 13, 14",
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Neutral.png",
+      "When": {
+        "Hearts:Marnie": "0, 1",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Smiling.png",
+      "When": {
+        "Hearts:Marnie": "2, 3, 4, 5, 6, 7",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Happy.png",
+      "When": {
+        "Hearts:Marnie": "8, 9, 10, 11, 12, 13, 14",
+        "Season": "spring, summer, fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Neutral.png",
+      "When": {
+        "Hearts:Marnie": "0, 1",
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Smiling.png",
+      "When": {
+        "Hearts:Marnie": "2, 3, 4, 5, 6, 7",
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Custom/MasterRoshiHehe.PWR/ShopPortraits/PetAdoption",
+      "FromFile": "assets/Shops/Marnie/Marnie_Winter_Happy.png",
+      "When": {
+        "Hearts:Marnie": "8, 9, 10, 11, 12, 13, 14",
+        "Season": "winter"
+      }
+    }
+  ]
+}

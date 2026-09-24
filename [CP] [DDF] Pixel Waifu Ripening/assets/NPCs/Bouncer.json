@@ -1,11 +1,11 @@
 {
   "Changes": [
     // --- 1. LOAD HD ASSETS ---
-    { 
-      "LogName": "Load HD Portrait - Bouncer", 
-      "Action": "Load", 
-      "Target": "Portraits/Bouncer", 
-      "FromFile": "assets/Roshi_Portraits/Bouncer/Bouncer.png" 
+    {
+      "LogName": "Load HD Portrait - Bouncer",
+      "Action": "Load",
+      "Target": "Portraits/Bouncer",
+      "FromFile": "assets/Roshi_Portraits/Bouncer/Bouncer.png"
     },
     {
       "LogName": "Load HD Sprite - Bouncer",
@@ -20,7 +20,7 @@
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {
-        "Bouncer": { 
+        "Bouncer": {
           "copyFrom": "RoshiHD_Template",
           "portrait": {
             "w": 320,

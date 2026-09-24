@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    // --- 1A. LOAD STANDALONE ASSETS ---
+    {
+      "LogName": "Load HD Luau Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Luau",
+      "FromFile": "assets/Roshi_Sprites/Haley/Luau/Haley_Luau.png"
+    },
+    {
+      "LogName": "Load HD Luau_Default Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Luau_Default",
+      "FromFile": "assets/Roshi_Sprites/Haley/Luau/Haley_Luau_Default.png"
+    }
+  ]
+}

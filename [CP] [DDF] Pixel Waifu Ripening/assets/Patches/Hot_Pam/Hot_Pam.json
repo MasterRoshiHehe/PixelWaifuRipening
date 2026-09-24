@@ -1,0 +1,230 @@
+{
+  "Changes": [
+    // --- 1. LOAD STANDALONE ASSETS (PORTRAITS) ---
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam.png"
+    },
+    {
+      "LogName": "Load HD Spring",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Spring",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Spring.png"
+    },
+    {
+      "LogName": "Load HD Summer",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Summer",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Summer.png"
+    },
+    {
+      "LogName": "Load HD Fall",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Fall",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Fall.png"
+    },
+    {
+      "LogName": "Load HD Winter Indoor",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Winter_Indoor",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Winter_Indoor.png"
+    },
+    {
+      "LogName": "Load HD Winter Outdoor",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Winter_Outdoor",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Winter_Outdoor.png"
+    },
+    {
+      "LogName": "Load HD Flower Dance",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_FlowerDance",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_FlowerDance.png"
+    },
+    {
+      "LogName": "Load HD Spirits Eve",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_SpiritsEve",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_SpiritsEve.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Beach",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Beach.png"
+    },
+    {
+      "LogName": "Load HD Aerobics",
+      "Action": "Load",
+      "Target": "Portraits/Pam_Hot_Aerobics",
+      "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Fall.png"
+    },
+
+    // --- 2. INDEPENDENT APF PORTRAIT REDIRECTION ---
+    {
+      "LogName": "Hot Pam APF Portrait Logic",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Pam", "Appearance"],
+      "Entries": {
+        "Roshi_HotPam_Spring": {
+          "Id": "Roshi_HotPam_Spring",
+          "Condition": "SEASON Spring",
+          "Portrait": "Portraits/Pam_Hot_Spring",
+          "Precedence": -10
+        },
+        "Roshi_HotPam_Summer": {
+          "Id": "Roshi_HotPam_Summer",
+          "Condition": "SEASON Summer",
+          "Portrait": "Portraits/Pam_Hot_Summer",
+          "Precedence": -10
+        },
+        "Roshi_HotPam_Fall": {
+          "Id": "Roshi_HotPam_Fall",
+          "Condition": "SEASON Fall",
+          "Portrait": "Portraits/Pam_Hot_Fall",
+          "Precedence": -10
+        },
+        "Roshi_HotPam_WinterIndoor": {
+          "Id": "Roshi_HotPam_WinterIndoor",
+          "Condition": "SEASON Winter",
+          "Indoors": true,
+          "Portrait": "Portraits/Pam_Hot_Winter_Indoor",
+          "Precedence": -20
+        },
+        "Roshi_HotPam_WinterOutdoor": {
+          "Id": "Roshi_HotPam_WinterOutdoor",
+          "Condition": "SEASON Winter",
+          "Outdoors": true,
+          "Portrait": "Portraits/Pam_Hot_Winter_Outdoor",
+          "Precedence": -20
+        },
+        "Roshi_HotPam_Aerobics": {
+          "Id": "Roshi_HotPam_Aerobics",
+          "Condition": "DAY_OF_WEEK Tuesday, LOCATION_NAME Target SeedShop",
+          "Portrait": "Portraits/Pam_Hot_Aerobics",
+          "Precedence": -50
+        },
+        "Roshi_HotPam_FlowerDance": {
+          "Id": "Roshi_HotPam_FlowerDance",
+          "Condition": "SEASON_DAY Spring 24",
+          "Portrait": "Portraits/Pam_Hot_FlowerDance",
+          "Precedence": -100
+        },
+        "Roshi_HotPam_Spirit": {
+          "Id": "Roshi_HotPam_Spirit",
+          "Condition": "SEASON_DAY Fall 27",
+          "Portrait": "Portraits/Pam_Hot_SpiritsEve",
+          "Precedence": -100
+        },
+        "Roshi_HotPam_Beach": {
+          "Id": "Roshi_HotPam_Beach",
+          "IsIslandAttire": true,
+          "Portrait": "Portraits/Pam_Hot_Beach",
+          "Precedence": -150
+        }
+      }
+    },
+
+    // --- 3. SPRITE OVERLAYS (CASCADING) ---
+    {
+      "LogName": "Pam Sprite - Base",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam.png",
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Spring",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Spring.png",
+      "When": { "Season": "Spring" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Summer",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Summer.png",
+      "When": { "Season": "Summer" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Fall",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Fall.png",
+      "When": { "Season": "Fall" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Winter Indoor",
+      "Action": "EditImage",
+      "Target": "Characters/Pam_Winter",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Indoor.png",
+      "When": { "Season": "Winter", "IsOutdoors": "false" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Winter Outdoor",
+      "Action": "EditImage",
+      "Target": "Characters/Pam_Winter",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Outdoor.png",
+      "When": { "Season": "Winter", "IsOutdoors": "true" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Aerobics",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Aerobics.png",
+      "When": { "DayOfWeek": "Tuesday", "LocationName": "SeedShop" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Flower Dance",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_FlowerDance.png",
+      "When": { "Season": "Spring", "Day": "24" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Spirits Eve",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_SpiritsEve.png",
+      "When": { "Season": "Fall", "Day": "27" },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Pam Sprite - Beach",
+      "Action": "EditImage",
+      "Target": "Characters/Pam_Beach",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Beach.png"
+    },
+
+    // --- 4. NOSE OVERLAY (APPLIES TO EVERYTHING) ---
+    {
+      "LogName": "Pam Sprite - Nose Overlay",
+      "Action": "EditImage",
+      "Target": "Characters/Pam",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Nose.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+
+    // --- 5. DDFC ASSIGNMENT ---
+    {
+      "LogName": "DDFC Assignment - Pam",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Pam": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

@@ -1,95 +1,385 @@
 {
   "Format": "2.4.0",
-"DynamicTokens": [
+  "ConfigSchema": {
+    "Enable Shops Portrait Overhaul": {
+      "SectionTitle": "Global Settings",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable the Shops Portrait Overhaul mod."
+    },
+    "Enable Harem Valley Overwrites": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom portraits for Harem Valley events. Disable if you play in a language other than English."
+    },
+    "Enable Xtardew Valley Overwrites": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom portraits for Xtardew Valley events. Disable if you play in a language other than English."
+    },
+    "Enable Lewddew Valley Overwrites": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom portraits for Lewddew Valley."
+    },
+
+    "Enable Abigail": {
+      "SectionTitle": "Abigail",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Abigail Portraits."
+    },
+
+    "Enable Bouncer": {
+      "SectionTitle": "Bouncer",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Bouncer Portraits."
+    },
+    "Enable Caroline": {
+      "SectionTitle": "Caroline",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Caroline Portraits."
+    },
+    "Enable Childhood Sweetheart Caroline": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Enable custom Sweetheart Caroline portraits."
+    },
+    "Enable Emily": {
+      "SectionTitle": "Emily",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Emily Portraits."
+    },
+    "Enable Emily Breast Envy": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Enable Breast Envy for Emily."
+    },
+
+    "Enable Evelyn": {
+      "SectionTitle": "Evelyn",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Evelyn Portraits."
+    },
+
+    "Enable Haley": {
+      "SectionTitle": "Haley",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Haley Portraits."
+    },
+    "Enable Custom Outfits for Haley": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom randomized PWR sprites and portraits for Haley."
+    },
+    "Enable Jodi": {
+      "SectionTitle": "Jodi",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Jodi Portraits."
+    },
+
+    "Enable Lewd Krobus": {
+      "SectionTitle": "Krobus",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enables Lewd Krobus without having the dependency."
+    },
+
+    "Enable Leah": {
+      "SectionTitle": "Leah",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Leah Portraits."
+    },
+
+    "Enable Marnie": {
+      "SectionTitle": "Marnie",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Marnie Portraits."
+    },
+
+    "Enable Maru": {
+      "SectionTitle": "Maru",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Maru Portraits."
+    },
+    "Enable Pam": {
+      "SectionTitle": "Pam",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Pam Portraits."
+    },
+    "Enable Hot Pam": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Enable custom Hot Pam portraits and seasonal walking sprites. Replaces vanilla Pam."
+    },
+
+    "Enable Penny": {
+      "SectionTitle": "Penny",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Penny Portraits."
+    },
+
+    "Enable Mrs Qi": {
+      "SectionTitle": "Mister Qi",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Mrs Qi."
+    },
+
+    "Enable Robin": {
+      "SectionTitle": "Robin",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Robin Portraits."
+    },
+
+    "Enable Sandy": {
+      "SectionTitle": "Sandy",
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable Sandy Portraits."
+    }
+  },
+  "DynamicTokens": [
     {
       "Name": "Roshi_HaleyBeachOutfitId",
       "Value": "{{Random:Beach,Beach_BlackTube,Beach_BlueTube,Beach_PinkSuit,Beach_Towel}}",
       "Update": "OnDayStart"
     }
   ],
-  "ConfigSchema": {
-      "EnableCustomOutfits": {
-      "AllowValues": "true, false",
-      "Default": "true",
-      "Description": "Enable custom immersive seasonal, pajama, and festival outfits for supported NPCs."
-    },
-	"EmilyBreastEnvy": {
-      "AllowValues": "true, false",
-      "Default": "false",
-      "Description": "Enable Breast Envy for Emily."
-    },
-	"EnableHaremValleyOverwrites": {
-      "AllowValues": "true, false",
-      "Default": "true",
-      "Description": "Enable custom portraits for Harem Valley events. Disable if you play in a language other than English."
-    },
-    "EnableXtardewOverwrites": {
-      "AllowValues": "true, false",
-      "Default": "true",
-      "Description": "Enable custom portraits for Xtardew Valley events. Disable if you play in a language other than English."
-    }
-  },
   "Changes": [
     // ==========================================
-    // 1. DDFC MASTER TEMPLATE
+    // DDFC MASTER TEMPLATE
     // ==========================================
     {
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {
         "RoshiHD_Template": {
-		    "width": 1100,
-			"height": 360,
-          "portrait": { "xOffset": 480, "yOffset": -1291, "h": 320, "w": 320, "bottom": true, "scale": 2.775, "layerDepth": 0.1 },
-          "name": { "xOffset": 180, "yOffset": -440, "scroll": true, "bottom": true, "centered": true, "scrollType": 0 },
-          "jewel": { "disabled": true,"xOffset": -48, "yOffset": -60, "right": true },
-          "button": { "xOffset": -40, "yOffset": -48, "right": true, "bottom": true },
-          "hearts": { "xOffset": 8, "yOffset": -24, "bottom": true, "showEmptyHearts": true, "heartsPerRow": 14 },
+          "width": 1100,
+          "height": 360,
+          "portrait": {
+            "xOffset": 480,
+            "yOffset": -1291,
+            "h": 320,
+            "w": 320,
+            "bottom": true,
+            "scale": 2.775,
+            "layerDepth": 0.1
+          },
+          "name": {
+            "xOffset": 180,
+            "yOffset": -440,
+            "scroll": true,
+            "bottom": true,
+            "centered": true,
+            "scrollType": 0
+          },
+          "jewel": {
+            "disabled": true,
+            "xOffset": -48,
+            "yOffset": -60,
+            "right": true
+          },
+          "button": {
+            "xOffset": -40,
+            "yOffset": -48,
+            "right": true,
+            "bottom": true
+          },
+          "hearts": {
+            "xOffset": 8,
+            "yOffset": -24,
+            "bottom": true,
+            "showEmptyHearts": true,
+            "heartsPerRow": 14
+          },
           "texts": [{ "disabled": true }],
           "dividers": [{ "disabled": true, "xOffset": 0, "height": 0 }]
         }
       }
     },
-
     // ==========================================
-    // 2. VANILLA NPC MODULES
-    // Loads the individual JSON files for each character.
-    // ==========================================
-    { "Action": "Include", "FromFile": "assets/NPCs/Abigail.json" },
-	{ "Action": "Include", "FromFile": "assets/NPCs/Bouncer.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Caroline.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Emily.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Haley.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Jodi.json" },
-	{ "Action": "Include", "FromFile": "assets/NPCs/Krobus.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Leah.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Marnie.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Maru.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Penny.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Robin.json" },
-    { "Action": "Include", "FromFile": "assets/NPCs/Sandy.json" },
-
-    // ==========================================
-    // 3. CUSTOM EVENT PORTRAITS
-    //
-    // ==========================================
-    { "Action": "Include", "FromFile": "assets/Events/Haley_Pickles.json" },
-
-    // ==========================================
-    // 4. THIRD-PARTY MOD PATCHES
-    // Only loads if the player actually has these mods installed.
+    // NPC MODULES
     // ==========================================
     {
       "Action": "Include",
-      "When": { "HasMod": "Pseudodiego.XtardewValley" },
-      "FromFile": "assets/Patches/Xtardew/Xtardew_Index.json"
+      "FromFile": "assets/NPCs/Abigail.json",
+      "When": { "Enable Abigail": "true" }
     },
     {
-      "LogName": "Lewd Krobus Integration",
       "Action": "Include",
-      "FromFile": "assets/Patches/Lewd_Krobus/Krobus.json",
+      "FromFile": "assets/NPCs/Bouncer.json",
+      "When": { "Enable Bouncer": "true" }
+    },
+    {
+      "LogName": "Load Vanilla Caroline",
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Caroline.json",
       "When": {
-        "HasMod": "thrinityseven.Lewd_Krobus"
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "false"
+      }
+    },
+    {
+      "LogName": "Load Childhood Sweetheart Caroline Patch",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json",
+      "When": {
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Emily.json",
+      "When": {
+        "Enable Emily": "true"
+      }
+    },
+    {
+      "LogName": "Load Breast Envy Emily Dream",
+      "Action": "Include",
+      "FromFile": "assets/Events/Emily_Dream_BE.json",
+      "When": {
+        "Enable Emily": "true",
+        "Enable Emily Breast Envy": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Evelyn.json",
+      "When": {
+        "Enable Evelyn": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Haley.json",
+      "When": {
+        "Enable Haley": "true",
+        "Enable Custom Outfits for Haley": "false"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Haley.json",
+      "When": {
+        "Enable Haley": "true",
+        "Enable Custom Outfits for Haley": "True"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Events/Haley_Pickles.json",
+      "When": {
+        "Enable Haley": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Patches/Xtardew/Events/Haley_Darkroom.json",
+      "When": {
+        "Enable Haley": "true",
+        "HasMod": "Pseudodiego.XtardewValley",
+        "Enable Xtardew Valley Overwrites": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Jodi.json",
+      "When": {
+        "Enable Jodi": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Leah.json",
+      "When": {
+        "Enable Leah": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Marnie.json",
+      "When": {
+        "Enable Marnie": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Maru.json",
+      "When": {
+        "Enable Maru": "true"
+      }
+    },
+    {
+      "LogName": "Load Vanilla Pam",
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Pam.json",
+      "When": {
+        "Enable Pam": "true",
+        "Enable Hot Pam": "false"
+      }
+    },
+    {
+      "LogName": "Load Hot Pam Patch",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Hot_Pam/Hot_Pam.json",
+      "When": {
+        "Enable Pam": "true",
+        "Enable Hot Pam": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Penny.json",
+      "When": {
+        "Enable Penny": "true"
+      }
+    },
+    {
+      "LogName": "Mr. Qi Beautification Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Qi_Beautification/Mrs_Qi.json",
+      "When": {
+        "Query: '{{HasMod |contains=missymossy.MrQiBeautification}}' = 'true' OR '{{Enable Mrs Qi}}' = 'true'": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Robin.json",
+      "When": {
+        "Enable Robin": "true"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/NPCs/Sandy.json",
+      "When": {
+        "Enable Sandy": "true"
+      }
+    },
+    // ==========================================
+    // THIRD PARTY PATCHES
+    // ==========================================
+    {
+      "Action": "Include",
+      "FromFile": "assets/Patches/Xtardew/Xtardew_Index.json",
+      "When": {
+        "HasMod": "Pseudodiego.XtardewValley",
+        "Enable Xtardew Valley Overwrites": "true"
       }
     },
     {
@@ -98,86 +388,74 @@
       "FromFile": "assets/Patches/Harem_Valley/Harem_Valley_Index.json",
       "When": {
         "HasMod": "Trashracc.VG",
-		"EnableHaremValleyOverwrites": "true"
+        "Enable Harem Valley Overwrites": "true"
       }
     },
-    { 
-      "Action": "Include", 
-      "FromFile": "assets/Patches/Xtardew/Events/Haley_Darkroom.json", 
+    {
+      "LogName": "LewdDew Valley Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Lewddew/LewdDew_Index.json",
       "When": {
-		"HasMod": "Pseudodiego.XtardewValley",
-        "EnableXtardewOverwrites": "true" 
+        "HasMod": "shurmash.LewdDew_Valley",
+        "Enable Lewddew Valley Overwrites": "true"
       }
     },
+    {
+      "LogName": "Include Beach Bikinis",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Beach_Bikinis/Beach_Bikinis.json",
+      "When": { "HasMod": "BeachBikinis" }
+    },
+    {
+      "LogName": "Include Improved Luau",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Improved_Luau/Improved_Luau.json",
+      "When": { "HasMod": "citacritta.ImprovedLuau" }
+    },
+    {
+      "LogName": "Include Shop Portrait Overhaul",
+      "Action": "Include",
+      "FromFile": "assets/Shops/SPO_Index.json",
+      "When": {
+        "HasMod": "Dakota.ShopPortraitOverhaul",
+        "Enable Shops Portrait Overhaul": "true"
+      }
+    },
+
+    // ==========================================
+    // DDFC SCALER
+    // ==========================================
     {
       "LogName": "DDFC Scaler Integration",
       "Action": "Include",
       "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler.json",
-      "When": {
-        "HasMod": "dakot.DDFCScaler"
-      }
+      "When": { "HasMod": "dakot.DDFCScaler" }
     },
-	{
-	"LogName": "Include Beach Bikinis",
-	"Action": "Include",
-	"FromFile": "assets/Patches/Beach_Bikinis/Beach_Bikinis.json",
-	"When": {
-		"HasMod": "BeachBikinis"
-	}
-	},
-	{
-	"LogName": "Include Improved Luau",
-	"Action": "Include",
-	"FromFile": "assets/Patches/Improved_Luau/Improved_Luau.json",
-	"When": {
-		"HasMod": "citacritta.ImprovedLuau"
-	}
-	},
-// ==========================================
-    // 5. DDFC SCALER - THIRD PARTY PATCHES
-    // Only loads if both DDFC Scaler AND the target mod are installed.
-    // ==========================================
     {
       "LogName": "DDFC Scaler - Xtardew Integration",
       "Action": "Include",
       "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Xtardew.json",
-      "When": {
-        "HasMod": "dakot.DDFCScaler, Pseudodiego.XtardewValley"
-      }
+      "When": { "HasMod": "dakot.DDFCScaler, Pseudodiego.XtardewValley" }
+    },
+    {
+      "LogName": "DDFC Scaler - LewdDew Integration",
+      "Action": "Include",
+      "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_LewdDew.json",
+      "When": { "HasMod": "dakot.DDFCScaler, shurmash.LewdDew_Valley" }
     },
     {
       "LogName": "DDFC Scaler - Lewd Krobus Integration",
       "Action": "Include",
       "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Lewd_Krobus.json",
       "When": {
-        "HasMod": "dakot.DDFCScaler, thrinityseven.Lewd_Krobus"
-      }
-    },
-	// ==========================================
-    // 5. IMMERSIVE ADDITIONS
-    // Optional dynamic events and logic.
-    // ==========================================
-	{
-      "LogName": "Load Custom Outfits Index",
-      "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits_Index.json",
-      "When": {
-        "EnableCustomOutfits": "true"
+        "Query: '{{HasMod |contains=thrinityseven.Lewd_Krobus}}' = 'true' OR '{{Enable Lewd Krobus}}' = 'true'": "true"
       }
     },
     {
-      "LogName": "Load Breast Envy Emily Dream",
+      "LogName": "DDFC Scaler - Mr. Qi Beautification Integration",
       "Action": "Include",
-      "FromFile": "assets/Events/Emily_Dream_BE.json",
-      "When": {
-        "EmilyBreastEnvy": "true"
-      }
+      "FromFile": "assets/Patches/DDFC_Scaler/DDFC_Scaler_Qi_Beautification.json",
+      "When": { "HasMod": "dakot.DDFCScaler, missymossy.MrQiBeautification" }
     }
-	// ==========================================
-    // 6. CUSTOM EVENTS
-    // Custom PWR Events.
-    // ==========================================
-
   ]
 }
-

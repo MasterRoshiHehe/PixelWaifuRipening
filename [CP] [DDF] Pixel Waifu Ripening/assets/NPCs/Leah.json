@@ -1,19 +1,52 @@
 {
   "Changes": [
     // --- 1. LOAD STANDALONE ASSETS ---
-    { "LogName": "Load HD Base", "Action": "Load", "Priority": "High", "Target": "Portraits/Leah_Vanilla", "FromFile": "assets/Roshi_Portraits/Leah/Leah.png" },
-    { "LogName": "Load HD Winter", "Action": "Load", "Priority": "High", "Target": "Portraits/Leah_Winter", "FromFile": "assets/Roshi_Portraits/Leah/Leah_Winter.png" },
-    { "LogName": "Load HD Winter Int", "Action": "Load", "Priority": "High", "Target": "Portraits/Leah_Winter_Int", "FromFile": "assets/Roshi_Portraits/Leah/Leah_Winter_Int.png" },
-    { "LogName": "Load HD Beach", "Action": "Load", "Target": "Portraits/Leah_Beach", "FromFile": "assets/Roshi_Portraits/Leah/Leah_Beach.png" },
-    { "LogName": "Load HD Rain", "Action": "Load", "Target": "Portraits/Leah_Rainy", "FromFile": "assets/Roshi_Portraits/Leah/Leah_Rain.png" },
-    { "LogName": "Load HD Pyjamas", "Action": "Load", "Target": "Portraits/Leah_Pyjamas", "FromFile": "assets/Roshi_Portraits/Leah/Leah_Pyjamas.png" },
+    {
+      "LogName": "Load HD Base",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Leah_Vanilla",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah.png"
+    },
+    {
+      "LogName": "Load HD Winter",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Leah_Winter",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah_Winter.png"
+    },
+    {
+      "LogName": "Load HD Winter Int",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Portraits/Leah_Winter_Int",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah_Winter_Int.png"
+    },
+    {
+      "LogName": "Load HD Beach",
+      "Action": "Load",
+      "Target": "Portraits/Leah_Beach",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah_Beach.png"
+    },
+    {
+      "LogName": "Load HD Rain",
+      "Action": "Load",
+      "Target": "Portraits/Leah_Rainy",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah_Rain.png"
+    },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Leah_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Leah/Leah_Pyjamas.png"
+    },
 
     // --- 2A. BASE APPEARANCE LOGIC (NO MOD DEPENDENCIES) ---
     {
       "LogName": "Leah Appearance Logic - Base",
       "Action": "EditData",
       "Target": "Data/Characters",
-      "TargetField": [ "Leah", "Appearance" ],
+      "TargetField": ["Leah", "Appearance"],
       "Entries": {
         "Roshi_Leah_Vanilla_Fallback": {
           "Id": "Roshi_Leah_Vanilla_Fallback",
@@ -32,11 +65,11 @@
           "Portrait": "Portraits/Leah_Pyjamas",
           "Precedence": -100
         },
-"Roshi_Leah_Rain": {
+        "Roshi_Leah_Rain": {
           "Id": "Roshi_Leah_Rain",
           "Indoors": false,
           "Outdoors": true,
-          "Condition": "WEATHER Town Rain Storm, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
+          "Condition": "WEATHER Town Rain Storm GreenRain, ANY \"SEASON Spring\" \"SEASON Summer\" \"SEASON Fall\"",
           "Portrait": "Portraits/Leah_Rainy",
           "Precedence": -50
         },
@@ -54,7 +87,6 @@
         }
       }
     },
-
 
     // --- 3. DDFC ASSIGNMENT ---
     {
