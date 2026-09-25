@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "Abigail Appearance Logic - Winter Portraits",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Abigail", "Appearance"],
+      "Entries": {
+        "Roshi_Abigail_Pyjamas_Morning_Winter": {
+          "Id": "Roshi_Abigail_Pyjamas_Morning_Winter",
+          "Condition": "ANY \"LOCATION_NAME Target SeedShop\" \"LOCATION_NAME Target FarmHouse\", TIME 600 950, SEASON Winter",
+          "Portrait": "Portraits/Abigail_Pyjamas",
+          "Precedence": -100
+        },
+        "Roshi_Abigail_Pyjamas_Night_Winter": {
+          "Id": "Roshi_Abigail_Pyjamas_Night_Winter",
+          "Condition": "ANY \"LOCATION_NAME Target SeedShop\" \"LOCATION_NAME Target FarmHouse\", TIME 2000 2600, SEASON Winter",
+          "Portrait": "Portraits/Abigail_Pyjamas",
+          "Precedence": -100
+        }
+      }
+    }
+  ]
+}

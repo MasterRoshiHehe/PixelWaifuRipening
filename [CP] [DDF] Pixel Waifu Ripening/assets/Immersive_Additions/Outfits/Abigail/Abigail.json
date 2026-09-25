@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Haley SD Beach",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Beach_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Spring",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Spring_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Summer",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Summer_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Fall",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Fall_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Winter",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Winter_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Pyjamas",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Pyjamas_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Festival",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Festival_Outfits.json"
+    },
+    {
+      "LogName": "Load Haley SD Luau",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Luau_Outfits.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Haley": { "copyFrom": "RoshiHD_Template" },
+        "Haley_Beach": { "copyFrom": "RoshiHD_Template" },
+        "Haley_Winter": { "copyFrom": "RoshiHD_Template" }
+      }
+    }
+  ]
+}

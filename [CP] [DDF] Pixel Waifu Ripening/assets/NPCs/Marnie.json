@@ -1,6 +1,9 @@
 {
   "Changes": [
-    // --- 1. LOAD STANDALONE ASSETS ---
+    // --- 1. LOAD PORTRAIT SHEETS ---
+    // These sheets are what the game shows if APF is disabled or has no image for an expression.
+    // With APF's VariantControl = ContentPatcher, the asset name (e.g. Portraits/Marnie_Rainy)
+    // tells APF which of its own images to show ("Rainy").
     {
       "LogName": "Load HD Base",
       "Action": "Load",
@@ -27,14 +30,17 @@
       "Target": "Portraits/Marnie_Rainy",
       "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Rain.png"
     },
+    {
+      "LogName": "Load HD Pyjamas",
+      "Action": "Load",
+      "Target": "Portraits/Marnie_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Marnie/Marnie_Pyjamas.png"
+    },
 
     // --- 2. APPEARANCE LOGIC ---
-    // All appearance entries are consolidated here.
-    // By using Game State Queries (like TIME) directly in the 'Condition' field,
-    // the game engine evaluates these rules natively.
-    // Note: The game only rechecks an NPC's Appearance when they change location.
-    // This means if you are in the same room as Marnie when the time changes,
-    // her portrait might not update until she moves or you re-enter the location.
+    // The game picks the matching entry with the LOWEST Precedence.
+    // The game itself only re-checks these when Marnie changes location, but APF
+    // re-checks them every time you start talking to her, so the portrait is always current.
     {
       "LogName": "Marnie Appearance Logic",
       "Action": "EditData",
@@ -54,11 +60,29 @@
           "Portrait": "Portraits/Marnie_Rainy",
           "Precedence": 50
         },
+        "Roshi_Marnie_Winter": {
+          "Id": "Roshi_Marnie_Winter",
+          "Season": "Winter",
+          "Indoors": false,
+          "Outdoors": true,
+          "Portrait": "Portraits/Marnie_Winter",
+          "Precedence": 60
+        },
         "Roshi_Marnie_IslandAttire": {
           "Id": "Roshi_Marnie_IslandAttire",
           "IsIslandAttire": true,
           "Portrait": "Portraits/Marnie_Beach",
           "Precedence": 0
+        },
+        // Pyjamas at home, in the morning and at night.
+        // Shop days: out of pyjamas at 9:00, when the shop opens.
+        // Shop closed (Mon, Tue, Fall 18, Winter 18, Spring 17 once the bus is repaired): out of pyjamas at 9:30.
+        // Note: TIME only takes ONE range, so every range is its own ANY option.
+        "Roshi_Marnie_Pyjamas": {
+          "Id": "Roshi_Marnie_Pyjamas",
+          "Condition": "LOCATION_NAME Target AnimalShop, ANY \"TIME 2000 2600\" \"TIME 600 850\" \"TIME 600 920, DAY_OF_WEEK Monday Tuesday\" \"TIME 600 920, SEASON_DAY Fall 18 Winter 18\" \"TIME 600 920, SEASON_DAY Spring 17, PLAYER_HAS_MAIL Host ccVault\"",
+          "Portrait": "Portraits/Marnie_Pyjamas",
+          "Precedence": -1000
         }
       }
     },

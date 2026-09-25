@@ -1441,6 +1441,7 @@
     {
       "NPC": "Haley",
       "Root": "Pyjamas",
+      "CarryOver": true,
       "Variants": [
         {
           "Id": "Pyjamas_Default",

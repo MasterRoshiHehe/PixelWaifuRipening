@@ -8,16 +8,14 @@
       "Columns": 1,
       "IsPerExpressionMode": true,
       "Variants": [
-        "Vanilla",
-        "Rainy",
-        "Bowless",
-        "Bowless_Rainy",
-        "Pyjamas",
-        "Beach",
-        "Fall",
-        "Fall_Rainy",
-        "Fall_Nun",
-        "Winter"
+        "Spring_Base",
+        "Spring_Base_Rainy",
+        "Spring_Bowless",
+        "Spring_Bowless_Rainy",
+        "Summer_Base",
+        "Summer_Base_Rainy",
+        "Summer_Bowless",
+        "Summer_Bowless_Rainy"
       ],
       "Expressions": {
         "0": {
@@ -216,7 +214,7 @@
         }
       },
       "VariantExpressions": {
-        "Vanilla": {
+        "Spring_Base": {
           "0": {
             "Frames": 1,
             "Fps": 1,
@@ -278,7 +276,7 @@
             "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_9.png"
           }
         },
-        "Rainy": {
+        "Spring_Base_Rainy": {
           "0": {
             "Frames": 1,
             "Fps": 1,
@@ -340,7 +338,7 @@
             "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_9.png"
           }
         },
-        "Bowless": {
+        "Spring_Bowless": {
           "0": {
             "Frames": 1,
             "Fps": 1,
@@ -402,7 +400,255 @@
             "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_9.png"
           }
         },
-        "Bowless_Rainy": {
+        "Spring_Bowless_Rainy": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Bowless_Rainy_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_9.png"
+          }
+        },
+        "Summer_Base": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Default/Abigail_9.png"
+          }
+        },
+        "Summer_Base_Rainy": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Rainy/Abigail_Rainy_9.png"
+          }
+        },
+        "Summer_Bowless": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless/Abigail_Bowless_9.png"
+          }
+        },
+        "Summer_Bowless_Rainy": {
           "0": {
             "Frames": 1,
             "Fps": 1,
@@ -463,381 +709,120 @@
             "Mode": "once",
             "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_9.png"
           }
-        },
-        "Pyjamas": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Pyjamas/Abigail_Pyjamas_9.png"
-          }
-        },
-        "Beach": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Beach/Abigail_Beach_9.png"
-          }
-        },
-        "Fall": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall/Abigail_Fall_9.png"
-          }
-        },
-        "Fall_Rainy": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Fall_Rainy/Abigail_Fall_Rainy_9.png"
-          }
-        },
-        "Fall_Nun": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Nun/Abigail_Nun_9.png"
-          }
-        },
-        "Winter": {
-          "0": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_0.png"
-          },
-          "1": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_1.png"
-          },
-          "2": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_2.png"
-          },
-          "3": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_3.png"
-          },
-          "4": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_4.png"
-          },
-          "5": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_5.png"
-          },
-          "6": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_6.png"
-          },
-          "7": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_7.png"
-          },
-          "8": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_8.png"
-          },
-          "9": {
-            "Frames": 1,
-            "Fps": 1,
-            "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Winter/Abigail_Winter_9.png"
-          }
         }
       }
     }
   ],
-  "Rules": []
+  "Rules": [
+    {
+      "NPC": "Abigail",
+      "Root": "Spring",
+      "Variants": [
+        {
+          "Id": "Spring_Base",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            }
+          ]
+        },
+        {
+          "Id": "Spring_Bowless",
+          "Priority": 10,
+          "Weight": 0.9,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            }
+          ]
+        },
+        {
+          "Id": "Spring_Base_Rainy",
+          "Priority": 15,
+          "Weight": 0.8,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Rain"
+            }
+          ]
+        },
+        {
+          "Id": "Spring_Bowless_Rainy",
+          "Priority": 15,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Storm"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Base",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Bowless",
+          "Priority": 10,
+          "Weight": 0.9,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Base_Rainy",
+          "Priority": 15,
+          "Weight": 0.8,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Rain"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Bowless_Rainy",
+          "Priority": 15,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Storm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

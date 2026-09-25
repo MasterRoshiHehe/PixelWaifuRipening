@@ -60,7 +60,7 @@
       "Entries": {
         "Roshi_Haley_Pyjamas": {
           "Id": "Roshi_Haley_Pyjamas",
-          "Condition": "TIME 600 930 2000 2600, Spiderbuttons.BETAS_NPC_NEAR_AREA HaleyHouse 5 6 4 Haley",
+          "Condition": "ANY \"TIME 600 930\" \"TIME 2000 2600\", Spiderbuttons.BETAS_NPC_NEAR_AREA HaleyHouse 5 6 4 Haley",
           "Portrait": "Portraits/Haley_Pyjamas",
           "Sprite": "Characters/Haley_Pyjamas",
           "Precedence": -1000

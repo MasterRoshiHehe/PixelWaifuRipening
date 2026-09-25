@@ -1,5 +1,6 @@
 {
   "Format": "1.0.0",
+  "VariantControl": "ContentPatcher",
   "Include": [
     "assets/Definitions/Abigail/Abigail_Base.json",
     "assets/Definitions/Abigail/Abigail_NSFW.json",

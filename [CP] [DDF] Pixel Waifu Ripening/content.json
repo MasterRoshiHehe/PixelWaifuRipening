@@ -274,7 +274,7 @@
     },
     {
       "Action": "Include",
-      "FromFile": "assets/NPCs/Haley.json",
+      "FromFile": "assets/Immersive_Additions/Outfits//Haley/Haley.json",
       "When": {
         "Enable Haley": "true",
         "Enable Custom Outfits for Haley": "True"
