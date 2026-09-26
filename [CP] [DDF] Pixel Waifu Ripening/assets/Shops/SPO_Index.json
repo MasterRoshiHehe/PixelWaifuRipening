@@ -53,9 +53,8 @@
     {
       "Action": "Include",
       "FromFile": "assets/Shops/Haley/SPO_Haley.json",
-
       "When": {
-        "Enable Haley": "True",
+        "Enable Haley": "true",
         "Enable Custom Outfits for Haley": "false"
       }
     },
@@ -63,7 +62,7 @@
       "Action": "Include",
       "FromFile": "assets/Shops/Haley/SPO_Haley_Immersive.json",
       "When": {
-        "Enable Haley": "True",
+        "Enable Haley": "true",
         "Enable Custom Outfits for Haley": "true"
       }
     },

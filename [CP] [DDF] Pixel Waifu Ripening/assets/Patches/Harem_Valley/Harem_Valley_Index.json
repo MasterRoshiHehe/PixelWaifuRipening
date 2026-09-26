@@ -3,17 +3,26 @@
     {
       "LogName": "Load Harem Valley / Valley Girls - Haley",
       "Action": "Include",
-      "FromFile": "assets/Patches/Harem_Valley/NPCs/Haley.json"
+      "FromFile": "assets/Patches/Harem_Valley/NPCs/Haley.json",
+      "When": {
+        "Enable Haley": "true"
+      }
     },
     {
       "LogName": "Load Harem Valley / Valley Girls - Haley Picnic",
       "Action": "Include",
-      "FromFile": "assets/Patches/Harem_Valley/Events/Haley_Picnic.json"
+      "FromFile": "assets/Patches/Harem_Valley/Events/Haley_Picnic.json",
+      "When": {
+        "Enable Haley": "true"
+      }
     },
     {
       "LogName": "Load Harem Valley / Valley Girls - Maru",
       "Action": "Include",
-      "FromFile": "assets/Patches/Harem_Valley/NPCs/Maru.json"
+      "FromFile": "assets/Patches/Harem_Valley/NPCs/Maru.json",
+      "When": {
+        "Enable Maru": "true"
+      }
     }
   ]
 }

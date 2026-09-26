@@ -3,22 +3,34 @@
     {
       "LogName": "Load LewdDew - Abigail",
       "Action": "Include",
-      "FromFile": "assets/Patches/Lewddew/NPCs/Abigail.json"
+      "FromFile": "assets/Patches/Lewddew/NPCs/Abigail.json",
+      "When": {
+        "Enable Abigail": "true"
+      }
     },
     {
       "LogName": "Load LewdDew - Emily",
       "Action": "Include",
-      "FromFile": "assets/Patches/Lewddew/NPCs/Emily.json"
+      "FromFile": "assets/Patches/Lewddew/NPCs/Emily.json",
+      "When": {
+        "Enable Emily": "true"
+      }
     },
     {
       "LogName": "Load LewdDew - Haley",
       "Action": "Include",
-      "FromFile": "assets/Patches/Lewddew/NPCs/Haley.json"
+      "FromFile": "assets/Patches/Lewddew/NPCs/Haley.json",
+      "When": {
+        "Enable Haley": "true"
+      }
     },
     {
       "LogName": "Load LewdDew - Maru",
       "Action": "Include",
-      "FromFile": "assets/Patches/Lewddew/NPCs/Maru.json"
+      "FromFile": "assets/Patches/Lewddew/NPCs/Maru.json",
+      "When": {
+        "Enable Maru": "true"
+      }
     },
     {
       "LogName": "Load LewdDew - SexRobot",

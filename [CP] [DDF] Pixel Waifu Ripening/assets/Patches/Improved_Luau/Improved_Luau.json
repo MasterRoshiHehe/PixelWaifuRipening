@@ -8,7 +8,7 @@
       "Entries": {
         "Roshi_Abigail_ImprovedLuau": {
           "Id": "Roshi_Abigail_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Abigail_Beach",
           "Precedence": -100
         }
@@ -19,10 +19,13 @@
       "Action": "EditData",
       "Target": "Data/Characters",
       "TargetField": ["Caroline", "Appearance"],
+      "When": {
+        "Enable Childhood Sweetheart Caroline": "false"
+      },
       "Entries": {
         "Roshi_Caroline_ImprovedLuau": {
           "Id": "Roshi_Caroline_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Caroline_Beach",
           "Precedence": -100
         }
@@ -41,7 +44,7 @@
       "Entries": {
         "Roshi_Caroline_Sweetheart_ImprovedLuau": {
           "Id": "Roshi_Caroline_Sweetheart_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Caroline_Sweetheart_Beach",
           "Sprite": "Characters/Caroline_Sweetheart_Beach",
           "Precedence": -2500
@@ -56,7 +59,7 @@
       "Entries": {
         "Roshi_Emily_ImprovedLuau": {
           "Id": "Roshi_Emily_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Emily_Luau",
           "Sprite": "Characters/Emily_Luau",
           "Precedence": -100
@@ -68,24 +71,15 @@
       "Action": "EditData",
       "Target": "Data/Characters",
       "TargetField": ["Haley", "Appearance"],
+      "When": {
+        "Enable Haley": "true",
+        "Enable Custom Outfits for Haley": "true"
+      },
       "Entries": {
         "Roshi_Haley_ImprovedLuau_Default": {
           "Id": "Roshi_Haley_ImprovedLuau_Default",
           "Condition": "SEASON_DAY Summer 11",
           "Portrait": "Portraits/Haley_Luau",
-          "Precedence": -1500
-        }
-      }
-    },
-    {
-      "LogName": "Haley Appearance Logic - Improved Luau Default",
-      "Action": "EditImage",
-      "Target": "Data/Characters",
-      "FromFile": "assets/Roshi_Sprites/Haley/Luau/Haley_Luau_Default.png",
-      "Entries": {
-        "Roshi_Haley_ImprovedLuau_Default": {
-          "Id": "Roshi_Haley_ImprovedLuau_Default",
-          "Condition": "SEASON_DAY Summer 11",
           "Sprite": "Characters/Haley_Luau_Default",
           "Precedence": -1500
         }
@@ -96,10 +90,14 @@
       "Action": "EditData",
       "Target": "Data/Characters",
       "TargetField": ["Haley", "Appearance"],
+      "When": {
+        "Enable Haley": "true",
+        "Enable Custom Outfits for Haley": "true"
+      },
       "Entries": {
         "Roshi_Haley_ImprovedLuau": {
           "Id": "Roshi_Haley_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Haley_Luau",
           "Sprite": "Characters/Haley_Luau",
           "Precedence": -1501
@@ -114,7 +112,7 @@
       "Entries": {
         "Roshi_Jodi_ImprovedLuau": {
           "Id": "Roshi_Jodi_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Jodi_Beach",
           "Precedence": -100
         }
@@ -128,7 +126,7 @@
       "Entries": {
         "Roshi_Leah_ImprovedLuau": {
           "Id": "Roshi_Leah_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Leah_Beach",
           "Precedence": -100
         }
@@ -142,7 +140,7 @@
       "Entries": {
         "Roshi_Marnie_ImprovedLuau": {
           "Id": "Roshi_Marnie_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Marnie_Beach",
           "Precedence": -100
         }
@@ -156,7 +154,7 @@
       "Entries": {
         "Roshi_Maru_ImprovedLuau": {
           "Id": "Roshi_Maru_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Maru_Beach",
           "Precedence": -100
         }
@@ -175,7 +173,7 @@
       "Entries": {
         "Roshi_Pam_ImprovedLuau": {
           "Id": "Roshi_Pam_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Pam_Beach",
           "Precedence": -100
         }
@@ -195,7 +193,7 @@
       "Entries": {
         "Roshi_HotPam_ImprovedLuau": {
           "Id": "Roshi_HotPam_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Pam_Hot_Beach",
           "Sprite": "Characters/Pam_Beach",
           "Precedence": -1500
@@ -210,7 +208,7 @@
       "Entries": {
         "Roshi_Penny_ImprovedLuau": {
           "Id": "Roshi_Penny_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Penny_Beach",
           "Precedence": -100
         }
@@ -224,7 +222,7 @@
       "Entries": {
         "Roshi_Robin_ImprovedLuau": {
           "Id": "Roshi_Robin_ImprovedLuau",
-          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Summer 11, LOCATION_NAME Target Temp",
           "Portrait": "Portraits/Robin_Beach",
           "Precedence": -100
         }

@@ -1,0 +1,21 @@
+{
+  // Custom outfits for Sweetheart Caroline - Fall.
+  // The root (Sweetheart_Fall) and its Appearance entry live in the default patch
+  // (assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json). This file only loads the sub-variants
+  // that APF rolls for that root (Rules in [APF] .../Definitions/Caroline/Caroline_Sweetheart_Outfits.json).
+  "Changes": [
+    // --- Fall_HairDown (sprite by Layeyez) ---
+    {
+      "LogName": "CSC Outfit Portrait - Fall_HairDown",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Fall_HairDown",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Fall_HairDown.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Fall_HairDown",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Fall_HairDown",
+      "FromFile": "assets/Other_Sprites/Layeyez/Caroline_Fall_HairDown.png"
+    }
+  ]
+}

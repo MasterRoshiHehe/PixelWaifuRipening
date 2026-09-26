@@ -1,0 +1,21 @@
+{
+  // Custom outfits for Sweetheart Caroline - Summer.
+  // The root (Sweetheart_Summer) and its Appearance entry live in the default patch
+  // (assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json). This file only loads the sub-variants
+  // that APF rolls for that root (Rules in [APF] .../Definitions/Caroline/Caroline_Sweetheart_Outfits.json).
+  "Changes": [
+    // --- Summer_Jeans (sprite by Layeyez) ---
+    {
+      "LogName": "CSC Outfit Portrait - Summer_Jeans",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Summer_Jeans",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Summer_Jeans.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Summer_Jeans",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Summer_Jeans",
+      "FromFile": "assets/Other_Sprites/Layeyez/Caroline_Summer_Jeans.png"
+    }
+  ]
+}

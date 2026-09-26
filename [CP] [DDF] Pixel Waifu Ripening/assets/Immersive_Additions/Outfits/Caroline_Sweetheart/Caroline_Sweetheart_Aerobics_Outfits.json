@@ -1,0 +1,21 @@
+{
+  // Custom outfits for Sweetheart Caroline - Aerobics.
+  // The root (Sweetheart_Aerobics) and its Appearance entry live in the default patch
+  // (assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json). This file only loads the sub-variants
+  // that APF rolls for that root (Rules in [APF] .../Definitions/Caroline/Caroline_Sweetheart_Outfits.json).
+  "Changes": [
+    // --- Aerobics_HairDown (sprite by Layeyez) ---
+    {
+      "LogName": "CSC Outfit Portrait - Aerobics_HairDown",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Aerobics_HairDown",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Aerobics_HairDown.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Aerobics_HairDown",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Aerobics_HairDown",
+      "FromFile": "assets/Other_Sprites/Layeyez/Caroline_Aerobics_HairDown.png"
+    }
+  ]
+}

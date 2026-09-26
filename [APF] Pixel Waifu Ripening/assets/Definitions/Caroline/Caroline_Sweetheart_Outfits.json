@@ -1,0 +1,1452 @@
+{
+  "Format": "1.0.0",
+  "Portraits": [
+    {
+      "Target": "Caroline",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Variants": [
+        "Sweetheart_Beach_BlueTop",
+        "Sweetheart_Beach_BlueSwimsuit",
+        "Sweetheart_Beach_PurpleBikini",
+        "Sweetheart_Summer_Jeans",
+        "Sweetheart_Fall_HairDown",
+        "Sweetheart_Aerobics_HairDown"
+      ],
+      "Expressions": {
+        "0": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "1": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "2": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "3": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "4": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "5": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "6": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "7": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "8": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "9": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "10": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "11": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "30": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "31": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "32": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "33": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "34": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "35": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "36": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "37": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "38": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "39": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "40": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "41": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "42": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "43": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "44": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "45": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "47": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "49": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "51": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        },
+        "53": {
+          "Frames": 1,
+          "Fps": 1,
+          "Mode": "once"
+        }
+      },
+      "VariantExpressions": {
+        "Sweetheart_Beach_BlueTop": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueTop/Caroline_Beach_BlueTop_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        },
+        "Sweetheart_Beach_BlueSwimsuit": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_BlueSwimsuit/Caroline_Beach_BlueSwimsuit_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        },
+        "Sweetheart_Beach_PurpleBikini": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Beach_PurpleBikini/Caroline_Beach_PurpleBikini_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        },
+        "Sweetheart_Summer_Jeans": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Summer_Jeans/Caroline_Summer_Jeans_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        },
+        "Sweetheart_Fall_HairDown": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Fall_HairDown/Caroline_Fall_HairDown_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        },
+        "Sweetheart_Aerobics_HairDown": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_9.png"
+          },
+          "10": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_10.png"
+          },
+          "11": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Aerobics_HairDown/Caroline_Aerobics_HairDown_11.png"
+          },
+          "30": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_0.png"
+          },
+          "31": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_1.png"
+          },
+          "32": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_2.png"
+          },
+          "33": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_4.png"
+          },
+          "34": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_5.png"
+          },
+          "35": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Nude_6.png"
+          },
+          "36": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_0.png"
+          },
+          "37": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_0.png"
+          },
+          "38": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_1.png"
+          },
+          "39": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_1.png"
+          },
+          "40": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_2.png"
+          },
+          "41": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_2.png"
+          },
+          "42": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_3.png"
+          },
+          "43": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_3.png"
+          },
+          "44": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Pleasure_4.png"
+          },
+          "45": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Male_Sex_4.png"
+          },
+          "47": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_0.png"
+          },
+          "49": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_1.png"
+          },
+          "51": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_2.png"
+          },
+          "53": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Valley_Girls/Female_Sex_3.png"
+          }
+        }
+      }
+    }
+  ],
+  "Rules": [
+    {
+      "NPC": "Caroline",
+      "Root": "Sweetheart_Beach",
+      "Variants": [
+        {
+          "Id": "Sweetheart_Beach",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Beach_BlueTop",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Beach_BlueSwimsuit",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Beach_PurpleBikini",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        }
+      ]
+    },
+    {
+      "NPC": "Caroline",
+      "Root": "Sweetheart_Summer",
+      "Variants": [
+        {
+          "Id": "Sweetheart_Summer",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Summer_Jeans",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        }
+      ]
+    },
+    {
+      "NPC": "Caroline",
+      "Root": "Sweetheart_Fall",
+      "Variants": [
+        {
+          "Id": "Sweetheart_Fall",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Fall_HairDown",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        }
+      ]
+    },
+    {
+      "NPC": "Caroline",
+      "Root": "Sweetheart_Aerobics",
+      "Variants": [
+        {
+          "Id": "Sweetheart_Aerobics",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Aerobics_HairDown",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        }
+      ]
+    },
+    {
+      "NPC": "Caroline",
+      "Root": "Sweetheart_Winter_Indoor",
+      "Variants": [
+        {
+          "Id": "Sweetheart_Winter_Indoor",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        },
+        {
+          "Id": "Sweetheart_Winter_Indoor1",
+          "Priority": 10,
+          "Weight": 1.0,
+          "Conditions": []
+        }
+      ]
+    }
+  ]
+}

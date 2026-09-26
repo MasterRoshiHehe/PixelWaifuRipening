@@ -1,53 +1,30 @@
 {
+  // Custom outfits for Sweetheart Caroline (layered on top of the default patch).
   "Changes": [
     {
-      "LogName": "Load Haley SD Beach",
+      "LogName": "Load Sweetheart Caroline Beach Outfits",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Beach_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart_Beach_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Spring",
+      "LogName": "Load Sweetheart Caroline Summer Outfits",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Spring_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart_Summer_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Summer",
+      "LogName": "Load Sweetheart Caroline Fall Outfits",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Summer_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart_Fall_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Fall",
+      "LogName": "Load Sweetheart Caroline Winter Outfits",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Fall_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart_Winter_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Winter",
+      "LogName": "Load Sweetheart Caroline Aerobics Outfits",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Winter_Outfits.json"
-    },
-    {
-      "LogName": "Load Haley SD Pyjamas",
-      "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Pyjamas_Outfits.json"
-    },
-    {
-      "LogName": "Load Haley SD Festival",
-      "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Festival_Outfits.json"
-    },
-    {
-      "LogName": "Load Haley SD Luau",
-      "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Luau_Outfits.json"
-    },
-    {
-      "Action": "EditData",
-      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
-      "Entries": {
-        "Haley": { "copyFrom": "RoshiHD_Template" },
-        "Haley_Beach": { "copyFrom": "RoshiHD_Template" },
-        "Haley_Winter": { "copyFrom": "RoshiHD_Template" }
-      }
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart_Aerobics_Outfits.json"
     }
   ]
 }

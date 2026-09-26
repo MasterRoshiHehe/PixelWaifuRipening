@@ -1,0 +1,47 @@
+{
+  // Custom outfits for Sweetheart Caroline - Beach.
+  // The root (Sweetheart_Beach) and its Appearance entry live in the default patch
+  // (assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json). This file only loads the sub-variants
+  // that APF rolls for that root (Rules in [APF] .../Definitions/Caroline/Caroline_Sweetheart_Outfits.json).
+  "Changes": [
+    // --- Beach_BlueTop (sprite by Layeyez) ---
+    {
+      "LogName": "CSC Outfit Portrait - Beach_BlueTop",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Beach_BlueTop",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach_BlueTop.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Beach_BlueTop",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Beach_BlueTop",
+      "FromFile": "assets/Other_Sprites/Layeyez/Caroline_Beach_BlueTop.png"
+    },
+    // --- Beach_BlueSwimsuit (Roshi_Sprites) ---
+    {
+      "LogName": "CSC Outfit Portrait - Beach_BlueSwimsuit",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Beach_BlueSwimsuit",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach_BlueSwimsuit.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Beach_BlueSwimsuit",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Beach_BlueSwimsuit",
+      "FromFile": "assets/Roshi_Sprites/Caroline_Sweetheart/Caroline_Beach_BlueSwimsuit.png"
+    },
+    // --- Beach_PurpleBikini (Roshi_Sprites) ---
+    {
+      "LogName": "CSC Outfit Portrait - Beach_PurpleBikini",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Beach_PurpleBikini",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach_PurpleBikini.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Beach_PurpleBikini",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Beach_PurpleBikini",
+      "FromFile": "assets/Roshi_Sprites/Caroline_Sweetheart/Caroline_Beach_PurpleBikini.png"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  // Xtardew Valley - Sweetheart Caroline.
+  // Xtardew uses its own NPCs "Caroline·" (nude) and "Caroline··" (clothed) for its events.
+  // These Appearance entries point them at PWR portrait names ending in "_Sweetheart", which APF maps to the
+  // "Sweetheart" variant in Caroline_Sweetheart_NSFW.json (APF pack). The sheets loaded here are only the
+  // fallback for expressions APF has no image for. DDFC entries for Caroline·/Caroline·· are in Caroline.json.
+  "Changes": [
+    {
+      "LogName": "Xtardew Sweetheart Caroline - Nude Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Caroline·_Sweetheart",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Xtardew_Nude.png"
+    },
+    {
+      "LogName": "Xtardew Sweetheart Caroline - Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Caroline··_Sweetheart",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Xtardew.png"
+    },
+    {
+      "LogName": "Xtardew Sweetheart Caroline - Nude Appearance",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Caroline·", "Appearance"],
+      "Entries": {
+        "Roshi_CSC_Xtardew_Nude": {
+          "Id": "Roshi_CSC_Xtardew_Nude",
+          "Portrait": "Portraits/Caroline·_Sweetheart",
+          "Precedence": -1000
+        }
+      }
+    },
+    {
+      "LogName": "Xtardew Sweetheart Caroline - Appearance",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Caroline··", "Appearance"],
+      "Entries": {
+        "Roshi_CSC_Xtardew": {
+          "Id": "Roshi_CSC_Xtardew",
+          "Portrait": "Portraits/Caroline··_Sweetheart",
+          "Precedence": -1000
+        }
+      }
+    }
+  ]
+}

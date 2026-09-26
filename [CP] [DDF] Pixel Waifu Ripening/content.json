@@ -52,6 +52,16 @@
       "Default": "false",
       "Description": "Enable custom Sweetheart Caroline portraits."
     },
+    "Enable Custom Outfits for Sweetheart Caroline": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom randomized PWR sprites and portraits for Sweetheart Caroline."
+    },
+    "Enable Childhood Sweetheart Caroline Compatibility": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Turn on if you have a Childhood Sweetheart Caroline mod installed, so its outfits and events use PWR's Sweetheart Caroline portraits."
+    },
     "Enable Emily": {
       "SectionTitle": "Emily",
       "AllowValues": "true, false",
@@ -255,6 +265,16 @@
       "When": {
         "Enable Caroline": "true",
         "Enable Childhood Sweetheart Caroline": "true"
+      }
+    },
+    {
+      "LogName": "Load Childhood Sweetheart Caroline Custom Outfits",
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart.json",
+      "When": {
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "true",
+        "Enable Custom Outfits for Sweetheart Caroline": "true"
       }
     },
     {

@@ -62,6 +62,20 @@
       "FromFile": "assets/Roshi_Portraits/PamHot/Pam_Fall.png"
     },
 
+    // --- 1b. LOAD STANDALONE ASSETS (WINTER SPRITES) ---
+    {
+      "LogName": "Load Winter Indoor Sprite",
+      "Action": "Load",
+      "Target": "Characters/Pam_Hot_Winter_Indoor",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Indoor.png"
+    },
+    {
+      "LogName": "Load Winter Outdoor Sprite",
+      "Action": "Load",
+      "Target": "Characters/Pam_Hot_Winter_Outdoor",
+      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Outdoor.png"
+    },
+
     // --- 2. INDEPENDENT APF PORTRAIT REDIRECTION ---
     {
       "LogName": "Hot Pam APF Portrait Logic",
@@ -91,14 +105,18 @@
           "Id": "Roshi_HotPam_WinterIndoor",
           "Condition": "SEASON Winter",
           "Indoors": true,
+          "Outdoors": false,
           "Portrait": "Portraits/Pam_Hot_Winter_Indoor",
+          "Sprite": "Characters/Pam_Hot_Winter_Indoor",
           "Precedence": -20
         },
         "Roshi_HotPam_WinterOutdoor": {
           "Id": "Roshi_HotPam_WinterOutdoor",
           "Condition": "SEASON Winter",
+          "Indoors": false,
           "Outdoors": true,
           "Portrait": "Portraits/Pam_Hot_Winter_Outdoor",
+          "Sprite": "Characters/Pam_Hot_Winter_Outdoor",
           "Precedence": -20
         },
         "Roshi_HotPam_Aerobics": {
@@ -123,6 +141,7 @@
           "Id": "Roshi_HotPam_Beach",
           "IsIslandAttire": true,
           "Portrait": "Portraits/Pam_Hot_Beach",
+          "Sprite": "Characters/Pam_Beach",
           "Precedence": -150
         }
       }
@@ -161,22 +180,6 @@
       "Update": "OnLocationChange, OnTimeChange"
     },
     {
-      "LogName": "Pam Sprite - Winter Indoor",
-      "Action": "EditImage",
-      "Target": "Characters/Pam_Winter",
-      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Indoor.png",
-      "When": { "Season": "Winter", "IsOutdoors": "false" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Pam Sprite - Winter Outdoor",
-      "Action": "EditImage",
-      "Target": "Characters/Pam_Winter",
-      "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Winter_Outdoor.png",
-      "When": { "Season": "Winter", "IsOutdoors": "true" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
       "LogName": "Pam Sprite - Aerobics",
       "Action": "EditImage",
       "Target": "Characters/Pam",
@@ -211,7 +214,7 @@
     {
       "LogName": "Pam Sprite - Nose Overlay",
       "Action": "EditImage",
-      "Target": "Characters/Pam",
+      "Target": "Characters/Pam, Characters/Pam_Hot_Winter_Indoor, Characters/Pam_Hot_Winter_Outdoor",
       "FromFile": "assets/Other_Sprites/Hot_Pam/Pam_Nose.png",
       "PatchMode": "Overlay",
       "Update": "OnLocationChange, OnTimeChange"

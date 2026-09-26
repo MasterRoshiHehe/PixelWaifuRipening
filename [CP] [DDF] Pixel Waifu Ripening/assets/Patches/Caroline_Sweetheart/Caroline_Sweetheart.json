@@ -1,208 +1,213 @@
 {
+  // ==========================================================================================
+  // CHILDHOOD SWEETHEART CAROLINE - DEFAULT PATCH
+  // Included when "Enable Caroline" + "Enable Childhood Sweetheart Caroline" are on.
+  // Works standalone (sorkrimp's original sheets) and next to a Childhood Sweetheart Caroline mod ("Enable Childhood Sweetheart Caroline Compatibility").
+  // "Enable Custom Outfits for Sweetheart Caroline" LAYERS the alt outfits on top of this file
+  // (assets/Immersive_Additions/Outfits/Caroline_Sweetheart/Caroline_Sweetheart.json).
+  //
+  // Names: PWR-owned assets are Portraits|Characters/Caroline_Sweetheart_<X> (APF variant Sweetheart_<X>).
+  // Precedence map (lowest wins):
+  //   Beach Bikinis patch -2200 | Improved Luau patch -2500 | pyjamas -1150 | island -1120 |
+  //   specials -1110 (aerobics, festivals, swim, wedding) | CSC specials -1100 |
+  //   seasons -140 | CSC seasons -130
+  // Cutscene sheets: APF VariantEvents in Caroline_Sweetheart_Base.json (APF pack).
+  // ==========================================================================================
   "Changes": [
-    // --- 1. LOAD STANDALONE ASSETS (PORTRAITS) ---
+    // --- 1. HD PORTRAIT SHEETS (fallback sheets; APF renders the per-expression images) ---
+    { "LogName": "CSC HD Portrait Spring",         "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Spring",         "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Spring.png" },
+    { "LogName": "CSC HD Portrait Summer",         "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Summer",         "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Summer.png" },
+    { "LogName": "CSC HD Portrait Fall",           "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Fall",           "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Fall.png" },
+    { "LogName": "CSC HD Portrait Winter Indoor",  "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor",  "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor.png" },
+    { "LogName": "CSC HD Portrait Winter Outdoor", "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Winter_Outdoor", "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Outdoor.png" },
+    { "LogName": "CSC HD Portrait Aerobics",       "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Aerobics",       "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Aerobics.png" },
+    { "LogName": "CSC HD Portrait Beach",          "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Beach",          "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach.png" },
+    { "LogName": "CSC HD Portrait Flower Dance",   "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_FlowerDance",    "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_FlowerDance.png" },
+    { "LogName": "CSC HD Portrait Spirits Eve",    "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_SpiritsEve",     "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_SpiritsEve.png" },
+    { "LogName": "CSC HD Portrait Pyjamas",        "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Pyjamas",        "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Pyjamas.png" },
+    { "LogName": "CSC HD Portrait Wedding",        "Action": "Load", "Target": "Portraits/Caroline_Sweetheart_Wedding",        "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_.png" },
+
+    // --- 2. CSC COMPATIBILITY: HD sheets over the CSC mod's own portrait names ---
+    // Covers `changePortrait Caroline FlowerDance` (its DancePractice event) and any CSC Appearance entry that
+    // still wins, so a 64px sheet never shows under RoshiHD_Template. Exclusive beats CSC's "High" loads.
     {
-      "LogName": "Load HD Spring",
+      "LogName": "CSC Compatibility - HD Portraits",
       "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Spring",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Spring.png"
-    },
-    {
-      "LogName": "Load HD Summer",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Summer",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Summer.png"
-    },
-    {
-      "LogName": "Load HD Fall",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Fall",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Fall.png"
-    },
-    {
-      "LogName": "Load HD Winter Indoor",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor.png"
-    },
-    {
-      "LogName": "Load HD Winter Indoor 1",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor1",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor1.png"
-    },
-    {
-      "LogName": "Load HD Winter Outdoor",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Winter_Outdoor",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Outdoor.png"
-    },
-    {
-      "LogName": "Load HD Flower Dance",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_FlowerDance",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_FlowerDance.png"
-    },
-    {
-      "LogName": "Load HD Spirits Eve",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_SpiritsEve",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_SpiritsEve.png"
-    },
-    {
-      "LogName": "Load HD Beach",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Beach",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Beach.png"
-    },
-    {
-      "LogName": "Load HD Aerobics",
-      "Action": "Load",
-      "Target": "Portraits/Caroline_Sweetheart_Aerobics",
-      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Aerobics.png"
+      "Priority": "Exclusive",
+      "Target": "Portraits/Caroline_Spring, Portraits/Caroline_Summer, Portraits/Caroline_Fall, Portraits/Caroline_Winter_Indoor, Portraits/Caroline_Winter_Outdoor, Portraits/Caroline_Aerobics, Portraits/Caroline_Beach, Portraits/Caroline_FlowerDance, Portraits/Caroline_SpiritsEve",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/{{TargetWithoutPath}}.png",
+      "When": { "Enable Childhood Sweetheart Caroline Compatibility": "true" }
     },
 
-    // --- 2. INDEPENDENT APF PORTRAIT REDIRECTION ---
+    // --- 3. SPRITES (sorkrimp's original sheets; CSC's own sheets are only used as cutscene sheets via APF) ---
+    { "LogName": "CSC Sprite Spring",         "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Spring",         "FromFile": "assets/Other_Sprites/sorkrimp/Spring.png" },
+    { "LogName": "CSC Sprite Summer",         "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Summer",         "FromFile": "assets/Other_Sprites/sorkrimp/Summer.png" },
+    { "LogName": "CSC Sprite Fall",           "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Fall",           "FromFile": "assets/Other_Sprites/sorkrimp/Fall.png" },
+    { "LogName": "CSC Sprite Winter Indoor",  "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Winter_Indoor",  "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Indoor.png" },
+    { "LogName": "CSC Sprite Winter Outdoor", "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Winter_Outdoor", "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Outdoor.png" },
+    { "LogName": "CSC Sprite Aerobics",       "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Aerobics",       "FromFile": "assets/Other_Sprites/sorkrimp/Aerobics.png" },
+    { "LogName": "CSC Sprite Beach",          "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Beach",          "FromFile": "assets/Other_Sprites/sorkrimp/beach.png" },
+    { "LogName": "CSC Sprite Flower Dance",   "Action": "Load", "Target": "Characters/Caroline_Sweetheart_FlowerDance",    "FromFile": "assets/Other_Sprites/sorkrimp/FlowerDance.png" },
+    { "LogName": "CSC Sprite Spirits Eve",    "Action": "Load", "Target": "Characters/Caroline_Sweetheart_SpiritsEve",     "FromFile": "assets/Other_Sprites/sorkrimp/SpiritsEve.png" },
+    { "LogName": "CSC Sprite Pyjamas",        "Action": "Load", "Target": "Characters/Caroline_Sweetheart_Pyjamas",        "FromFile": "assets/Roshi_Sprites/Caroline_Sweetheart/Caroline_Pyjamas.png" },
+
+    // Base sheet (social tab, gift log, first frame of event actors). With CSC compatibility on, the CSC mod does this itself.
+    { "LogName": "CSC Base Sprite Spring", "Action": "EditImage", "Target": "Characters/Caroline", "FromFile": "assets/Other_Sprites/sorkrimp/Spring.png",         "When": { "Enable Childhood Sweetheart Caroline Compatibility": "false", "Season": "spring" } },
+    { "LogName": "CSC Base Sprite Summer", "Action": "EditImage", "Target": "Characters/Caroline", "FromFile": "assets/Other_Sprites/sorkrimp/Summer.png",         "When": { "Enable Childhood Sweetheart Caroline Compatibility": "false", "Season": "summer" } },
+    { "LogName": "CSC Base Sprite Fall",   "Action": "EditImage", "Target": "Characters/Caroline", "FromFile": "assets/Other_Sprites/sorkrimp/Fall.png",           "When": { "Enable Childhood Sweetheart Caroline Compatibility": "false", "Season": "fall" } },
+    { "LogName": "CSC Base Sprite Winter", "Action": "EditImage", "Target": "Characters/Caroline", "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Outdoor.png", "When": { "Enable Childhood Sweetheart Caroline Compatibility": "false", "Season": "winter" } },
+
+    // --- 4. APPEARANCE (every entry sets Portrait AND Sprite; a missing Sprite falls back to Characters/Caroline) ---
     {
-      "LogName": "Sweetheart Caroline APF Portrait Logic",
+      "LogName": "CSC Appearance Logic",
       "Action": "EditData",
       "Target": "Data/Characters",
       "TargetField": ["Caroline", "Appearance"],
       "Entries": {
-        "Roshi_Caroline_Sweetheart_Spring": {
-          "Id": "Roshi_Caroline_Sweetheart_Spring",
+        // ---- Seasons (-140). Indoors/Outdoors both default to true, so winter turns the other one off. ----
+        "Roshi_CSC_Spring": {
+          "Id": "Roshi_CSC_Spring",
           "Condition": "SEASON Spring",
           "Portrait": "Portraits/Caroline_Sweetheart_Spring",
-          "Precedence": -2010
+          "Sprite": "Characters/Caroline_Sweetheart_Spring",
+          "Precedence": -140
         },
-        "Roshi_Caroline_Sweetheart_Summer": {
-          "Id": "Roshi_Caroline_Sweetheart_Summer",
+        "Roshi_CSC_Summer": {
+          "Id": "Roshi_CSC_Summer",
           "Condition": "SEASON Summer",
           "Portrait": "Portraits/Caroline_Sweetheart_Summer",
-          "Precedence": -2010
+          "Sprite": "Characters/Caroline_Sweetheart_Summer",
+          "Precedence": -140
         },
-        "Roshi_Caroline_Sweetheart_Fall": {
-          "Id": "Roshi_Caroline_Sweetheart_Fall",
+        "Roshi_CSC_Fall": {
+          "Id": "Roshi_CSC_Fall",
           "Condition": "SEASON Fall",
           "Portrait": "Portraits/Caroline_Sweetheart_Fall",
-          "Precedence": -2010
+          "Sprite": "Characters/Caroline_Sweetheart_Fall",
+          "Precedence": -140
         },
-        "Roshi_Caroline_Sweetheart_WinterIndoor": {
-          "Id": "Roshi_Caroline_Sweetheart_WinterIndoor",
+        "Roshi_CSC_WinterIndoor": {
+          "Id": "Roshi_CSC_WinterIndoor",
           "Condition": "SEASON Winter",
           "Indoors": true,
+          "Outdoors": false,
           "Portrait": "Portraits/Caroline_Sweetheart_Winter_Indoor",
-          "Precedence": -2020
+          "Sprite": "Characters/Caroline_Sweetheart_Winter_Indoor",
+          "Precedence": -140
         },
-        "Roshi_Caroline_Sweetheart_WinterOutdoor": {
-          "Id": "Roshi_Caroline_Sweetheart_WinterOutdoor",
+        "Roshi_CSC_WinterOutdoor": {
+          "Id": "Roshi_CSC_WinterOutdoor",
           "Condition": "SEASON Winter",
+          "Indoors": false,
           "Outdoors": true,
           "Portrait": "Portraits/Caroline_Sweetheart_Winter_Outdoor",
-          "Precedence": -2020
+          "Sprite": "Characters/Caroline_Sweetheart_Winter_Outdoor",
+          "Precedence": -140
         },
-        "Roshi_Caroline_Sweetheart_Aerobics": {
-          "Id": "Roshi_Caroline_Sweetheart_Aerobics",
-          "Condition": "DAY_OF_WEEK Tuesday, LOCATION_NAME Target SeedShop",
+
+        // ---- Specials (-1110) ----
+        // Aerobics: 10:00-19:50 so the pyjama windows stay free.
+        "Roshi_CSC_Aerobics": {
+          "Id": "Roshi_CSC_Aerobics",
+          "Condition": "LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, WEATHER Target Sun Wind Snow, TIME 1000 1950",
           "Portrait": "Portraits/Caroline_Sweetheart_Aerobics",
-          "Precedence": -2050
+          "Sprite": "Characters/Caroline_Sweetheart_Aerobics",
+          "Precedence": -1110
         },
-        "Roshi_Caroline_Sweetheart_FlowerDance": {
-          "Id": "Roshi_Caroline_Sweetheart_FlowerDance",
-          "Condition": "SEASON_DAY Spring 24",
+        "Roshi_CSC_FlowerDance": {
+          "Id": "Roshi_CSC_FlowerDance",
+          "Condition": "EVENT_ID festival_spring24",
           "Portrait": "Portraits/Caroline_Sweetheart_FlowerDance",
-          "Precedence": -2100
+          "Sprite": "Characters/Caroline_Sweetheart_FlowerDance",
+          "Precedence": -1110
         },
-        "Roshi_Caroline_Sweetheart_Spirit": {
-          "Id": "Roshi_Caroline_Sweetheart_Spirit",
-          "Condition": "SEASON_DAY Fall 27",
+        "Roshi_CSC_SpiritsEve": {
+          "Id": "Roshi_CSC_SpiritsEve",
+          "Condition": "EVENT_ID festival_fall27",
           "Portrait": "Portraits/Caroline_Sweetheart_SpiritsEve",
-          "Precedence": -2100
+          "Sprite": "Characters/Caroline_Sweetheart_SpiritsEve",
+          "Precedence": -1110
         },
-        "Roshi_Caroline_Sweetheart_Beach": {
-          "Id": "Roshi_Caroline_Sweetheart_Beach",
+        // Swimsuit where SHE is: bathhouse always, town beach outside winter.
+        "Roshi_CSC_Swim": {
+          "Id": "Roshi_CSC_Swim",
+          "Condition": "ANY \"LOCATION_NAME Target BathHouse_Entry BathHouse_WomensLocker BathHouse_Pool\" \"LOCATION_NAME Target Beach, !SEASON Winter\"",
+          "Portrait": "Portraits/Caroline_Sweetheart_Beach",
+          "Sprite": "Characters/Caroline_Sweetheart_Beach",
+          "Precedence": -1110
+        },
+        // Wedding (event id -2). The wedding dress frames 36-38 are in every seasonal sheet; APF keeps rolled outfits out of cutscenes.
+        "Roshi_CSC_Wedding_Spring": {
+          "Id": "Roshi_CSC_Wedding_Spring",
+          "Condition": "EVENT_ID -2, SEASON Spring",
+          "Portrait": "Portraits/Caroline_Sweetheart_Wedding",
+          "Sprite": "Characters/Caroline_Sweetheart_Spring",
+          "Precedence": -1110
+        },
+        "Roshi_CSC_Wedding_Summer": {
+          "Id": "Roshi_CSC_Wedding_Summer",
+          "Condition": "EVENT_ID -2, SEASON Summer",
+          "Portrait": "Portraits/Caroline_Sweetheart_Wedding",
+          "Sprite": "Characters/Caroline_Sweetheart_Summer",
+          "Precedence": -1110
+        },
+        "Roshi_CSC_Wedding_Fall": {
+          "Id": "Roshi_CSC_Wedding_Fall",
+          "Condition": "EVENT_ID -2, SEASON Fall",
+          "Portrait": "Portraits/Caroline_Sweetheart_Wedding",
+          "Sprite": "Characters/Caroline_Sweetheart_Fall",
+          "Precedence": -1110
+        },
+        "Roshi_CSC_Wedding_Winter": {
+          "Id": "Roshi_CSC_Wedding_Winter",
+          "Condition": "EVENT_ID -2, SEASON Winter",
+          "Portrait": "Portraits/Caroline_Sweetheart_Wedding",
+          "Sprite": "Characters/Caroline_Sweetheart_Winter_Outdoor",
+          "Precedence": -1110
+        },
+
+        // ---- Island (-1120). IsIslandAttire entries only count while she wears island attire. ----
+        "Roshi_CSC_Island": {
+          "Id": "Roshi_CSC_Island",
           "IsIslandAttire": true,
           "Portrait": "Portraits/Caroline_Sweetheart_Beach",
-          "Precedence": -2150
+          "Sprite": "Characters/Caroline_Sweetheart_Beach",
+          "Precedence": -1120
+        },
+
+        // ---- Pyjamas (-1150): at home (SeedShop) in the mornings and at night. ----
+        "Roshi_CSC_Pyjamas": {
+          "Id": "Roshi_CSC_Pyjamas",
+          "Condition": "ANY \"TIME 600 950\" \"TIME 2000 2600\", LOCATION_NAME Target SeedShop",
+          "Portrait": "Portraits/Caroline_Sweetheart_Pyjamas",
+          "Sprite": "Characters/Caroline_Sweetheart_Pyjamas",
+          "Precedence": -1150
         }
       }
     },
 
-    // --- 3. SPRITE OVERLAYS (CASCADING) ---
+    // --- 5. CSC COMPATIBILITY: mirror of CSC's beach/bathhouse outfit ---
+    // CSC gives her the swimsuit while the PLAYER is at the beach/bathhouse (e.g. in its 14-heart BathLove event).
     {
-      "LogName": "Caroline Sprite - Spring",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Spring.png",
-      "When": { "Season": "Spring" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Summer",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Summer.png",
-      "When": { "Season": "Summer" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Fall",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Fall.png",
-      "When": { "Season": "Fall" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Winter Indoor",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline_Winter",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Indoor.png",
-      "When": { "Season": "Winter", "IsOutdoors": "false" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Winter Outdoor",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline_Winter",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Outdoor.png",
-      "When": { "Season": "Winter", "IsOutdoors": "true" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Aerobics",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/Aerobics.png",
-      "When": { "DayOfWeek": "Tuesday", "LocationName": "SeedShop" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Flower Dance",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/FlowerDance.png",
-      "When": { "Season": "Spring", "Day": "24" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Spirits Eve",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline",
-      "FromFile": "assets/Other_Sprites/sorkrimp/SpiritsEve.png",
-      "When": { "Season": "Fall", "Day": "27" },
-      "Update": "OnLocationChange, OnTimeChange"
-    },
-    {
-      "LogName": "Caroline Sprite - Beach",
-      "Action": "EditImage",
-      "Target": "Characters/Caroline_Beach",
-      "FromFile": "assets/Other_Sprites/sorkrimp/beach.png"
+      "LogName": "CSC Compatibility - Swim Mirror",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Caroline", "Appearance"],
+      "When": { "Enable Childhood Sweetheart Caroline Compatibility": "true" },
+      "Entries": {
+        "Roshi_CSC_Swim_PlayerMirror": {
+          "Id": "Roshi_CSC_Swim_PlayerMirror",
+          "Condition": "PLAYER_LOCATION_UNIQUE_NAME Current Beach BathHouse_Entry BathHouse_WomensLocker BathHouse_Pool",
+          "Portrait": "Portraits/Caroline_Sweetheart_Beach",
+          "Sprite": "Characters/Caroline_Sweetheart_Beach",
+          "Precedence": -1110
+        }
+      }
     },
 
-    // --- 4. DDFC ASSIGNMENT ---
+    // --- 6. DDFC ASSIGNMENT (DDFC looks up Caroline_<appearance id>, Caroline_Beach, then Caroline) ---
     {
-      "LogName": "DDFC Assignment - Caroline",
+      "LogName": "DDFC Assignment - Sweetheart Caroline",
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {

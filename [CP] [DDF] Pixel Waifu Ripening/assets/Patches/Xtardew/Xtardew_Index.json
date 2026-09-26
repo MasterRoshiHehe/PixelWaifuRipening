@@ -2,43 +2,82 @@
   "Changes": [
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Abigail.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Abigail.json",
+      "When": {
+        "Enable Abigail": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Caroline.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Caroline.json",
+      "When": {
+        "Enable Caroline": "true"
+      }
+    },
+    {
+      "LogName": "Xtardew - Sweetheart Caroline",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Xtardew/NPCs/Caroline_Sweetheart.json",
+      "When": {
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Emily.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Emily.json",
+      "When": {
+        "Enable Emily": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Haley.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Haley.json",
+      "When": {
+        "Enable Haley": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Jodi.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Jodi.json",
+      "When": {
+        "Enable Jodi": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Leah.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Leah.json",
+      "When": {
+        "Enable Leah": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Maru.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Maru.json",
+      "When": {
+        "Enable Maru": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Penny.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Penny.json",
+      "When": {
+        "Enable Penny": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Robin.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Robin.json",
+      "When": {
+        "Enable Robin": "true"
+      }
     },
     {
       "Action": "Include",
-      "FromFile": "assets/Patches/Xtardew/NPCs/Sandy.json"
+      "FromFile": "assets/Patches/Xtardew/NPCs/Sandy.json",
+      "When": {
+        "Enable Sandy": "true"
+      }
     }
   ]
 }

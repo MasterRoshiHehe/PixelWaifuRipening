@@ -1,0 +1,21 @@
+{
+  // Custom outfits for Sweetheart Caroline - Winter (indoors).
+  // The root (Sweetheart_Winter_Indoor) and its Appearance entry live in the default patch
+  // (assets/Patches/Caroline_Sweetheart/Caroline_Sweetheart.json). This file only loads the sub-variants
+  // that APF rolls for that root (Rules in [APF] .../Definitions/Caroline/Caroline_Sweetheart_Outfits.json).
+  "Changes": [
+    // --- Winter_Indoor1 (sprite by sorkrimp) ---
+    {
+      "LogName": "CSC Outfit Portrait - Winter_Indoor1",
+      "Action": "Load",
+      "Target": "Portraits/Caroline_Sweetheart_Winter_Indoor1",
+      "FromFile": "assets/Roshi_Portraits/Caroline_Sweetheart/Caroline_Winter_Indoor1.png"
+    },
+    {
+      "LogName": "CSC Outfit Sprite - Winter_Indoor1",
+      "Action": "Load",
+      "Target": "Characters/Caroline_Sweetheart_Winter_Indoor1",
+      "FromFile": "assets/Other_Sprites/sorkrimp/Winter_Indoor1.png"
+    }
+  ]
+}

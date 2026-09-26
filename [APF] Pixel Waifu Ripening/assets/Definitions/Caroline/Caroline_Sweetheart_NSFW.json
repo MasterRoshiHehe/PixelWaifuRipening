@@ -7,7 +7,9 @@
       "FrameSize": 320,
       "Columns": 1,
       "IsPerExpressionMode": true,
-      "Variants": ["Sweetheart_Valley_Girls"],
+      "Variants": [
+        "Sweetheart_Valley_Girls"
+      ],
       "Expressions": {
         "0": {
           "Frames": 1,
@@ -171,6 +173,120 @@
         }
       },
       "VariantExpressions": {}
+    },
+    {
+      "Target": "Caroline·",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {},
+      "Variants": [
+        "Sweetheart"
+      ],
+      "VariantExpressions": {
+        "Sweetheart": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_3.png"
+          },
+          "4": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_4.png"
+          },
+          "5": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_5.png"
+          },
+          "6": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_6.png"
+          },
+          "7": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_7.png"
+          },
+          "8": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_8.png"
+          },
+          "9": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_Nude_9.png"
+          }
+        }
+      }
+    },
+    {
+      "Target": "Caroline··",
+      "OverrideDdf": false,
+      "FrameSize": 320,
+      "Columns": 1,
+      "IsPerExpressionMode": true,
+      "Expressions": {},
+      "Variants": [
+        "Sweetheart"
+      ],
+      "VariantExpressions": {
+        "Sweetheart": {
+          "0": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_0.png"
+          },
+          "1": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_1.png"
+          },
+          "2": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_2.png"
+          },
+          "3": {
+            "Frames": 1,
+            "Fps": 1,
+            "Mode": "once",
+            "Sprite": "assets/Roshi_Portraits/Caroline_Sweetheart/Xtardew/Xtardew_3.png"
+          }
+        }
+      }
     }
   ],
   "Rules": []
