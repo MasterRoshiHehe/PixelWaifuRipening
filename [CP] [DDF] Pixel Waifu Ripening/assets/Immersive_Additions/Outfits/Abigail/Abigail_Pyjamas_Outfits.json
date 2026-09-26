@@ -1,0 +1,35 @@
+{
+  "Changes": [
+    // --- 1. PYJAMAS ASSETS ---
+    {
+      "LogName": "Load Abigail Pyjamas Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Abigail_Pyjamas",
+      "FromFile": "assets/Roshi_Portraits/Abigail/Abigail_Pyjamas.png"
+    },
+    {
+      "LogName": "Load Abigail Pyjamas Sprite",
+      "Action": "Load",
+      "Target": "Characters/Abigail_Pyjamas",
+      "FromFile": "assets/Other_Sprites/CoffeeBuns/Abigail_Bowless.png"
+    },
+
+    // --- 2. APPEARANCE HOOK - MORNING / NIGHT AT HOME ---
+    {
+      "LogName": "Abigail Appearance Logic - Pyjamas",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Abigail", "Appearance"],
+      "Update": "OnLocationChange, OnTimeChange",
+      "Entries": {
+        "Roshi_Abigail_Pyjamas": {
+          "Id": "Roshi_Abigail_Pyjamas",
+          "Condition": "ANY \"TIME 600 930\" \"TIME 2000 2600\", LOCATION_NAME Target SeedShop FarmHouse",
+          "Portrait": "Portraits/Abigail_Pyjamas",
+          "Sprite": "Characters/Abigail_Pyjamas",
+          "Precedence": -1000
+        }
+      }
+    }
+  ]
+}

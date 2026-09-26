@@ -29,6 +29,11 @@
       "Default": "true",
       "Description": "Enable Abigail Portraits."
     },
+    "Enable Custom Outfits for Abigail": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Enable custom randomized PWR sprites and portraits for Abigail."
+    },
 
     "Enable Bouncer": {
       "SectionTitle": "Bouncer",
@@ -216,7 +221,18 @@
     {
       "Action": "Include",
       "FromFile": "assets/NPCs/Abigail.json",
-      "When": { "Enable Abigail": "true" }
+      "When": {
+        "Enable Abigail": "true",
+        "Enable Custom Outfits for Abigail": "false"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail.json",
+      "When": {
+        "Enable Abigail": "true",
+        "Enable Custom Outfits for Abigail": "true"
+      }
     },
     {
       "Action": "Include",

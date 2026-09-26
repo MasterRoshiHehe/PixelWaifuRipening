@@ -1,52 +1,52 @@
 {
   "Changes": [
     {
-      "LogName": "Load Haley SD Beach",
+      "LogName": "Load Abigail SD Beach",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Beach_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Beach_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Spring",
+      "LogName": "Load Abigail SD Spring",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Spring_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Spring_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Summer",
+      "LogName": "Load Abigail SD Summer",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Summer_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Summer_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Fall",
+      "LogName": "Load Abigail SD Fall",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Fall_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Fall_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Winter",
+      "LogName": "Load Abigail SD Winter",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Winter_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Winter_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Pyjamas",
+      "LogName": "Load Abigail SD Pyjamas",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Pyjamas_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Pyjamas_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Festival",
+      "LogName": "Load Abigail SD Festival",
       "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Festival_Outfits.json"
+      "FromFile": "assets/Immersive_Additions/Outfits/Abigail/Abigail_Festival_Outfits.json"
     },
     {
-      "LogName": "Load Haley SD Luau",
-      "Action": "Include",
-      "FromFile": "assets/Immersive_Additions/Outfits/Haley/Haley_Luau_Outfits.json"
-    },
-    {
+      "LogName": "DDFC Assignment - Abigail Outfits",
       "Action": "EditData",
       "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
       "Entries": {
-        "Haley": { "copyFrom": "RoshiHD_Template" },
-        "Haley_Beach": { "copyFrom": "RoshiHD_Template" },
-        "Haley_Winter": { "copyFrom": "RoshiHD_Template" }
+        "Abigail": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Spring": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Summer": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Fall": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Fall_Rainy": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Winter": { "copyFrom": "RoshiHD_Template" },
+        "Abigail_Pyjamas": { "copyFrom": "RoshiHD_Template" }
       }
     }
   ]

@@ -411,7 +411,7 @@
             "Frames": 1,
             "Fps": 1,
             "Mode": "once",
-            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Bowless_Rainy_1.png"
+            "Sprite": "assets/Roshi_Portraits/Abigail/Bowless_Rainy/Abigail_Bowless_Rainy_1.png"
           },
           "2": {
             "Frames": 1,
@@ -766,10 +766,46 @@
             },
             {
               "Type": "Weather",
+              "Value": "Rain"
+            }
+          ]
+        },
+        {
+          "Id": "Spring_Base_Rainy",
+          "Priority": 15,
+          "Weight": 0.8,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            },
+            {
+              "Type": "Weather",
               "Value": "Storm"
             }
           ]
         },
+        {
+          "Id": "Spring_Bowless_Rainy",
+          "Priority": 15,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Spring"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Storm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NPC": "Abigail",
+      "Root": "Summer",
+      "Variants": [
         {
           "Id": "Summer_Base",
           "Priority": 10,
@@ -804,6 +840,36 @@
             {
               "Type": "Weather",
               "Value": "Rain"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Bowless_Rainy",
+          "Priority": 15,
+          "Weight": 1.0,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Rain"
+            }
+          ]
+        },
+        {
+          "Id": "Summer_Base_Rainy",
+          "Priority": 15,
+          "Weight": 0.8,
+          "Conditions": [
+            {
+              "Type": "Season",
+              "Value": "Summer"
+            },
+            {
+              "Type": "Weather",
+              "Value": "Storm"
             }
           ]
         },

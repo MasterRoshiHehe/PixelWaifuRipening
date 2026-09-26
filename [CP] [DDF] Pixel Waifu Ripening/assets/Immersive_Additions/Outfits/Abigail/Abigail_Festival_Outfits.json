@@ -1,17 +1,20 @@
 {
   "Changes": [
+    // --- 1. LOAD FESTIVAL PORTRAITS & SPRITES ---
     {
-      "LogName": "Load HD Fall Nun Portrait",
+      "LogName": "Load Abigail Spirits Eve Nun Portrait",
       "Action": "Load",
       "Target": "Portraits/Abigail_Fall_Nun",
       "FromFile": "assets/Roshi_Portraits/Abigail/Abigail_Nun.png"
     },
     {
-      "LogName": "Load HD Fall Nun Sprite",
+      "LogName": "Load Abigail Spirits Eve Nun Sprite",
       "Action": "Load",
       "Target": "Characters/Abigail_Fall_Nun",
       "FromFile": "assets/Other_Sprites/RiAI123/Sister_Abigail.png"
     },
+
+    // --- 2. FESTIVAL APPEARANCE LOGIC ---
     {
       "LogName": "Abigail Appearance Logic - Festivals",
       "Action": "EditData",
@@ -20,10 +23,22 @@
       "Entries": {
         "Roshi_Abigail_SpiritsEve": {
           "Id": "Roshi_Abigail_SpiritsEve",
-          "Condition": "SEASON_DAY Fall 27, LOCATION_NAME Here Temp",
+          "Condition": "SEASON_DAY Fall 27",
           "Portrait": "Portraits/Abigail_Fall_Nun",
           "Sprite": "Characters/Abigail_Fall_Nun",
           "Precedence": -2000
+        }
+      }
+    },
+
+    // --- 3. DDFC MAPPING ---
+    {
+      "LogName": "DDFC Assignment - Abigail Festivals",
+      "Action": "EditData",
+      "Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+      "Entries": {
+        "Abigail_Fall_Nun": {
+          "copyFrom": "RoshiHD_Template"
         }
       }
     }
