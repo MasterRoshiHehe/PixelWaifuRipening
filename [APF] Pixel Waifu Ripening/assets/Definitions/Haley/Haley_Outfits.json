@@ -1402,19 +1402,13 @@
         {
           "Id": "Beach_Towel",
           "Priority": 10,
-          "Weight": 0.2,
+          "Weight": 0.1,
           "Conditions": []
         },
         {
           "Id": "Beach_Vanilla",
           "Priority": 10,
           "Weight": 0.7,
-          "Conditions": []
-        },
-        {
-          "Id": "Beach_Nude",
-          "Priority": 10,
-          "Weight": 0.01,
           "Conditions": []
         }
       ]

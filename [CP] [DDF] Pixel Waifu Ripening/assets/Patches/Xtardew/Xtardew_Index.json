@@ -11,7 +11,8 @@
       "Action": "Include",
       "FromFile": "assets/Patches/Xtardew/NPCs/Caroline.json",
       "When": {
-        "Enable Caroline": "true"
+        "Enable Caroline": "true",
+        "Enable Childhood Sweetheart Caroline": "false"
       }
     },
     {

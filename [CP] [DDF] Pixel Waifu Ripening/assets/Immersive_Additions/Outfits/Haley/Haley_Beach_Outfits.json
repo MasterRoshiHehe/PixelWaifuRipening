@@ -35,6 +35,20 @@
       "FromFile": "assets/Roshi_Sprites/Haley/Beach/Haley_Beach.png"
     },
 
+    // Nude root (APF variant "Nude" in Haley_Base.json), used while she changes at her dresser on beach days.
+    {
+      "LogName": "Load Haley Nude Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Haley_Nude",
+      "FromFile": "assets/Roshi_Portraits/Haley/Haley_Nude.png"
+    },
+    {
+      "LogName": "Load Haley Nude Sprite",
+      "Action": "Load",
+      "Target": "Characters/Haley_Nude",
+      "FromFile": "assets/Roshi_Sprites/Haley/Nude/Haley_Nude.png"
+    },
+
     // --- 3. DDFC MAPPING ---
     {
       "LogName": "DDFC Assignment - Haley Beach Random",
@@ -78,7 +92,116 @@
           "Condition": "LOCATION_NAME Target Beach IslandResort, WEATHER Target Sun",
           "Portrait": "Portraits/Haley_Beach",
           "Sprite": "Characters/Haley_Beach",
-          "Precedence": -2000
+          "Precedence": -1999
+        }
+      }
+    },
+
+    // --- 5. BEACH DAY ROUTINE (Live Appearance Framework) ---
+    // Days her loaded schedule goes to the Beach and then on to Town (Alex's ice cream stand), whatever the schedule
+    // source (vanilla, Harem Valley, ...). LAF re-checks on every clock change, so she changes while you watch.
+    // Times below for Harem Valley's summer schedule (Beach at 10:30, leaves for Town at 13:30); everything counts back
+    // from when she leaves the Beach, so it adapts to other departure times.
+    //   until 9:00        pyjamas (normal pyjamas entry, -1000)
+    //   9:10-9:20         nude at her dresser (same area check as the pyjamas entry)
+    //   9:30              the day's beach outfit (root Haley_Beach, APF rolls which one)
+    //   arrival           lies down on her towel (idle pose below: 20 > 21, first idle)
+    //   50 min before     rolls over (21) to the second idle
+    //   20 min before     gets up (21 > 20), stands normally
+    //   10 min before     back to her outfit of the day, stands
+    //   departure         walks to Town
+    // Only with LAF installed (without it these queries would be unknown and log errors).
+    // !EVENT_ACTOR: event actors never get these outfits (events draw poses from the default sheet, whose frames the
+    // beach/nude sheets don't match); Haley herself keeps them. Events that want beachwear use changeSprite.
+    {
+      "LogName": "Haley Appearance Logic - Beach Day Routine (LAF)",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": ["Haley", "Appearance"],
+      "When": {
+        "HasMod": "MasterRoshiHehe.LiveAppearanceFramework"
+      },
+      "Entries": {
+        "Roshi_Haley_BeachDay_Nude": {
+          "Id": "Roshi_Haley_BeachDay_Nude",
+          "Condition": "!MasterRoshiHehe.LiveAppearanceFramework_EVENT_ACTOR, TIME 910 920, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_VISITS Haley Beach, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_LEAVES_FOR Haley Town 1100 1600, Spiderbuttons.BETAS_NPC_NEAR_AREA HaleyHouse 5 6 4 Haley",
+          "Portrait": "Portraits/Haley_Nude",
+          "Sprite": "Characters/Haley_Nude",
+          "Precedence": -1999
+        },
+        // From 9:30 until 20 min before she leaves the Beach (the outfit of the day comes back 10 min before).
+        "Roshi_Haley_BeachDay": {
+          "Id": "Roshi_Haley_BeachDay",
+          "Condition": "!MasterRoshiHehe.LiveAppearanceFramework_EVENT_ACTOR, TIME 930 2600, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_VISITS Haley Beach, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_LEAVES_FOR Haley Town 1100 1600, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_MINUTES_BEFORE_LEAVING Haley Beach 20",
+          "Portrait": "Portraits/Haley_Beach",
+          "Sprite": "Characters/Haley_Beach",
+          "Precedence": -1999
+        },
+        // Same Id as the Beach Map entry above, so this replaces it when LAF is installed: identical, except that on
+        // these beach days it turns off 10 min before she leaves the Beach (she'd otherwise stay in beachwear
+        // until she walks off the map).
+        "Roshi_Haley_BeachBikinis": {
+          "Id": "Roshi_Haley_BeachBikinis",
+          "Condition": "!MasterRoshiHehe.LiveAppearanceFramework_EVENT_ACTOR, LOCATION_NAME Target Beach IslandResort, WEATHER Target Sun, !ANY \"MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_VISITS Haley Beach, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_LEAVES_FOR Haley Town 1100 1600, !MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_MINUTES_BEFORE_LEAVING Haley Beach 20\"",
+          "Portrait": "Portraits/Haley_Beach",
+          "Sprite": "Characters/Haley_Beach",
+          "Precedence": -1999
+        }
+      }
+    },
+
+    // --- 6. BEACH TOWEL IDLE POSE (Live Appearance Framework) ---
+    // Beach sheets (all six variants): 20 (0,160) > 21 (16,160) = lying down, 22 (32,160) = on her back,
+    // 18/19 (32,128 / 48,128) = on her stomach. Plays at whatever beach stop her loaded schedule uses.
+    //   arrival .......... 60+ min before leaving: first idle
+    //   50 to 30 min before leaving: second idle (21 in between)
+    //   20 min before: gets up (21 > 20) and stands
+    // ShuffleStages: which idle comes first is random per day (same for every player); both always play.
+    // KeepWhenTalkedTo: she stays down while you talk to her.
+    {
+      "LogName": "Haley Idle Pose - Beach Towel (LAF)",
+      "Action": "EditData",
+      "Target": "MasterRoshiHehe.LiveAppearanceFramework/IdlePoses",
+      "When": {
+        "HasMod": "MasterRoshiHehe.LiveAppearanceFramework"
+      },
+      "Entries": {
+        "Roshi.Haley_BeachTowel": {
+          "Npc": "Haley",
+          "Location": "Beach",
+          "AtScheduleStop": true,
+          "Condition": "MasterRoshiHehe.LiveAppearanceFramework_NPC_APPEARANCE Haley Roshi_Haley_BeachDay Roshi_Haley_BeachBikinis, MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_MINUTES_BEFORE_LEAVING Haley Beach 30",
+          "StillFor": 1000,
+          "KeepWhenTalkedTo": true,
+          "Intro": [
+            { "Frame": 20, "Duration": 300 },
+            { "Frame": 21, "Duration": 300 }
+          ],
+          "Outro": [
+            { "Frame": 21, "Duration": 300 },
+            { "Frame": 20, "Duration": 300 }
+          ],
+          "ShuffleStages": true,
+          "Stages": [
+            {
+              // Slot 1: the last half hour before she gets up (50 to 30 min before leaving the Beach).
+              "Id": "Stomach",
+              "Condition": "MasterRoshiHehe.LiveAppearanceFramework_SCHEDULE_MINUTES_BEFORE_LEAVING Haley Beach 30 50",
+              "Transition": [ { "Frame": 21, "Duration": 300 } ],
+              "Frames": [
+                { "Frame": 18, "Duration": 4000 },
+                { "Frame": 19, "Duration": 250 },
+                { "Frame": 18, "Duration": 250 },
+                { "Frame": 19, "Duration": 250 }
+              ]
+            },
+            {
+              // Slot 2 (fallback): from arrival until then.
+              "Id": "Back",
+              "Transition": [ { "Frame": 21, "Duration": 300 } ],
+              "Frames": [ { "Frame": 22, "Duration": 1000 } ]
+            }
+          ]
         }
       }
     }

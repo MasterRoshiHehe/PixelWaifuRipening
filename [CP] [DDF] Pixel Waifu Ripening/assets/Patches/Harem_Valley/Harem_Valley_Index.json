@@ -23,6 +23,14 @@
       "When": {
         "Enable Maru": "true"
       }
+    },
+    {
+      "LogName": "Load Harem Valley / Valley Girls - Emily Bra nude event",
+      "Action": "Include",
+      "FromFile": "assets/Patches/Harem_Valley/Events/HVEmily0.json",
+      "When": {
+        "Enable Emily": "true"
+      }
     }
   ]
 }

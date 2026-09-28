@@ -1353,7 +1353,7 @@
         {
           "Id": "Sweetheart_Beach",
           "Priority": 10,
-          "Weight": 1.0,
+          "Weight": 0.4,
           "Conditions": []
         },
         {
@@ -1365,13 +1365,13 @@
         {
           "Id": "Sweetheart_Beach_BlueSwimsuit",
           "Priority": 10,
-          "Weight": 1.0,
+          "Weight": 0.6,
           "Conditions": []
         },
         {
           "Id": "Sweetheart_Beach_PurpleBikini",
           "Priority": 10,
-          "Weight": 1.0,
+          "Weight": 0.8,
           "Conditions": []
         }
       ]

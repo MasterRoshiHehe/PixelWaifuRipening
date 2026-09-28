@@ -4,6 +4,7 @@
   "Include": [
     "assets/Definitions/Abigail/Abigail_Base.json",
     "assets/Definitions/Abigail/Abigail_NSFW.json",
+    "assets/Definitions/Abigail/Abigail_Outfits.json",
     "assets/Definitions/Bouncer/Bouncer_Base.json",
     "assets/Definitions/Caroline/Caroline_Base.json",
     "assets/Definitions/Caroline/Caroline_NSFW.json",
@@ -29,8 +30,10 @@
     "assets/Definitions/Pam/Pam_Hot_NSFW.json",
     "assets/Definitions/Penny/Penny_Base.json",
     "assets/Definitions/Penny/Penny_NSFW.json",
+    "assets/Definitions/Qi/Qi.json",
     "assets/Definitions/Robin/Robin_Base.json",
     "assets/Definitions/Robin/Robin_NSFW.json",
+    "assets/Definitions/Sandy/Sandy_Base.json",
     "assets/Definitions/Sandy/Sandy_NSFW.json",
     "assets/Definitions/SexRobot/SexRobot_Base.json"
   ]

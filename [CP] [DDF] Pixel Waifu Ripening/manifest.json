@@ -1,7 +1,7 @@
 {
   "Name": "[CP] [DDF] Pixel Waifu Ripening PWR",
   "Author": "MasterRoshiHehe",
-  "Version": "0.2.75",
+  "Version": "0.2.80",
   "Description": "High-quality Pixel Style AI Portraits",
   "UniqueID": "MasterRoshiHehe.PWR",
   "UpdateKeys": ["Nexus:44489"],
@@ -15,6 +15,12 @@
     },
     {
       "UniqueID": "tyr4ntx.AnimatedPortraitFramework",
+      "MinimumVersion": "1.2.1",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "MasterRoshiHehe.LiveAppearanceFramework",
+      "MinimumVersion": "0.2.0",
       "IsRequired": true
     },
     {

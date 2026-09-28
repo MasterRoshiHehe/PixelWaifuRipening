@@ -1,17 +1,19 @@
 {
   "Name": "Pixel Waifu Ripening PWR - APF",
   "Author": "MasterRoshiHehe",
-  "Version": "0.2.75",
+  "Version": "0.2.80",
   "Description": "High-quality Pixel Style AI Portraits (APF)",
   "UniqueID": "MasterRoshiHehe.PWR.APF",
   "UpdateKeys": ["Nexus:44489"],
   "MinimumApiVersion": "4.0.0",
   "ContentPackFor": {
-    "UniqueID": "tyr4ntx.AnimatedPortraitFramework"
+    "UniqueID": "tyr4ntx.AnimatedPortraitFramework",
+    "MinimumVersion": "1.2.1"
   },
   "Dependencies": [
     {
       "UniqueID": "tyr4ntx.AnimatedPortraitFramework",
+      "MinimumVersion": "1.2.1",
       "IsRequired": true
     },
     {
